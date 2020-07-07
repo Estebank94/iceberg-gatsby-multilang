@@ -1,10 +1,12 @@
 ---
-title: 'Javascript Language - Code examples using PrismJS'
+title: Javascript Language - Code examples using PrismJS
+description: >-
+  JavaScript, often abbreviated as JS, is a high-level, interpreted scripting
+  language that conforms to the ECMAScript specification.
 date: '2019-03-26 11:21:56'
-description: JavaScript, often abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification.
+image: /assets/img/rec2.jpg
 category: Javascript
 background: '#e58e26'
-image: '/assets/img/05.jpg'
 ---
 
 JavaScript (/ˈdʒɑːvəˌskrɪpt/), often abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
