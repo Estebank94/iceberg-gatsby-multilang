@@ -1,14 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import SEO from '../components/seo';
-import PostItem from '../components/PostItem';
 import Hero from '../components/Hero';
-import TitlePage from '../components/TitlePage';
 import LocalizedLink from '../components/LocalizedLink';
 import useTranslations from '../components/useTranslations';
+import Banner from '../components/Banner';
 import FeaturedRecipes from '../components/FeaturedRecipes';
+import AllRecipes from '../components/AllRecipes';
 
-import * as S from '../components/ListWrapper/styled';
 
 const Index = ({ data: { allMarkdownRemark } }) => {
   // useTranslations is aware of the global context (and therefore also "locale")
@@ -28,7 +27,8 @@ const Index = ({ data: { allMarkdownRemark } }) => {
       <SEO title="Home" />
       <Hero />
       <FeaturedRecipes featuredRecipes={postList} />
-      <br />
+      <AllRecipes recipes={postList} />
+      <Banner />
 
       {/*<LocalizedLink to={`/blog/`}>{allPosts}</LocalizedLink>*/}
     </div>

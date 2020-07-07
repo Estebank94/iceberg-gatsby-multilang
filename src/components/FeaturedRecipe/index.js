@@ -48,7 +48,7 @@ const featuredRecipe = ({
       : false;
 
   return(
-    <GatsbyLink to={"/dalgona-coffee"}>
+    <GatsbyLink to={slug}>
       <div className="pasador">
         <div className="card receta-destacada">
           <Image className="card-img-top" fluid={postImg.node.childImageSharp.fluid} alt="Matcha Coffee"/>

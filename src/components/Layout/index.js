@@ -10,7 +10,7 @@ const LocaleContext = React.createContext();
 // the locale available everywhere!
 const Layout = ({ children, pageContext: { locale } }) => (
   <LocaleContext.Provider value={{ locale }}>
-      <Header />
+      <Header locale={locale} />
       <div role="main">
         <div>{children}</div>
       </div>
