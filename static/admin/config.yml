@@ -63,29 +63,30 @@ collections:
                 widget: 'datetime',
                 format: 'YYYY-MM-DD hh:mm:ss',
             }
+
     #Posts (Spanish)
-        - name: 'posts-es' # Used in routes, e.g., /admin/collections/blog
-          label: 'Posts (Spanish)' # Used in the UI
-          folder: 'blog' # The path to the folder where the documents are stored
-          create: true # Allow users to create new documents in this collection
-          slug: '{{slug}}' # Filename template, e.g., title.md
-          extension: 'es.md'
-          format: frontmatter
-          fields: # The fields for each document, usually in front matter
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'string' }
-              - {label: 'Author', name: 'author', widget: 'string'}
-              - {label: 'Featured', name: 'featured', widget: 'boolean', default: false}
-              - {label: "Difficulty", name: "difficulty", widget: "number", default: 1, valueType: "int", min: 1}
-              - {label: "Servings", name: "servings", widget: "number", default: 1, valueType: "int", min: 1}
-              - {label: "Preparation Time", name: "preparationTime", widget: "number", default: 15, valueType: "int", min: 1}
-              - {label: "Steps", name: "steps", widget: "list", default: ["Paso 1", "Paso 2"]}
-              - {label: "Ingredients", name: "ingredients", widget: "list", default: ["Ingredient 1", "Ingredient 2"]}
-              - { label: 'image', name: 'image', widget: 'image' }
-              - { label: 'Body', name: 'body', widget: 'markdown' }
-              - {
-                    label: 'Date',
-                    name: 'date',
-                    widget: 'datetime',
-                    format: 'YYYY-MM-DD hh:mm:ss',
-                }
+    - name: 'posts-es' # Used in routes, e.g., /admin/collections/blog
+      label: 'Posts (Spanish)' # Used in the UI
+      folder: 'blog' # The path to the folder where the documents are stored
+      create: true # Allow users to create new documents in this collection
+      slug: '{{slug}}' # Filename template, e.g., title.md
+      extension: 'es.md'
+      format: frontmatter
+      fields: # The fields for each document, usually in front matter
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - {label: 'Author', name: 'author', widget: 'string'}
+          - {label: 'Featured', name: 'featured', widget: 'boolean', default: false}
+          - {label: "Difficulty", name: "difficulty", widget: "number", default: 1, valueType: "int", min: 1}
+          - {label: "Servings", name: "servings", widget: "number", default: 1, valueType: "int", min: 1}
+          - {label: "Preparation Time", name: "preparationTime", widget: "number", default: 15, valueType: "int", min: 1}
+          - {label: "Steps", name: "steps", widget: "list", default: ["Paso 1", "Paso 2"]}
+          - {label: "Ingredients", name: "ingredients", widget: "list", default: ["Ingredient 1", "Ingredient 2"]}
+          - { label: 'image', name: 'image', widget: 'image' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - {
+                label: 'Date',
+                name: 'date',
+                widget: 'datetime',
+                format: 'YYYY-MM-DD hh:mm:ss',
+            }
