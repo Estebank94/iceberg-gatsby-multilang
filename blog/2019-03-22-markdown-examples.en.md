@@ -1,12 +1,11 @@
 ---
-title: 'Markdown Examples'
-date: '2019-03-22 01:21:23'
+title: Markdown Examples
 description: Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
+date: '2019-03-22 01:21:23'
+image: /assets/img/receta7.jpg
 category: Markdown
 background: '#353b48'
-image: '/assets/img/03.jpg'
 ---
-
 Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
 
 Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. While Markdown’s syntax has been influenced by several existing text-to-HTML filters — including Setext, atx, Textile, reStructuredText, Grutatext, and EtText — the single biggest source of inspiration for Markdown’s syntax is the format of plain text email.
@@ -67,7 +66,7 @@ Alt-H2
 
 1. First ordered list item
 2. Another item
-   ⋅⋅\* Unordered sub-list.
+   ⋅⋅* Unordered sub-list.
 3. Actual numbers don't matter, just that it's a number
    ⋅⋅1. Ordered sub-list
 4. And another item.
@@ -78,11 +77,9 @@ Alt-H2
 ⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
 ⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
 
--   Unordered list can use asterisks
-
-*   Or minuses
-
--   Or pluses
+* Unordered list can use asterisks
+* Or minuses
+* Or pluses
 
 ## Links
 
@@ -108,30 +105,25 @@ Some text to show that the reference links can follow later.
 [arbitrary case-insensitive reference text]: https://www.mozilla.org
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com
-
 ```
 
 [I'm an inline-style link](https://www.google.com)
 
 [I'm an inline-style link with title](https://www.google.com "Google's Homepage")
 
-[I'm a reference-style link][arbitrary case-insensitive reference text]
+[I'm a reference-style link](https://www.mozilla.org)
 
 [I'm a relative reference to a repository file](../blob/master/LICENSE)
 
-[You can use numbers for reference-style link definitions][1]
+[You can use numbers for reference-style link definitions](http://slashdot.org)
 
-Or leave it empty and use the [link text itself].
+Or leave it empty and use the [link text itself](http://www.reddit.com).
 
 URLs and URLs in angle brackets will automatically get turned into links.
 http://www.example.com or <http://www.example.com> and sometimes
 example.com (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
 
 ## Blockquotes
 
