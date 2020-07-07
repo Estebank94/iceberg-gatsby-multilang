@@ -1,11 +1,12 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import Slider from "react-slick";
 import Stamp from '../../images/stamp/sello.png';
 import Recipe from '../FeaturedRecipe';
 
 
-const FeaturedRecipes = ({ data: { allMarkdownRemark } }) => {
+const FeaturedRecipes = ({ featuredRecipes }) => {
+
+  console.log('DSATA', featuredRecipes);
 
   const settings = {
     dots: true,
@@ -47,8 +48,6 @@ const FeaturedRecipes = ({ data: { allMarkdownRemark } }) => {
     ]
   };
 
-  const recipes = allMarkdownRemark.edges;
-
   return(
     <div className="container">
       <div className="row">
@@ -60,9 +59,33 @@ const FeaturedRecipes = ({ data: { allMarkdownRemark } }) => {
       <div className="col-12 p-0 m-0">
         <img className="sello" src={Stamp} alt="100% plant-based"/>
           <Slider {...settings}>
-            {
-              recipes.map((r,index) => <Recipe alt={r.alt} key={index} />)
-            }
+              {featuredRecipes.map(
+                  ({
+                       node: {
+                           frontmatter: {
+                               background,
+                               category,
+                               date,
+                               description,
+                               title,
+                               image,
+                           },
+                           timeToRead,
+                           fields: { slug },
+                       },
+                   }) => (
+                      <Recipe
+                          slug={`/blog/${slug}`}
+                          background={background}
+                          category={category}
+                          date={date}
+                          timeToRead={timeToRead}
+                          title={title}
+                          description={description}
+                          image={image}
+                      />
+                  ),
+              )}
           </Slider>
       </div>
     </div>
@@ -70,35 +93,3 @@ const FeaturedRecipes = ({ data: { allMarkdownRemark } }) => {
 }
 
 export default FeaturedRecipes;
-
-export const query = graphql`
-  query Index($locale: String!, $dateFormat: String!, ) {
-    allMarkdownRemark(
-      filter: {
-        fields: { locale: { eq: $locale } }
-        fileAbsolutePath: {regex: "/(blog)\/.*\\.md$/"}
-      }
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 2
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            description
-            category
-            background
-            image
-            date(formatString: $dateFormat)
-
-          }
-          timeToRead
-          fields {
-            locale
-            slug
-          }
-        }
-      }
-    }
-  }
-`;

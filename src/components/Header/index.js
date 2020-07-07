@@ -1,41 +1,71 @@
 import React, { useState } from 'react';
 import useTranslations from '../useTranslations';
-import Navigation from '../Navigation';
-import Languages from '../Languages';
-import ButtonMenu from '../ButtonMenu';
-import Logo from '../Logo';
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+} from 'reactstrap';
+
+import logo from '../../images/logo-notco-black.svg';
+import USA from '../../images/flags/usa-flag.png'
 
 import * as S from './styled';
 
-const Header = () => {
-  const { home } = useTranslations();
-  const [toggleMenu, setToggleMenu] = useState(false);
+const Header = (props) => {
+    const [isOpen, setIsOpen] = useState(false);
 
-  function handleToggleMenu() {
-    setToggleMenu(!toggleMenu);
-  }
+    const { t } = useTranslations()
 
-  return (
-    <S.HeaderWrapper>
-      <S.Container>
-        <S.LogoLink to="/" title={home} aria-label={home}>
-          <Logo />
-        </S.LogoLink>
+    const toggle = () => setIsOpen(!isOpen);
 
-        <S.NavLanguages>
-          <Languages />
-        </S.NavLanguages>
-
-        <ButtonMenu
-          handleClick={handleToggleMenu}
-          isActive={toggleMenu}
-        />
-        <S.NavMenu>
-          <Navigation isActive={toggleMenu} handleToggleMenu={handleToggleMenu} />
-        </S.NavMenu>
-      </S.Container>
-    </S.HeaderWrapper>
-  );
-};
+    return (
+        <div>
+            <Navbar color="light" light expand="md" className="navbar navbar-expand-lg navbar-light bg-light" style={{ zIndex: 3 }}>
+                <NavbarBrand href="/"><img src={logo} alt="Logo" style={{ width: 55 }} /></NavbarBrand>
+                <div id="nav-icon" onClick={toggle} className={isOpen ? 'open d-md-none' : 'd-md-none'}>
+                    <span></span>
+                    <span></span>
+                </div>
+                <Collapse isOpen={isOpen} navbar>
+                    <Nav className="ml-auto" navbar>
+                        <NavItem>
+                            <NavLink href="/" className="nav-link item-menu pr-5">NOTCO1</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="/" className="nav-link item-menu pr-5">NOTCO2</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="/" className="nav-link item-menu pr-5">NOT<span className="azul">MILK</span></NavLink>
+                        </NavItem>
+                        <UncontrolledDropdown nav inNavbar className="desplegable-header">
+                            <DropdownToggle nav caret>
+                                <img src={USA} style={{ width: 30 }} />
+                            </DropdownToggle>
+                            <DropdownMenu right className="p-2">
+                                <DropdownItem className="nav-link item-menu">
+                                    <img src={USA} style={{ width: 30 }} /><span className="pl-2">Estados Unidos / Ingles</span>
+                                </DropdownItem>
+                                <DropdownItem className="nav-link item-menu">
+                                    <img src={USA} style={{ width: 30 }} /><span className="pl-2">Chile / Español</span>
+                                </DropdownItem>
+                                <DropdownItem className="nav-link item-menu">
+                                    <img src={USA} style={{ width: 30 }} /><span className="pl-2">Portugues / Brasil</span>
+                                </DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
+                    </Nav>
+                </Collapse>
+            </Navbar>
+        </div>
+    );
+}
 
 export default Header;

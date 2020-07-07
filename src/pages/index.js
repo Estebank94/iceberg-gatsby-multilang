@@ -2,9 +2,11 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import SEO from '../components/seo';
 import PostItem from '../components/PostItem';
+import Hero from '../components/Hero';
 import TitlePage from '../components/TitlePage';
 import LocalizedLink from '../components/LocalizedLink';
 import useTranslations from '../components/useTranslations';
+import FeaturedRecipes from '../components/FeaturedRecipes';
 
 import * as S from '../components/ListWrapper/styled';
 
@@ -24,48 +26,11 @@ const Index = ({ data: { allMarkdownRemark } }) => {
   return (
     <div className="homepage">
       <SEO title="Home" />
-      <TitlePage text={hello} />
-      <p>{subline}</p>
-      <hr style={{ margin: `2rem 0` }} />
-      <h2>
-        <strong>{latestPosts}</strong>
-      </h2>
-
+      <Hero />
+      <FeaturedRecipes featuredRecipes={postList} />
       <br />
 
-      <S.ListWrapper>
-        {postList.map(
-          ({
-            node: {
-              frontmatter: {
-                background,
-                category,
-                date,
-                description,
-                title,
-                image,
-              },
-              timeToRead,
-              fields: { slug },
-            },
-          }) => (
-              <PostItem
-                slug={`/blog/${slug}`}
-                background={background}
-                category={category}
-                date={date}
-                timeToRead={timeToRead}
-                title={title}
-                description={description}
-                image={image}
-              />
-            ),
-        )}
-      </S.ListWrapper>
-
-      <br />
-
-      <LocalizedLink to={`/blog/`}>{allPosts}</LocalizedLink>
+      {/*<LocalizedLink to={`/blog/`}>{allPosts}</LocalizedLink>*/}
     </div>
   );
 };
@@ -80,7 +45,7 @@ export const query = graphql`
         fileAbsolutePath: {regex: "/(blog)\/.*\\.md$/"}
       }
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 2
+      limit: 3
     ) {
       edges {
         node {

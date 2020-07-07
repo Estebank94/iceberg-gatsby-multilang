@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import useTranslations from '../useTranslations';
 
 import * as S from './styled';
@@ -24,7 +25,7 @@ const PostItem = ({
           edges {
             node {
               childImageSharp {
-                fluid(maxWidth: 600, maxHeight: 350) {
+                fluid(maxWidth: 1000, maxHeight: 1000) {
                   src
                   ...GatsbyImageSharpFluid
                 }
@@ -49,34 +50,41 @@ const PostItem = ({
     : false;
 
   return (
-    <S.PostItemLink to={slug}>
-      <S.PostItemWrapper>
-        {postImg && (
-          <S.PostItemImg
-            fluid={postImg.node.childImageSharp.fluid}
-            alt={title}
-          />
-        )}
-        {!postImg && (
-          <S.PostItemImg
-            fluid={postImgCover.node.childImageSharp.fluid}
-            alt={title}
-          />
-        )}
+      <div className="col-sm-6 col-md-2 pb-5">
+          <Img className="img-fluid" fluid={postImg.node.childImageSharp.fluid} alt={title}/>
+          <h4 className="text-right receta-titulo pt-3 negro">pink<br/>coffee</h4>
+      </div>
+  )
 
-        <S.PostItemInfo>
-          <S.PostItemTag background={background}>
-            {category}
-          </S.PostItemTag>
-          <S.PostItemDate>
-            {date} • {timeToRead} min {toRead}
-          </S.PostItemDate>
-          <S.PostItemTitle>{title}</S.PostItemTitle>
-          <S.PostItemDescription>{description}</S.PostItemDescription>
-        </S.PostItemInfo>
-      </S.PostItemWrapper>
-    </S.PostItemLink>
-  );
+  // return (
+  //   <S.PostItemLink to={slug}>
+  //     <S.PostItemWrapper>
+  //       {postImg && (
+  //         <Img
+  //           fluid={postImg.node.childImageSharp.fluid}
+  //           alt={title}
+  //         />
+  //       )}
+  //       {!postImg && (
+  //         <S.PostItemImg
+  //           fluid={postImgCover.node.childImageSharp.fluid}
+  //           alt={title}
+  //         />
+  //       )}
+  //
+  //       <S.PostItemInfo>
+  //         <S.PostItemTag background={background}>
+  //           {category}
+  //         </S.PostItemTag>
+  //         <S.PostItemDate>
+  //           {date} • {timeToRead} min {toRead}
+  //         </S.PostItemDate>
+  //         <S.PostItemTitle>{title}</S.PostItemTitle>
+  //         <S.PostItemDescription>{description}</S.PostItemDescription>
+  //       </S.PostItemInfo>
+  //     </S.PostItemWrapper>
+  //   </S.PostItemLink>
+  // );
 };
 
 PostItem.propTypes = {
