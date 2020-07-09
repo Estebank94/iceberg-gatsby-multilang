@@ -6,8 +6,6 @@ import Recipe from '../FeaturedRecipe';
 
 const FeaturedRecipes = ({ featuredRecipes }) => {
 
-  console.log('DSATA', featuredRecipes);
-
   const settings = {
     dots: true,
     infinite: true,

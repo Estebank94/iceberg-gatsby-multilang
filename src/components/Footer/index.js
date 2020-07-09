@@ -29,7 +29,7 @@ function Footer(){
                             <div><a href="https://www.facebook.com/thenotcompany/" aria-label="Facebook" target="_blank">
                                 <div>
                                     <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                        <path fillRule="evenodd" clipRule="evenodd"
                                               d="M38 19C38 29.4934 29.4934 38 19 38C8.50659 38 0 29.4934 0 19C0 8.50659 8.50659 0 19 0C29.4934 0 38 8.50659 38 19ZM20.3863 19.7439H23.7766L24.2254 15.3829H20.3866V12.8139C20.3866 11.8503 21.0234 11.6241 21.4762 11.6241H24.2369V7.38701L20.432 7.37109C16.2092 7.37109 15.2497 10.5341 15.2497 12.5541V15.3788H12.8067V19.7439H15.2497V32.1644H20.3863V19.7439Z"
                                               fill="#FFFFFF"/>
                                     </svg>

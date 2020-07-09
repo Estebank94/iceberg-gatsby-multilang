@@ -4,16 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image'
 
 
-const Recipe = ({
-                    slug,
-                    background,
-                    category,
-                    date,
-                    timeToRead,
-                    title,
-                    description,
-                    image,
-                }) => {
+const Recipe = ({ slug, title, image, insideRecipe }) => {
 
     const { listImages } = useStaticQuery(
         graphql`
@@ -34,10 +25,6 @@ const Recipe = ({
       `,
     );
 
-    const postImgCover = listImages.edges.find(img => {
-        return img.node.childImageSharp.fluid.src.includes('cover');
-    });
-
     const imgName = image ? image.split('/')[3] : false;
 
     const postImg = imgName
@@ -47,11 +34,10 @@ const Recipe = ({
         : false;
 
   return(
-
-    <div className="col-sm-6 col-md-3 pb-5">
+    <div className={insideRecipe? "col-sm-6 col-md-2 pb-5":"col-sm-6 col-md-3 pb-5"}>
         <GatsbyLink to={slug}>
           <Image className="img-fluid" fluid={postImg.node.childImageSharp.fluid} alt="recetas"/>
-          <h4 className="text-right receta-titulo pt-3">pink<br/>coffee</h4>
+          <h4 className={insideRecipe ? "text-right receta-titulo pt-3 negro" : "text-right receta-titulo pt-3"}>{title}</h4>
         </GatsbyLink>
     </div>
   );

@@ -38,27 +38,20 @@ const Index = ({ data: { allMarkdownRemark } }) => {
 export default Index;
 
 export const query = graphql`
-  query Index($locale: String!, $dateFormat: String!, ) {
+  query Index($locale: String!) {
     allMarkdownRemark(
       filter: {
         fields: { locale: { eq: $locale } }
         fileAbsolutePath: {regex: "/(blog)\/.*\\.md$/"}
       }
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
     ) {
       edges {
         node {
           frontmatter {
             title
-            description
-            category
-            background
             image
-            date(formatString: $dateFormat)
-
+            featured
           }
-          timeToRead
           fields {
             locale
             slug

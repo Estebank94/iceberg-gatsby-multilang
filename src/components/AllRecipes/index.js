@@ -1,13 +1,14 @@
 import React from 'react'
 import Recipe from '../Recipe';
 
-function Recipes({recipes}) {
+function Recipes({recipes, insideRecipe }) {
+
 
   return(
-      <div className="container">
+      <div className={insideRecipe ? "container-fluid":"container"}>
           <div className="row">
               <div className="col-12  pt-5 mt-5 pb-5">
-                  <h1 className="titulo-seccion">sdfsdfsd</h1>
+                  <h1 className={insideRecipe ? "titulo-seccion negro":"titulo-seccion"}>sdfsdfsd</h1>
                   <p className="sub-titulo-seccion azul">sdsd</p>
               </div>
           </div>
@@ -26,16 +27,13 @@ function Recipes({recipes}) {
                        timeToRead,
                        fields: { slug },
                    },
-               }) => (
+               }, index) => (
                   <Recipe
                       slug={`/blog/${slug}`}
-                      background={background}
-                      category={category}
-                      date={date}
-                      timeToRead={timeToRead}
                       title={title}
-                      description={description}
                       image={image}
+                      insideRecipe={insideRecipe}
+                      key={index}
                   />
               ),
           )}

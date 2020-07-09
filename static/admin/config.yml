@@ -26,7 +26,6 @@ collections:
       - {label: "Difficulty", name: "difficulty", widget: "number", default: 1, valueType: "int", min: 1}
       - {label: "Servings", name: "servings", widget: "number", default: 1, valueType: "int", min: 1}
       - {label: "Preparation Time", name: "preparationTime", widget: "number", default: 15, valueType: "int", min: 1}
-      - {label: "Steps", name: "steps", widget: "list", default: ["Paso 1", "Paso 2"]}
       - {label: "Ingredients", name: "ingredients", widget: "list", default: ["Ingredient 1", "Ingredient 2"]}
       - { label: 'image', name: 'image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
@@ -53,7 +52,6 @@ collections:
           - {label: "Difficulty", name: "difficulty", widget: "number", default: 1, valueType: "int", min: 1}
           - {label: "Servings", name: "servings", widget: "number", default: 1, valueType: "int", min: 1}
           - {label: "Preparation Time", name: "preparationTime", widget: "number", default: 15, valueType: "int", min: 1}
-          - {label: "Steps", name: "steps", widget: "list", default: ["Paso 1", "Paso 2"]}
           - {label: "Ingredients", name: "ingredients", widget: "list", default: ["Ingredient 1", "Ingredient 2"]}
           - { label: 'image', name: 'image', widget: 'image' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
@@ -80,7 +78,6 @@ collections:
           - {label: "Difficulty", name: "difficulty", widget: "number", default: 1, valueType: "int", min: 1}
           - {label: "Servings", name: "servings", widget: "number", default: 1, valueType: "int", min: 1}
           - {label: "Preparation Time", name: "preparationTime", widget: "number", default: 15, valueType: "int", min: 1}
-          - {label: "Steps", name: "steps", widget: "list", default: ["Paso 1", "Paso 2"]}
           - {label: "Ingredients", name: "ingredients", widget: "list", default: ["Ingredient 1", "Ingredient 2"]}
           - { label: 'image', name: 'image', widget: 'image' }
           - { label: 'Body', name: 'body', widget: 'markdown' }

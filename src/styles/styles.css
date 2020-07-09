@@ -253,7 +253,7 @@ body {background-color: #000;}
 }
 
 .receta-derecha {
-  background: url("../images/recipies/back-receta.jpg")no-repeat center center;
+  /*background: url("../images/recipies/back-receta.jpg")no-repeat center center;*/
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
@@ -307,6 +307,7 @@ body {background-color: #000;}
   position: absolute;
   left: -2em;
   top: 8em;
+    cursor: pointer;
 }
 
 .desc-receta {
@@ -613,4 +614,8 @@ body {background-color: #000;}
     -moz-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
+}
+
+.recipe-page {
+    background-color: white;
 }

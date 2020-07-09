@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faTimes, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { graphql, useStaticQuery } from "gatsby";
-import BackgroundImage from 'gatsby-background-image'
+import BackgroundImage from 'gatsby-background-image';
 
 function Banner() {
 

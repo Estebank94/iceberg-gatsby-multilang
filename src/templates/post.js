@@ -2,26 +2,37 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import TitlePage from '../components/TitlePage';
 import SEO from '../components/seo';
+import RecipeHero from '../components/RecipeHero';
+import RecipeInfo from '../components/RecipeInfo';
+import AllRecipes from '../components/AllRecipes';
+import Banner from '../components/Banner';
 
-import * as S from '../components/Content/styled';
 
 const Post = props => {
+  console.log('props', props);
   const post = props.data.markdownRemark;
+  const recipes = props.data.allMarkdownRemark.edges;
 
   return (
-    <>
+    <div className="recipe-page">
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
         image={post.frontmatter.image}
       />
-      <TitlePage text={post.frontmatter.title} />
-      <S.Content>
-        <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
-      </S.Content>
-    </>
+        <RecipeHero title={post.frontmatter.title} author={post.frontmatter.author} image={post.frontmatter.image}/>
+        <RecipeInfo
+            preparationTime={post.frontmatter.preparationTime}
+            ingredients={post.frontmatter.ingredients}
+            servings={post.frontmatter.servings}
+            html={post.html}
+        />
+        <AllRecipes recipes={recipes} insideRecipe />
+        <Banner />
+    </div>
   );
 };
+
 
 export const query = graphql`
   query Post($locale: String!, $title: String!) {
@@ -32,9 +43,32 @@ export const query = graphql`
       frontmatter {
         title
         description
+        author 
         image
+        servings
+        preparationTime
+        ingredients
       }
       html
+    }
+    allMarkdownRemark(
+      filter: {
+        fields: { locale: { eq: $locale } }
+        fileAbsolutePath: {regex: "/(blog)/.*\\.md$/"}
+      }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            image
+          }
+          fields {
+            locale
+            slug
+          }
+        }
+      }
     }
   }
 `;

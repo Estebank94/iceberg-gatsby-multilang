@@ -93,6 +93,7 @@ function SEO({ description, lang, meta, title, image }) {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
+        <script src="https://unpkg.com/share-api-polyfill/dist/share-min.js"></script>
     </Helmet>
   );
 }
