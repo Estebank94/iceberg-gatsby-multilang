@@ -5,7 +5,7 @@ import stamp from '../../images/stamp/sello-receta.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faShareAlt } from '@fortawesome/free-solid-svg-icons';
-function Hero({ title, author, image }) {
+function Hero({ title, author, image, location }) {
 
     const { listImages } = useStaticQuery(
         graphql`
@@ -41,7 +41,7 @@ function Hero({ title, author, image }) {
     const shareData = {
         title: 'Chequeá esta receta con NotMilk!',
         text: {title},
-        url: window.location.href,
+        url: location.href,
     }
 
   return(

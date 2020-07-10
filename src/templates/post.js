@@ -20,7 +20,12 @@ const Post = props => {
         description={post.frontmatter.description}
         image={post.frontmatter.image}
       />
-        <RecipeHero title={post.frontmatter.title} author={post.frontmatter.author} image={post.frontmatter.image}/>
+        <RecipeHero
+            title={post.frontmatter.title}
+            author={post.frontmatter.author}
+            image={post.frontmatter.image}
+            location={props.location}
+        />
         <RecipeInfo
             preparationTime={post.frontmatter.preparationTime}
             ingredients={post.frontmatter.ingredients}
