@@ -85,9 +85,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Templates for Posts List and Single post
   const postTemplate = path.resolve(`./src/templates/post.js`);
-  const postsListTemplate = path.resolve(
-    `./src/templates/posts-list.js`,
-  );
+
   const pageTemplate = path.resolve(`./src/templates/page.js`);
 
   const result = await graphql(`
@@ -120,10 +118,6 @@ exports.createPages = async ({ graphql, actions }) => {
   // Posts and Pages created by markdown (from blog and pages directory)
   const contentMarkdown = result.data.files.edges;
 
-  // Total of posts (only posts, no pages)
-  // It will be increase by the next loop
-  let postsTotal = 0;
-
   // Creating each post
   contentMarkdown.forEach(({ node: file }) => {
     // Getting Slug and Title
@@ -140,9 +134,6 @@ exports.createPages = async ({ graphql, actions }) => {
     // Setting a template for page or post depending on the content
     const template = isPage ? pageTemplate : postTemplate;
 
-    // Count posts
-    postsTotal = isPage ? postsTotal + 0 : postsTotal + 1;
-
     createPage({
       path: localizedSlug({ isDefault, locale, slug, isPage }),
       component: template,
@@ -153,36 +144,6 @@ exports.createPages = async ({ graphql, actions }) => {
         locale,
         title,
       },
-    });
-  });
-
-  // Creating Posts List and its Pagination
-  const postsPerPage = 4;
-  const langs = Object.keys(locales).length;
-  const numPages = Math.ceil(postsTotal / langs / postsPerPage);
-
-  Object.keys(locales).map(lang => {
-    // Use the values defined in "locales" to construct the path
-    const localizedPath = locales[lang].default
-      ? '/blog'
-      : `${locales[lang].path}/blog`;
-
-    return Array.from({ length: numPages }).forEach((_, index) => {
-      createPage({
-        path:
-          index === 0
-            ? `${localizedPath}`
-            : `${localizedPath}/page/${index + 1}`,
-        component: postsListTemplate,
-        context: {
-          limit: postsPerPage,
-          skip: index * postsPerPage,
-          numPages,
-          currentPage: index + 1,
-          locale: lang,
-          dateFormat: locales[lang].dateFormat,
-        },
-      });
     });
   });
 };

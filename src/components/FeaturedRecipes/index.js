@@ -6,6 +6,8 @@ import Recipe from '../FeaturedRecipe';
 
 const FeaturedRecipes = ({ featuredRecipes }) => {
 
+  console.log('feat', featuredRecipes);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -61,25 +63,15 @@ const FeaturedRecipes = ({ featuredRecipes }) => {
                   ({
                        node: {
                            frontmatter: {
-                               background,
-                               category,
-                               date,
-                               description,
                                title,
                                image,
                            },
-                           timeToRead,
                            fields: { slug },
                        },
                    }) => (
                       <Recipe
                           slug={`/blog/${slug}`}
-                          background={background}
-                          category={category}
-                          date={date}
-                          timeToRead={timeToRead}
                           title={title}
-                          description={description}
                           image={image}
                       />
                   ),

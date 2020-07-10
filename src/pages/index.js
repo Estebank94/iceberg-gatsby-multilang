@@ -29,7 +29,6 @@ const Index = ({ data: { allMarkdownRemark } }) => {
       <FeaturedRecipes featuredRecipes={postList} />
       <AllRecipes recipes={postList} />
       <Banner />
-
       {/*<LocalizedLink to={`/blog/`}>{allPosts}</LocalizedLink>*/}
     </div>
   );
