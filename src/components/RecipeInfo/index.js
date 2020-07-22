@@ -19,7 +19,7 @@ function Info({ ingredients, preparationTime, servings, html }) {
             <p className="pb-4"><FontAwesomeIcon icon={faWineBottle} className="pr-2"/>{ingredients.length} {ingred}</p>
             <p className="descripcion-info-receta"><strong><span className="negro">NOT</span>MILK</strong></p>
             {
-              ingredients.map((ingredient, index) => <p className="descripcion-info-receta" key={index}>{ingredient.replace(",", "\n")}</p>)
+              ingredients.map((ingredient, index) => <p className="descripcion-info-receta" key={index}>{ingredient.amount} {ingredient.ingredient}</p>)
             }
           </div>
         </div>
