@@ -16,7 +16,7 @@ function Recipes({recipes, insideRecipe }) {
               </div>
           </div>
           <div className="row text-center pb-4">
-          {recipes.map(
+          {recipes.filter(f => !f.node.frontmatter.featured).map(
               ({
                    node: {
                        frontmatter: {

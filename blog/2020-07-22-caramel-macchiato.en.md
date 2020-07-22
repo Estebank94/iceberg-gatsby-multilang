@@ -1,8 +1,8 @@
 ---
-title: Capucchino
+title: Caramel Macchiato
 description: Receta de cafe
 author: Catalina Donoso
-featured: true
+featured: false
 difficulty: 1
 servings: 2
 preparationTime: 10
@@ -13,7 +13,7 @@ ingredients:
     ingredient: Not Milk
   - amount: 1 cda
     ingredient: Cacao en polvo
-image: /assets/img/capuccino.jpg
+image: /assets/img/caramel_macchiato.jpg
 date: '2020-07-22 12:15:50'
 ---
 1. Hacer el café según máquina (italiana, francesa o americana).		

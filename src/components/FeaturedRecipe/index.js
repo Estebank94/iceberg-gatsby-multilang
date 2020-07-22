@@ -16,6 +16,9 @@ const featuredRecipe = ({
     title,
     description,
     image,
+    preparationTime,
+    ingredients,
+    servings,
 }) => {
   const { listImages } = useStaticQuery(
       graphql`
@@ -36,7 +39,7 @@ const featuredRecipe = ({
       `,
   );
 
-  const { minutes, servings, ingredients } = useTranslations();
+  const { minutes, serv, ingred } = useTranslations();
 
   const postImgCover = listImages.edges.find(img => {
       return img.node.childImageSharp.fluid.src.includes('cover');
@@ -57,9 +60,9 @@ const featuredRecipe = ({
           <Image className="card-img-top" fluid={postImg.node.childImageSharp.fluid} alt="Matcha Coffee"/>
           <div className="card-img-overlay rotate nombre-receta"><p>{title}</p></div>
           <div className="card-body text-right datos-receta-home">
-            <p><strong>15</strong> {minutes} <FontAwesomeIcon icon={faStopwatch} /></p>
-            <p><strong>5</strong> {servings} <FontAwesomeIcon icon={faUtensils} /></p>
-            <p><strong>4</strong> {ingredients} <FontAwesomeIcon icon={faWineBottle} /></p>
+            <p><strong>{preparationTime}</strong> {minutes} <FontAwesomeIcon icon={faStopwatch} /></p>
+            <p><strong>{servings}</strong> {serv} <FontAwesomeIcon icon={faUtensils} /></p>
+            <p><strong>{ingredients.length}</strong> {ingred} <FontAwesomeIcon icon={faWineBottle} /></p>
           </div>
         </div>
       </div>

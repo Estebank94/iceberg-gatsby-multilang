@@ -1,5 +1,5 @@
 ---
-title: Capucchino
+title: Chia Pudding
 description: Receta de cafe
 author: Catalina Donoso
 featured: true
@@ -13,7 +13,7 @@ ingredients:
     ingredient: Not Milk
   - amount: 1 cda
     ingredient: Cacao en polvo
-image: /assets/img/capuccino.jpg
+image: /assets/img/chia_pudding.jpg
 date: '2020-07-22 12:15:50'
 ---
 1. Hacer el café según máquina (italiana, francesa o americana).		

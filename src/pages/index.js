@@ -50,6 +50,11 @@ export const query = graphql`
             title
             image
             featured
+            servings
+            preparationTime
+            ingredients {
+                ingredient
+            }
           }
           fields {
             locale

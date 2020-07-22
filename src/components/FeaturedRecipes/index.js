@@ -9,6 +9,8 @@ const FeaturedRecipes = ({ featuredRecipes }) => {
 
   const { theFavs, checkOut } = useTranslations();
 
+  console.log('featuredRecipies', featuredRecipes)
+
   const settings = {
     dots: true,
     infinite: true,
@@ -60,12 +62,15 @@ const FeaturedRecipes = ({ featuredRecipes }) => {
       <div className="col-12 p-0 m-0">
         <img className="sello" src={Stamp} alt="100% plant-based"/>
           <Slider {...settings}>
-              {featuredRecipes.map(
+              {featuredRecipes.filter(f => f.node.frontmatter.featured).map(
                   ({
                        node: {
                            frontmatter: {
                                title,
                                image,
+                               ingredients,
+                               servings,
+                               preparationTime
                            },
                            fields: { slug },
                        },
@@ -74,6 +79,9 @@ const FeaturedRecipes = ({ featuredRecipes }) => {
                           slug={`/blog/${slug}`}
                           title={title}
                           image={image}
+                          ingredients={ingredients}
+                          servings={servings}
+                          preparationTime={preparationTime}
                       />
                   ),
               )}

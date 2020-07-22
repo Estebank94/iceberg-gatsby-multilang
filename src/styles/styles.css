@@ -317,6 +317,7 @@ body {background-color: #000;}
     text-align: right;
     top: 1em;
     font-size: 1.2em;
+    color: white;
 }
 
 .iconos-receta {
@@ -344,7 +345,7 @@ body {background-color: #000;}
     position: absolute;
     font-size: 1.2em;
     font-weight: 500;
-    text-align: right;
+    text-align: left;
     right: 4em;
     left: 5em;
     top: 3em;
