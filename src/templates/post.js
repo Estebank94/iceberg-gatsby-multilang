@@ -51,7 +51,10 @@ export const query = graphql`
         image
         servings
         preparationTime
-        ingredients
+        ingredients {
+          ingredient
+          amount
+        }
       }
       html
     }
