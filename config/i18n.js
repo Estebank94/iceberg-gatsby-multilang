@@ -8,8 +8,8 @@ module.exports = {
     dateFormat: `DD/MM/YYYY`,
     siteLanguage: `en`,
     ogLanguage: `en_US`,
-    defaultTitle: `Gatsby Starter with multi-language and CMS`,
-    defaultDescription: `Gatsby example site using Markdown, i18n and CMS`,
+    defaultTitle: `NOT Milk Recipes`,
+    defaultDescription: `Not Milk Recipe Site`,
   },
   pt: {
     path: `pt`,
@@ -17,8 +17,8 @@ module.exports = {
     dateFormat: `DD/MM/YYYY`,
     siteLanguage: `pt`,
     ogLanguage: `pt_BR`,
-    defaultTitle: `Gatsby Starter multilingue com CMS`,
-    defaultDescription: `Exemplo de Gatsby site usando Markdown, i18n e CMS`,
+    defaultTitle: `Recetas Not Milk`,
+    defaultDescription: `Pagina de recetas Not Milk`,
   },
     es: {
         path: `es`,
@@ -26,7 +26,7 @@ module.exports = {
         dateFormat: `DD/MM/YYYY`,
         siteLanguage: `es`,
         ogLanguage: `es_CL`,
-        defaultTitle: `Gatsby Starter multilingue com CMS`,
-        defaultDescription: `Exemplo de Gatsby site usando Markdown, i18n e CMS`,
+        defaultTitle: `Recetas Not Milk`,
+        defaultDescription: `Pagina de recetas Not Milk`,
     },
 }

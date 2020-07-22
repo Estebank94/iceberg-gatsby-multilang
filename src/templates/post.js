@@ -9,7 +9,6 @@ import Banner from '../components/Banner';
 
 
 const Post = props => {
-  console.log('props', props);
   const post = props.data.markdownRemark;
   const recipes = props.data.allMarkdownRemark.edges;
 

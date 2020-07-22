@@ -1,10 +1,11 @@
-{ 
+{
   "home": "Home",
+  "hi": "hi",
 
   "hello": "Gatsby multi-language starter",
   "subline": "Internationalization / i18n without third party plugins or packages for Posts and Pages. Different URLs dependending on the language. Focused on SEO, PWA, Image Optimization, Styled Components and more. This starter is also integrate with Netlify CMS to manage all pages, posts and images.",
   "latestPosts": "Latest posts",
-  "category": "Category", 
+  "category": "Category",
   "allPosts": "All Posts",
   "toRead": "to read",
 
@@ -17,5 +18,31 @@
   "aboutProject": "Iceberg Gatsby is a PWA, save it for offline reading.",
   "seeMorePWA": "See more PWA here",
   "maintainedBy": "Maintained by",
-  "contributeMessage": "You can always contribute with the project on"
+  "contributeMessage": "You can always contribute with the project on",
+
+  "theFavs": "Nuestras Favoritas",
+  "checkOut": "Chequea nuestras tres recetas favoritas",
+
+  "moreToTry": "Más para probar",
+  "mouthWatering": "Todas las deliciosas recetas que necesitas",
+
+  "whereToBuy": "Donde comprar",
+  "knowMore": "Conoce más sobre nuestros",
+  "products": "productos",
+  "sendYourSpecialty": "Envianos tu receta",
+
+  "langSelect": "Prefiero Este Idioma",
+  "contact": "Contacto",
+  "food": "Servicios de Catering",
+  "findUs": "Síguenos:",
+  "terms": "Términos y Condiciones",
+  "privacy": "Politicas de Privacidad",
+
+  "minutes": "minutos",
+  "serv": "porciones",
+  "ingred": "ingredientes",
+
+  "share": "Compartilo",
+
+  "madeBy": "Hecho por"
 }

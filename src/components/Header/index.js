@@ -36,10 +36,10 @@ const Header = ({locale}) => {
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink href="/" className="nav-link item-menu pr-5">NOTCO1</NavLink>
+                            <NavLink href="/" className="nav-link item-menu pr-5">NOT<span className="azul">MILK COFFEE</span></NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/" className="nav-link item-menu pr-5">NOTCO2</NavLink>
+                            <NavLink href="/" className="nav-link item-menu pr-5">NOTCO.COM</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href="/" className="nav-link item-menu pr-5">NOT<span className="azul">MILK</span></NavLink>

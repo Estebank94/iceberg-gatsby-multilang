@@ -1,7 +1,17 @@
 import React from 'react'
 import logo from '../../images/logo-notco.svg';
+import useTranslations from '../useTranslations';
 
 function Footer(){
+
+    const {
+        langSelect,
+        contact,
+        food,
+        findUs,
+        terms,
+        privacy
+    } = useTranslations()
 
     return(
         <footer className="page-footer font-small teal pie">
@@ -11,7 +21,7 @@ function Footer(){
                     <div className="col-sm-12 col-md-6 espacio-pie">
                         <img className="pb-5 logo-footer-espacio" src={logo} style={{ width: 81 }} alt="NotCo" />
                         <div className="LanguageSelector">
-                            <h2>Elegir lenguaje</h2>
+                            <h2>{langSelect}</h2>
                             <select className="select-footer">
                                 <option label="United States / English" value="en-us">United States / English</option>
                                 <option label="Brasil / Português" value="pt-br">Brasil / Português</option>
@@ -21,9 +31,9 @@ function Footer(){
                     </div>
 
                     <div className="col-sm-12 col-md-6 espacio-pie">
-                        <p className="footer-link"><a href="#">Contactanos</a></p>
-                        <p className="footer-link"><a href="#">Servicio</a></p>
-                        <h4 className="findus pt-4">Encontranos</h4>
+                        <p className="footer-link"><a href="#">{contact}</a></p>
+                        <p className="footer-link"><a href="#">{food}</a></p>
+                        <h4 className="findus pt-4">{findUs}</h4>
 
                         <div className="FindUs__Logos">
                             <div><a href="https://www.facebook.com/thenotcompany/" aria-label="Facebook" target="_blank">
@@ -73,7 +83,7 @@ function Footer(){
                     </div>
                 </div>
                 <p className=" text-center footer-link">
-                    <a className="pr-4" href="#">Terminos</a> <a href="#">Privacidad</a></p>
+                    <a className="pr-4" href="#">{terms}</a> <a href="#">{privacy}</a></p>
             </div>
             <div className="footer-copyright text-center"><p className="text-center footer-link">© NotCo 2020</p></div>
         </footer>

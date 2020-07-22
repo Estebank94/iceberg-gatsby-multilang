@@ -54,6 +54,33 @@ const query = graphql`
             seeMorePWA
             maintainedBy
             contributeMessage
+            
+            theFavs
+            checkOut
+            
+            moreToTry
+            mouthWatering
+            
+            whereToBuy
+            knowMore
+            products
+            sendYourSpecialty
+            
+            langSelect
+            contact
+            food
+            findUs
+            terms
+            privacy
+            
+            minutes
+            serv
+            ingred
+            
+            share
+            
+            madeBy
+
           }
         }
       }

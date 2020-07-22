@@ -5,7 +5,7 @@
   "subline": "Internacionalização / i18n sem plugins ou pacotes de terceiros para Posts e Páginas. URLs diferentes dependendo do idioma. Foco em SEO, PWA, Otimização de imagens, Styled Components e muito mais. Esse starter também é integrado ao Netlify CMS para gerenciar todas as páginas, posts e imagens.",
   "latestPosts": "Útimos posts",
   "category": "Categoria",
-  "allPosts": "Todos os Posts",  
+  "allPosts": "Todos os Posts",
   "toRead": "de leitura",
 
   "next": "Próximo",
@@ -17,5 +17,34 @@
   "aboutProject": "Iceberg Gatsby é um PWA, salve o site em sua homescreen para vê-lo offline.",
   "seeMorePWA": "Leia mais sobre PWA aqui",
   "maintainedBy": "Projeto mantido por",
-  "contributeMessage": "Você sempre poderá contribuir com esse projeto no"
+  "contributeMessage": "Você sempre poderá contribuir com esse projeto no",
+
+  "theFavorites": "The Favorites",
+  "checkOutOurTopThreePreps": "Check out our top three preps",
+
+  "theFavs": "The Favorites",
+  "checkOut": "Check out our top three preps",
+
+  "moreToTry": "Más para probar",
+  "mouthWatering": "Todas las deliciosas recetas que necesitas",
+
+  "whereToBuy": "Donde comprar",
+  "knowMore": "Conoce más sobre nuestros",
+  "products": "productos",
+  "sendYourSpecialty": "Envianos tu receta",
+
+  "langSelect": "Prefiero Este Idioma",
+  "contact": "Contacto",
+  "food": "Servicios de Catering",
+  "findUs": "Síguenos:",
+  "terms": "Términos y Condiciones",
+  "privacy": "Politicas de Privacidad",
+
+  "minutes": "minutos",
+  "serv": "porciones",
+  "ingred": "ingredientes",
+
+  "share": "Compartilo",
+
+  "madeBy": "Hecho por"
 }

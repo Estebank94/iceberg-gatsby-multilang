@@ -2,11 +2,12 @@ import React from 'react';
 import Slider from "react-slick";
 import Stamp from '../../images/stamp/sello.png';
 import Recipe from '../FeaturedRecipe';
+import useTranslations from '../useTranslations';
 
 
 const FeaturedRecipes = ({ featuredRecipes }) => {
 
-  console.log('feat', featuredRecipes);
+  const { theFavs, checkOut } = useTranslations();
 
   const settings = {
     dots: true,
@@ -52,8 +53,8 @@ const FeaturedRecipes = ({ featuredRecipes }) => {
     <div className="container">
       <div className="row">
         <div className="col-12 pb-5 pt-5">
-          <h1 className="titulo-seccion pt-5 mt-5">Titulo</h1>
-          <p className="sub-titulo-seccion azul">Subtitulo</p>
+          <h1 className="titulo-seccion pt-5 mt-5">{theFavs}</h1>
+          <p className="sub-titulo-seccion azul">{checkOut}</p>
         </div>
       </div>
       <div className="col-12 p-0 m-0">

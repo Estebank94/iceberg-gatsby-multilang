@@ -3,8 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faTimes, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from 'gatsby-background-image';
+import useTranslations from '../useTranslations';
 
 function Banner() {
+
+  const { whereToBuy, knowMore, sendYourSpecialty, products } = useTranslations();
 
   const data = useStaticQuery(graphql`
   query {
@@ -29,14 +32,14 @@ function Banner() {
       >
         <div className="col-sm-3"/>
         <div className="col-sm-3">
-          <h2 className="titulo-banner"><FontAwesomeIcon icon={faMapMarkerAlt} size="2x" className="pb-3"/><br/>Donde comprar</h2>
+          <h2 className="titulo-banner"><FontAwesomeIcon icon={faMapMarkerAlt} size="2x" className="pb-3"/><br/>{whereToBuy}</h2>
         </div>
         <div className="col-sm-3 ">
-          <h2 className="titulo-banner"><FontAwesomeIcon icon={faTimes} size="2x" className="pb-3"/><br/>Conoce otros<span
-            className="negro"> NOT</span>Productos</h2>
+          <h2 className="titulo-banner"><FontAwesomeIcon icon={faTimes} size="2x" className="pb-3"/><br/>{knowMore}<span
+            className="negro"> NOT</span>{products}</h2>
         </div>
         <div className="col-sm-3 ">
-          <h2 className="titulo-banner"><FontAwesomeIcon icon={faEnvelope} size="2x" className="pb-3"/><br/>Compartilo</h2>
+          <h2 className="titulo-banner"><FontAwesomeIcon icon={faEnvelope} size="2x" className="pb-3"/><br/>{sendYourSpecialty}</h2>
         </div>
       </BackgroundImage>
     </div>

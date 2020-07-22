@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStopwatch, faUtensils, faWineBottle } from '@fortawesome/free-solid-svg-icons'
+import useTranslations from '../useTranslations';
 
 
 const featuredRecipe = ({
@@ -35,6 +36,8 @@ const featuredRecipe = ({
       `,
   );
 
+  const { minutes, servings, ingredients } = useTranslations();
+
   const postImgCover = listImages.edges.find(img => {
       return img.node.childImageSharp.fluid.src.includes('cover');
   });
@@ -54,9 +57,9 @@ const featuredRecipe = ({
           <Image className="card-img-top" fluid={postImg.node.childImageSharp.fluid} alt="Matcha Coffee"/>
           <div className="card-img-overlay rotate nombre-receta"><p>{title}</p></div>
           <div className="card-body text-right datos-receta-home">
-            <p><strong>15</strong> minutes <FontAwesomeIcon icon={faStopwatch} /></p>
-            <p><strong>5</strong> servings <FontAwesomeIcon icon={faUtensils} /></p>
-            <p><strong>4</strong> ingredients <FontAwesomeIcon icon={faWineBottle} /></p>
+            <p><strong>15</strong> {minutes} <FontAwesomeIcon icon={faStopwatch} /></p>
+            <p><strong>5</strong> {servings} <FontAwesomeIcon icon={faUtensils} /></p>
+            <p><strong>4</strong> {ingredients} <FontAwesomeIcon icon={faWineBottle} /></p>
           </div>
         </div>
       </div>
