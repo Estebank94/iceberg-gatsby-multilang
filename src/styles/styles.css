@@ -61,7 +61,9 @@
   font-display: swap;
 }
 
-body {background-color: #000;}
+body {
+    background-color: #000;
+}
 
 .bg-light {background-color: #fff!important;}
 
@@ -110,6 +112,11 @@ body {background-color: #000;}
 	color:#000;
 }
 
+a:hover {
+    color: #00B2FF;
+    text-decoration: none;
+}
+
 .azul {color:#00B2FF!important;}
 .negro {color:#000!important;}
 
@@ -117,11 +124,19 @@ body {background-color: #000;}
 .dropdown-menu {min-width: 5rem!important;}
 
 .cabecera {
-  background: no-repeat center center;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*width: 90%;*/
+    height: 120%;
+    top: 7em;
+    /*left: 7em;*/
+}
+
+.extra-padding {
+    padding-top: 5em;
 }
 
 .banner {
@@ -133,41 +148,67 @@ body {background-color: #000;}
 }
 
 .cabecera-titulo-2 {
-  font-size: 3.8em;
+  font-size: 5.5em;
 }
 
-.rotate {transform: rotate(-90deg);}
+.rotate {
+    transform: rotate(-90deg);
+}
+
+.rotate.right-top {
+    transform-origin: right top;
+}
 
 .nombre-receta {
     color: #FFF;
     font-family: Neutraface2Display-Titling, sans-serif;
     font-weight: 800;
     line-height: 1em;
-    text-align: left;
+    text-align: right;
     text-transform: uppercase;
     font-size: 2em;
 }
 
 .card-img-overlay {
-   padding: 3em 0.5em 9em 3em!important;
+   padding: 3.25em 0.5em 9em 3em!important;
+   top: -2em;
 }
 
 .datos-receta-home {
-  padding-right: 0;
+  /*padding-right: 0;*/
 }
 
 .sello {
    position: absolute;
    z-index: 1000;
    right: -3em;
-   top: -3em;
+   top: -4em;
 
 }
 
 .sello-receta {
    position: absolute;
    top: 42%;
-   left: -4em;
+   left: -5em;
+}
+
+.sello.hero {
+    right: -9em !important;
+    top: -3em !important;
+}
+
+.hero-title {
+    position: absolute;
+    top: 11em;
+    left: 9em;
+    z-index: 1;
+}
+
+.hero-subtitle {
+    right: 9em;
+    position: relative;
+    top: 24em;
+    z-index: 1;
 }
 
 .espacio-cabecera {
@@ -280,11 +321,15 @@ body {background-color: #000;}
   height: 720px;
 }
 
+li {
+    font-size: 1em;
+}
+
 .titulo-receta {
     color: #000;
     font-family: Neutraface2Display-Titling, sans-serif;
     line-height: 0.750em;
-    font-size: 7em;
+    font-size: 6em;
     text-align: left;
 }
 
@@ -306,8 +351,8 @@ body {background-color: #000;}
   font-size: 1.4em;
   position: absolute;
   left: -2em;
-  top: 8em;
-    cursor: pointer;
+  top: 23.5em;
+  cursor: pointer;
 }
 
 .desc-receta {
@@ -316,8 +361,9 @@ body {background-color: #000;}
     right: 4em;
     text-align: right;
     top: 1em;
-    font-size: 1.2em;
+    font-size: 1.75em;
     color: white;
+    overflow: hidden;
 }
 
 .iconos-receta {
@@ -327,14 +373,14 @@ body {background-color: #000;}
     position: absolute;
     right: 7em;
     width: 32%;
-    top: 5em;
+    top: 2em;
     font-size: 1.7em;
 }
 
 .descripcion-info-receta {
   font-family: Neutraface2Text, sans-serif;
   color:#fff;
-  font-size: 0.7em;
+  font-size: 0.8em;
   line-height: 1.2;
   font-weight: 400;
 
@@ -391,9 +437,68 @@ body {background-color: #000;}
 
 .slick-list{padding:0 20% 0 0;}
 
+.lactose-strike-through:before {
+    content: '';
+    background: url(../images/crossed/lactose.svg);
+    background-repeat: no-repeat;
+    top: 13px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.gluten-strike-through:before {
+    content: '';
+    background: url(../images/crossed/gluten.svg);
+    background-repeat: no-repeat;
+    top: 50px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 24px;
+}
+
+.nut-strike-through:before {
+    content: '';
+    background: url(../images/crossed/nut.svg);
+    background-repeat: no-repeat;
+    top: 95px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 60px;
+}
+
 
 /*Estilos version mobile*/
 @media only screen and (max-width: 600px) {
+
+    .extra-padding {
+        padding-top: 0;
+    }
+
+    .featured-recipe-attribute {
+        font-size: 0.7em;
+    }
+
+    .recipe-number {
+        font-size: 0.9em;
+    }
+
+    .sello.hero {
+        right: -2.5em !important;
+        top: -1em !important;
+        width: 43px;
+        display: inherit;
+    }
+
+    .cabecera {
+        width: 100%;
+        height: 100%;
+        top: 3em;
+        left: 0;
+    }
 
 .aire-sitio {
     padding: 0 0 0 0;
@@ -415,6 +520,16 @@ body {background-color: #000;}
 
 .min-vh-100 {
     min-height: 31vh!important;
+}
+
+.hero-title {
+    top: 7.5em;
+    left: 1em;
+}
+
+.hero-subtitle {
+    right: 1em;
+    top: 9em;
 }
 
 .titulo-seccion {
@@ -462,8 +577,12 @@ body {background-color: #000;}
 
 .share-receta {
     font-size: 1em;
-    left: -4em;
-    top: 8.4em;
+    left: -2em;
+    top: 9.8em;
+}
+
+.texto-principal {
+    left: 3em;
 }
 
 .titulo-receta {
@@ -475,22 +594,22 @@ body {background-color: #000;}
 }
 
 .desc-receta {
-    font-size: 1em;
+    right: 1em;
 }
 
 .detalle-izquierda {
-    height: 390px;
+    height: 410px;
 }
 
 .iconos-receta {
-    right: 3em;
-    width: 43%;
-    top: 3em;
+    right: 1em;
+    width: 53%;
+    top: 1.5em;
     font-size: 1.2em;
 }
 
 .detalle-derecha {
-    height: 505px;
+    height: 200px;
 }
 
 .parrafos-receta {
@@ -507,7 +626,7 @@ body {background-color: #000;}
 /*.slick-list{padding:0 20% 0 0!important;}*/
 
 .pie {
-    padding: 3em 3em 1em 3em;
+    padding: 3em 0 1em 0;
 }
 
 .select-footer {
@@ -619,4 +738,8 @@ body {background-color: #000;}
 
 .recipe-page {
     background-color: white;
+}
+
+.recipe-number {
+    font-size: 1.25rem;
 }

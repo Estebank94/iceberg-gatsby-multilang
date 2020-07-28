@@ -7,8 +7,6 @@ function Info({ ingredients, preparationTime, servings, html }) {
 
   const { minutes, serv, ingred } = useTranslations();
 
-  console.log('ingredients', ingredients);
-
   return(
     <div className="container-fluid">
       <div className="row">

@@ -52,7 +52,7 @@ const FeaturedRecipes = ({ featuredRecipes }) => {
   };
 
   return(
-    <div className="container">
+    <div className="container extra-padding">
       <div className="row">
         <div className="col-12 pb-5 pt-5">
           <h1 className="titulo-seccion pt-5 mt-5">{theFavs}</h1>

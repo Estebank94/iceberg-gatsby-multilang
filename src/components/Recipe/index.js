@@ -34,7 +34,7 @@ const Recipe = ({ slug, title, image, insideRecipe }) => {
         : false;
 
   return(
-    <div className={insideRecipe? "col-sm-6 col-md-2 pb-5":"col-sm-6 col-md-4 pb-5"}>
+    <div className={insideRecipe? "col-sm-6 col-md-3 pb-5":"col-sm-6 col-md-4 pb-5"}>
         <GatsbyLink to={slug}>
           <Image className="img-fluid" fluid={postImg.node.childImageSharp.fluid} alt="recetas"/>
           <h4 className={insideRecipe ? "text-left receta-titulo pt-3 negro" : "text-left receta-titulo pt-3"}>{title}</h4>

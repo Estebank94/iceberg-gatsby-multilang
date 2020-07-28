@@ -6,6 +6,12 @@ function Recipes({recipes, insideRecipe }) {
 
     const { moreToTry, mouthWatering } = useTranslations();
 
+    let allRecipes = recipes;
+
+    if(insideRecipe) {
+        allRecipes = recipes.filter(f => !f.node.frontmatter.featured);
+    }
+
 
   return(
       <div className={insideRecipe ? "container-fluid":"container"}>
@@ -16,7 +22,7 @@ function Recipes({recipes, insideRecipe }) {
               </div>
           </div>
           <div className="row text-center pb-4">
-          {recipes.filter(f => !f.node.frontmatter.featured).map(
+          {allRecipes.map(
               ({
                    node: {
                        frontmatter: {

@@ -5,6 +5,7 @@ import stamp from '../../images/stamp/sello-receta.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faShareAlt } from '@fortawesome/free-solid-svg-icons';
+
 function Hero({ title, author, image, location }) {
 
     const { listImages } = useStaticQuery(
@@ -45,7 +46,7 @@ function Hero({ title, author, image, location }) {
     }
 
   return(
-    <div className="container-fluid pb-5">
+    <div className="container-fluid">
       <div className="row">
         <div className="col-sm-12 col-md-6 receta-izquierda">
           <h3 className="share-receta rotate" onClick={() => navigator.share(shareData)}><span className="mr-2">Share</span> <FontAwesomeIcon icon={faFacebookSquare} /> <FontAwesomeIcon icon={faInstagram} />  <FontAwesomeIcon icon={faShareAlt} /></h3>
@@ -61,7 +62,13 @@ function Hero({ title, author, image, location }) {
               fluid={postImg.node.childImageSharp.fluid}
           >
               <img className="sello-receta" src={stamp} alt="100% plant-based" />
-              <p className="desc-receta">Lactose-Free<br/>Gluten-Free<br/>Nut-Free</p>
+              <p className="desc-receta">
+                  <span className="lactose-strike-through">Lactose</span>
+                  <br/>
+                  <span className="gluten-strike-through">Gluten</span>
+                  <br/>
+                  <span className="nut-strike-through">Nut</span>
+              </p>
           </BackgroundImage>
       </div>
     </div>

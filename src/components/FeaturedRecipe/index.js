@@ -59,10 +59,19 @@ const featuredRecipe = ({
         <div className="card receta-destacada">
           <Image className="card-img-top" fluid={postImg.node.childImageSharp.fluid} alt="Matcha Coffee"/>
           <div className="card-img-overlay rotate nombre-receta"><p>{title}</p></div>
-          <div className="card-body text-right datos-receta-home">
-            <p><strong>{preparationTime}</strong> {minutes} <FontAwesomeIcon icon={faStopwatch} /></p>
-            <p><strong>{servings}</strong> {serv} <FontAwesomeIcon icon={faUtensils} /></p>
-            <p><strong>{ingredients.length}</strong> {ingred} <FontAwesomeIcon icon={faWineBottle} /></p>
+          <div className="card-body datos-receta-home row justify-content-between">
+              <div className="text-center">
+                  <FontAwesomeIcon icon={faStopwatch} className="mb-2" />
+                  <p className="featured-recipe-attribute"><strong><span className="recipe-number">{preparationTime}</span> {minutes}</strong></p>
+              </div>
+              <div className="text-center">
+                  <FontAwesomeIcon icon={faUtensils} className="mb-2" />
+                  <p className="featured-recipe-attribute"><strong> <span className="recipe-number">{servings}</span> {serv}</strong></p>
+              </div>
+              <div className="text-center">
+                  <FontAwesomeIcon icon={faWineBottle} className="mb-2" />
+                  <p className="featured-recipe-attribute"><strong><span className="recipe-number">{ingredients.length}</span> {ingred}</strong></p>
+              </div>
           </div>
         </div>
       </div>

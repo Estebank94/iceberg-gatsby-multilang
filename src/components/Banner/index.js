@@ -4,6 +4,9 @@ import { faMapMarkerAlt, faTimes, faEnvelope } from '@fortawesome/free-solid-svg
 import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from 'gatsby-background-image';
 import useTranslations from '../useTranslations';
+import contact from '../../images/icons/contact.svg';
+import cross from '../../images/icons/cross.svg';
+import location from '../../images/icons/location.svg';
 
 function Banner() {
 
@@ -32,14 +35,14 @@ function Banner() {
       >
         <div className="col-sm-3"/>
         <div className="col-sm-3">
-          <h2 className="titulo-banner"><FontAwesomeIcon icon={faMapMarkerAlt} size="2x" className="pb-3"/><br/>{whereToBuy}</h2>
+          <h2 className="titulo-banner"><img src={location} className="pb-3"/><br/>{whereToBuy}</h2>
         </div>
         <div className="col-sm-3 ">
-          <h2 className="titulo-banner"><FontAwesomeIcon icon={faTimes} size="2x" className="pb-3"/><br/>{knowMore}<span
+          <h2 className="titulo-banner"><img src={cross} className="pb-3"/><br/>{knowMore}<span
             className="negro"> NOT</span>{products}</h2>
         </div>
         <div className="col-sm-3 ">
-          <h2 className="titulo-banner"><FontAwesomeIcon icon={faEnvelope} size="2x" className="pb-3"/><br/>{sendYourSpecialty}</h2>
+          <h2 className="titulo-banner"><img src={contact} className="pb-3"/><br/>{sendYourSpecialty}</h2>
         </div>
       </BackgroundImage>
     </div>
