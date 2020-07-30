@@ -9,8 +9,6 @@ const FeaturedRecipes = ({ featuredRecipes }) => {
 
     const { theFavs, checkOut } = useTranslations()
 
-    console.log('featuredRecipies', featuredRecipes)
-
     const settings = {
         dots: true,
         infinite: true,
@@ -43,7 +41,7 @@ const FeaturedRecipes = ({ featuredRecipes }) => {
     }
 
     return (
-        <div className="container featured extra-padding">
+        <div className="container featured extra-padding overflow-hidden">
             <div className="row">
                 <div className="col-12 pb-5 pt5 featured-title">
                     <h1 className="titulo-seccion pt-5 mt-5">{theFavs}</h1>

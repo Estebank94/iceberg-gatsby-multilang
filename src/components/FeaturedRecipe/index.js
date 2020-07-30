@@ -9,7 +9,6 @@ import useTranslations from '../useTranslations'
 const featuredRecipe = ({
                             slug,
                             title,
-                            description,
                             image,
                             preparationTime,
                             ingredients,
@@ -52,7 +51,7 @@ const featuredRecipe = ({
         <GatsbyLink to={slug}>
             <div className="pasador">
                 <div className="card receta-destacada">
-                    <Image className="card-img-top" fluid={postImg.node.childImageSharp.fluid} alt="Matcha Coffee"/>
+                    <Image className="card-img-top" fluid={postImg.node.childImageSharp.fluid} alt={title} />
                     <div className="card-img-overlay rotate nombre-receta"><p>{title}</p></div>
                     <div className="card-body datos-receta-home row justify-content-between">
                         <div className="text-center">
