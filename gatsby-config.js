@@ -3,7 +3,7 @@ module.exports = {
     title: `NotCo`,
     description: `NotCo Recipe`,
     author: `The Not Company`,
-    siteUrl: `https://iceberg-gatsby-multilang.netlify.com/`,
+    siteUrl: `https://relaxed-gates-6dd431.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
