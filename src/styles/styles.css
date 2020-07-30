@@ -1,77 +1,99 @@
 @font-face {
-  font-family:"Neutraface2Display-Titling";
-  src:url("../fonts/Neutra2Display-Titling.woff2") format("woff2"),
-      url("../fonts/Neutra2Display-Titling.woff") format("woff"),
-      url("../fonts/Neutra2Display-Titling.otf") format("opentype");
-  font-style:normal;font-weight:400;
-  font-display: swap;
+    font-family: "Neutraface2Display-Titling";
+    src: url("../fonts/Neutra2Display-Titling.woff2") format("woff2"),
+    url("../fonts/Neutra2Display-Titling.woff") format("woff"),
+    url("../fonts/Neutra2Display-Titling.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
-  font-family:"Neutraface2Display-Bold";
-  src:url("../fonts/Neutra2Display-Bold.woff2") format("woff2"),
-      url("../fonts/Neutra2Display-Bold.woff") format("woff"),
-      url("../fonts/Neutra2Display-Bold.otf") format("opentype");
-  font-style:normal;font-weight:900;
-  font-display: swap;
+    font-family: "Neutraface2Display-Bold";
+    src: url("../fonts/Neutra2Display-Bold.woff2") format("woff2"),
+    url("../fonts/Neutra2Display-Bold.woff") format("woff"),
+    url("../fonts/Neutra2Display-Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
 }
 
 @font-face {
-  font-family:"Neutraface2Display-Bold";
-  src:url("../fonts/Neutra2Display-Bold.woff2") format("woff2"),
-      url("../fonts/Neutra2Display-Bold.woff") format("woff"),
-      url("../fonts/Neutra2Display-Bold.otf") format("opentype");
-  font-style:normal;font-weight:900;
-  font-display: swap;
+    font-family: "Neutraface2Display-Bold";
+    src: url("../fonts/Neutra2Display-Bold.woff2") format("woff2"),
+    url("../fonts/Neutra2Display-Bold.woff") format("woff"),
+    url("../fonts/Neutra2Display-Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
 }
 
 @font-face {
-  font-family:"Neutraface2Text";
-  src:url("../fonts/Neutra2Text-Book.woff2") format("woff2"),
-      url("../fonts/Neutra2Text-Book.woff") format("woff"),
-      url("../fonts/Neutra2Text-Book.otf") format("opentype");
-  font-style:normal;font-weight:400;
-  font-display: swap;
+    font-family: "Neutraface2Text";
+    src: url("../fonts/Neutra2Text-Book.woff2") format("woff2"),
+    url("../fonts/Neutra2Text-Book.woff") format("woff"),
+    url("../fonts/Neutra2Text-Book.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
-  font-family:"Neutraface2Text";
-  src:url("../fonts/Neutra2Text-Bold.woff2") format("woff2"),
-      url("../fonts/Neutra2Text-Bold.woff") format("woff"),
-      url("../fonts/Neutra2Text-Bold.otf") format("opentype");
-  font-style:normal;font-weight:900;
-  font-display: swap;
+    font-family: "Neutraface2Text";
+    src: url("../fonts/Neutra2Text-Bold.woff2") format("woff2"),
+    url("../fonts/Neutra2Text-Bold.woff") format("woff"),
+    url("../fonts/Neutra2Text-Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
 }
 
 @font-face {
-  font-family:"Felt Tip Roman";
-  src:url("../fonts/Felt Tip Roman.woff2") format("woff2"),
-      url("../fonts/Felt Tip Roman.woff") format("woff"),
-      url("../fonts/Felt Tip Roman.ttf") format("truetype");
-  font-style:normal;font-weight:400;
-  font-display: swap;
+    font-family: "Felt Tip Roman";
+    src: url("../fonts/Felt Tip Roman.woff2") format("woff2"),
+    url("../fonts/Felt Tip Roman.woff") format("woff"),
+    url("../fonts/Felt Tip Roman.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
-  font-family:"Neutraface2Text-Demi";
-  src:url("../fonts/Neutra2Text-Demi.woff2") format("woff2"),
-      url("../fonts/Neutra2Text-Demi.woff") format("woff"),
-      url("../fonts/Neutra2Text-Demi.otf") format("opentype");
-  font-style:normal;font-weight:400;
-  font-display: swap;
+    font-family: "Neutraface2Text-Demi";
+    src: url("../fonts/Neutra2Text-Demi.woff2") format("woff2"),
+    url("../fonts/Neutra2Text-Demi.woff") format("woff"),
+    url("../fonts/Neutra2Text-Demi.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
 }
+
+.show-desktop { display: initial; }
+.show-mobile { display: none; }
 
 body {
     background-color: #000;
 }
 
-.bg-light {background-color: #fff!important;}
+.card {
+    word-wrap: normal;
+}
 
-.body-blanco {background-color: #fff;}
+.bg-light {
+    background-color: #fff !important;
+}
 
-.fondo-negro {background-color: #000}
+.body-blanco {
+    background-color: #fff;
+}
 
-.aire-sitio {padding: 0 4em 0 4em}
+.fondo-negro {
+    background-color: #000
+}
+
+.aire-sitio {
+    padding: 0 4em 0 4em
+}
 
 .titulo {
     color: #fff;
@@ -81,35 +103,39 @@ body {
     text-align: right;
 }
 
+.titulo.hero {
+    font-size: 12vw;
+}
+
 .titulo-seccion {
-  color: #fff;
-  font-family: Neutraface2Display-Titling, sans-serif;
-  font-size: 3em;
-  line-height: 0.3em;
+    color: #fff;
+    font-family: Neutraface2Display-Titling, sans-serif;
+    font-size: 3em;
+    line-height: 0.3em;
 }
 
 .titulo-banner {
-  color: #fff;
-  font-family: Neutraface2Display-Titling, sans-serif;
-  font-size: 1.5em;
-  line-height: 1.3em;
+    color: #fff;
+    font-family: Neutraface2Display-Titling, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.3em;
 }
 
 .sub-titulo-seccion {
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 2em;
 }
 
 .item-menu {
-	font-family: Neutraface2Display-Titling, sans-serif;
-  font-size: 1em;
-  line-height: 2;
-  letter-spacing: -0.025em;
+    font-family: Neutraface2Display-Titling, sans-serif;
+    font-size: 1em;
+    line-height: 2;
+    letter-spacing: -0.025em;
 }
 
-.navbar-light .navbar-nav .nav-link{
-	color:#000;
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
 }
 
 a:hover {
@@ -117,11 +143,21 @@ a:hover {
     text-decoration: none;
 }
 
-.azul {color:#00B2FF!important;}
-.negro {color:#000!important;}
+.azul {
+    color: #00B2FF !important;
+}
 
-.navbar-light .navbar-nav .active>.nav-link {color:#00B2FF;}
-.dropdown-menu {min-width: 5rem!important;}
+.negro {
+    color: #000 !important;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+    color: #00B2FF;
+}
+
+.dropdown-menu {
+    min-width: 5rem !important;
+}
 
 .cabecera {
     background: no-repeat center center;
@@ -129,10 +165,11 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*width: 90%;*/
+    width: 92.5%;
     height: 120%;
     top: 7em;
-    /*left: 7em;*/
+    left: 5%;
+    right: 2.5%;
 }
 
 .extra-padding {
@@ -140,15 +177,15 @@ a:hover {
 }
 
 .banner {
-  background: no-repeat center center;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .cabecera-titulo-2 {
-  font-size: 5.5em;
+    font-size: 5.5em;
 }
 
 .rotate {
@@ -170,37 +207,41 @@ a:hover {
 }
 
 .card-img-overlay {
-   padding: 3.25em 0.5em 9em 3em!important;
-   top: -2em;
+    width: 30vw;
+    height: 30vw;
+    text-align: right;
+    padding-left: 4.5em;
 }
 
 .datos-receta-home {
-  /*padding-right: 0;*/
+    /*padding-right: 0;*/
 }
 
 .sello {
-   position: absolute;
-   z-index: 1000;
-   right: -3em;
-   top: -4em;
+    position: absolute;
+    z-index: 1000;
+    right: -3em;
+    top: -4em;
+    width: 8.5em;
 
 }
 
 .sello-receta {
-   position: absolute;
-   top: 42%;
-   left: -5em;
+    position: absolute;
+    top: 42%;
+    left: -4.5em;
+    width: 9em;
 }
 
 .sello.hero {
-    right: -9em !important;
-    top: -3em !important;
+    right: -7.5em !important;
+    top: -2.75em !important;
 }
 
 .hero-title {
     position: absolute;
-    top: 11em;
-    left: 9em;
+    top: 12em;
+    left: 8vw;
     z-index: 1;
 }
 
@@ -212,34 +253,34 @@ a:hover {
 }
 
 .espacio-cabecera {
-  padding-top: 8em;
-  padding-right: 5em;
+    padding-top: 8em;
+    padding-right: 5em;
 }
 
 .receta-destacada {
-  background-color: transparent;
-  color:#fff;
-  font-family: Neutraface2Text, sans-serif;
-  font-weight: 400;
-  line-height: 0.5em;
+    background-color: transparent;
+    color: #fff;
+    font-family: Neutraface2Text, sans-serif;
+    font-weight: 400;
+    line-height: 0.5em;
 }
 
 .receta-titulo {
-  color:#fff;
-  font-family: Neutraface2Text-bold, sans-serif;
-  font-weight: 800;
-  line-height: 1em;
-  text-transform: uppercase;
-  font-size: 1.5em;
+    color: #fff;
+    font-family: Neutraface2Text-bold, sans-serif;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-size: 1.5em;
 }
 
 .Footer {
-  font-size: 0.875rem;
-  letter-spacing: 0.05em;
-  background-color: #000;
-  padding-bottom: 2rem;
-  padding-top: 2.5rem;
-  position: relative;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    background-color: #000;
+    padding-bottom: 2rem;
+    padding-top: 2.5rem;
+    position: relative;
 }
 
 .LanguageSelector h2 {
@@ -247,10 +288,12 @@ a:hover {
     font-weight: 700;
     font-size: 0.875rem;
     letter-spacing: 0.025em;
-    color:#fff;
+    color: #fff;
 }
 
-.LanguageSelector {padding-top:20px;}
+.LanguageSelector {
+    padding-top: 20px;
+}
 
 .select-footer {
     font-family: Neutraface2Display-Bold, sans-serif;
@@ -260,31 +303,31 @@ a:hover {
     font-size: 1.3em;
     letter-spacing: 0.1em;
     border-bottom: 2px solid #00A3FF;
-    border-top:none;
+    border-top: none;
     border-right: none;
-    border-left:none;
+    border-left: none;
     height: 38px;
 }
 
-.footer-link a{
-  font-family: Neutraface2Text, sans-serif;
-  color:#fff;
-  text-decoration: none;
+.footer-link a {
+    font-family: Neutraface2Text, sans-serif;
+    color: #fff;
+    text-decoration: none;
 }
 
 .footer-link {
 
-  font-family: Neutraface2Text, sans-serif;
-  color:#fff;
-  text-decoration: none;
+    font-family: Neutraface2Text, sans-serif;
+    color: #fff;
+    text-decoration: none;
 }
 
 .findus {
-  color: #fff;
-  font-weight: 700;
-  letter-spacing: 0.025em;
-  font-size: 0.875rem;
-  font-family: Neutraface2Display-Titling, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    font-size: 0.875rem;
+    font-family: Neutraface2Display-Titling, sans-serif;
 }
 
 .FindUs__Logos {
@@ -294,31 +337,31 @@ a:hover {
 }
 
 .receta-derecha {
-  /*background: url("../images/recipies/back-receta.jpg")no-repeat center center;*/
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
- height: 720px;
+    /*background: url("../images/recipies/back-receta.jpg")no-repeat center center;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 720px;
 }
 
 .receta-izquierda {
-  background-color: #fff;
-  height: 720px;
+    background-color: #fff;
+    height: 720px;
 }
 
 .detalle-izquierda {
-  background: url("../images/recipies/back-receta-prod.png")no-repeat center center;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
- height: 720px;
+    background: url("../images/recipies/back-receta-prod.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 720px;
 }
 
 .detalle-derecha {
-  background-color: #fff;
-  height: 720px;
+    background-color: #fff;
+    height: 720px;
 }
 
 li {
@@ -347,12 +390,12 @@ li {
 }
 
 .share-receta {
-  font-family: Neutraface2Display-Titling, sans-serif;
-  font-size: 1.4em;
-  position: absolute;
-  left: -2em;
-  top: 23.5em;
-  cursor: pointer;
+    font-family: Neutraface2Display-Titling, sans-serif;
+    font-size: 1.4em;
+    position: absolute;
+    left: -2em;
+    top: 23.5em;
+    cursor: pointer;
 }
 
 .desc-receta {
@@ -371,18 +414,18 @@ li {
     color: #fff;
     font-weight: 600;
     position: absolute;
-    right: 7em;
-    width: 32%;
+    right: 2em;
+    width: 50%;
     top: 2em;
     font-size: 1.7em;
 }
 
 .descripcion-info-receta {
-  font-family: Neutraface2Text, sans-serif;
-  color:#fff;
-  font-size: 0.8em;
-  line-height: 1.2;
-  font-weight: 400;
+    font-family: Neutraface2Text, sans-serif;
+    color: #fff;
+    font-size: 0.8em;
+    line-height: 1.2;
+    font-weight: 400;
 
 }
 
@@ -414,28 +457,34 @@ li {
 }
 
 .dropdown-toggle::after {
-  color:#E81F76;
-  margin-left: 12px;
-  font-size: 25px;
-  vertical-align: 0em;
+    color: #E81F76;
+    margin-left: 12px;
+    font-size: 25px;
+    vertical-align: 0em;
 }
 
 .desplegable-header {
-  border: 2px solid #F3F3F3;
-  border-radius: .50rem;
-  padding-left: 15px;
-  padding-right: 15px;
+    border: 2px solid #F3F3F3;
+    border-radius: .50rem;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .listado-receta {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
-.pie {padding: 3em 0em 1em 0em;}
+.pie {
+    padding: 3em 0em 1em 0em;
+}
 
-.espacio-pie {padding: 0 0 3em 0;}
+.espacio-pie {
+    padding: 0 0 3em 0;
+}
 
-.slick-list{padding:0 20% 0 0;}
+.slick-list {
+    padding: 0 20% 0 0;
+}
 
 .lactose-strike-through:before {
     content: '';
@@ -470,12 +519,35 @@ li {
     left: 60px;
 }
 
+@media only screen and (max-width: 1024px) {
+    .show-desktop { display: none; }
+    .show-mobile { display: initial; }
 
-/*Estilos version mobile*/
-@media only screen and (max-width: 600px) {
 
-    .extra-padding {
-        padding-top: 0;
+    .sello {
+        display: none;
+    }
+
+    .sello.hero {
+        display: inherit;
+    }
+
+    .sello-receta {
+        display: none;
+    }
+
+    .card-img-overlay {
+        padding-left: 2em;
+    }
+
+    .featured-title {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .container.featured {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .featured-recipe-attribute {
@@ -486,9 +558,52 @@ li {
         font-size: 0.9em;
     }
 
+    .nombre-receta {
+        font-size: 1.5em;
+    }
+
+}
+
+
+/*Estilos version mobile*/
+@media only screen and (max-width: 600px) {
+
+    .desplegable-header {
+        margin-bottom: 1em;
+    }
+
+    .menu-link {
+        font-size: 2em;
+    }
+
+    .card-img-overlay {
+        width: 73vw;
+        height: 73vw;
+    }
+
+    .titulo-banner {
+        margin-bottom: 1.5em
+    }
+
+    .dropdown-menu {
+        border: none
+    }
+
+    .titulo.hero {
+        font-size: 15vw;
+    }
+
+    .nombre-receta {
+        font-size: 1.75em;
+    }
+
+    .extra-padding {
+        padding-top: 0;
+    }
+
     .sello.hero {
-        right: -2.5em !important;
-        top: -1em !important;
+        right: -2.4em !important;
+        top: -0.8em !important;
         width: 43px;
         display: inherit;
     }
@@ -500,144 +615,151 @@ li {
         left: 0;
     }
 
-.aire-sitio {
-    padding: 0 0 0 0;
+    .aire-sitio {
+        padding: 0 0 0 0;
+    }
+
+    .titulo {
+        line-height: 0.75em;
+        font-size: 4em;
+    }
+
+    .cabecera-titulo-2 {
+        font-size: 2em;
+    }
+
+    .espacio-cabecera {
+        padding-top: 3em;
+        padding-right: 1em;
+    }
+
+    .min-vh-100 {
+        min-height: 31vh !important;
+    }
+
+    .hero-title {
+        top: 8em;
+        left: 1em;
+    }
+
+    .hero-subtitle {
+        right: 2em;
+        top: 9em;
+    }
+
+    .titulo-seccion {
+        font-size: 1.7em;
+    }
+
+    .sub-titulo-seccion {
+        font-size: 1em;
+    }
+
+    .pt-5, .py-5 {
+        padding-top: 1rem !important;
+    }
+
+    .pb-5 {
+        padding-bottom: 0rem !important;
+    }
+
+    .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .receta-titulo {
+        font-size: 1em;
+    }
+
+    .barra-azul {
+        height: 32%;
+        width: 0.3em;
+    }
+
+    .barra-rosa {
+        height: 51%;
+        width: 0.3em;
+    }
+
+    .sello {
+        display: none;
+    }
+
+    .sello-receta {
+        display: none;
+    }
+
+    .receta-izquierda {
+        height: 301px;
+    }
+
+    .share-receta {
+        font-size: 1em;
+        left: -2em;
+        top: 9.8em;
+    }
+
+    .texto-principal {
+        left: 3em;
+    }
+
+    .titulo-receta {
+        font-size: 2.75em;
+    }
+
+    .receta-derecha {
+        height: 301px;
+    }
+
+    .desc-receta {
+        right: 1em;
+    }
+
+    .detalle-izquierda {
+        height: 410px;
+    }
+
+    .iconos-receta {
+        right: 1em;
+        width: 53%;
+        top: 1.5em;
+        font-size: 1.2em;
+    }
+
+    .detalle-derecha {
+        height: 200px;
+    }
+
+    .parrafos-receta {
+        font-size: 1em;
+        right: 2em;
+        left: 2em;
+        top: 0em;
+    }
+
+    .subtitulo-receta {
+        font-size: 0.8em;
+    }
+
+    /*.slick-list{padding:0 20% 0 0!important;}*/
+    .pie {
+        padding: 3em 0 1em 0;
+    }
+
+    .select-footer {
+        width: 100%;
+    }
+
+    .logo-footer-espacio {
+        padding-bottom: 1em !important;
+    }
 }
 
-.titulo {
-  line-height: 0.75em;
-  font-size: 4em;
-}
-
-.cabecera-titulo-2 {
-  font-size: 1.3em;
-}
-
-.espacio-cabecera {
-  padding-top: 3em;
-  padding-right: 1em;
-}
-
-.min-vh-100 {
-    min-height: 31vh!important;
-}
-
-.hero-title {
-    top: 7.5em;
-    left: 1em;
-}
-
-.hero-subtitle {
-    right: 1em;
-    top: 9em;
-}
-
-.titulo-seccion {
-    font-size: 1.7em;
-}
-
-.sub-titulo-seccion {
-    font-size: 1em;
-}
-
-.pt-5, .py-5 {
-    padding-top: 1rem!important;
-}
-
-.pb-5 {
-      padding-bottom: 0rem!important;
-}
-
-.col-sm-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.receta-titulo {
-    font-size: 1em;
-}
-
-.barra-azul {
-    height: 32%;
-    width: 0.3em;
-}
-
-.barra-rosa {
-    height: 51%;
-    width: 0.3em;
-}
-
-.sello {display: none;}
-.sello-receta {display:none;}
-
-.receta-izquierda {
-    height: 301px;
-}
-
-.share-receta {
-    font-size: 1em;
-    left: -2em;
-    top: 9.8em;
-}
-
-.texto-principal {
-    left: 3em;
-}
-
-.titulo-receta {
-    font-size: 3em;
-}
-
-.receta-derecha {
-    height: 301px;
-}
-
-.desc-receta {
-    right: 1em;
-}
-
-.detalle-izquierda {
-    height: 410px;
-}
-
-.iconos-receta {
-    right: 1em;
-    width: 53%;
-    top: 1.5em;
-    font-size: 1.2em;
-}
-
-.detalle-derecha {
-    height: 200px;
-}
-
-.parrafos-receta {
-    font-size: 1em;
-    right: 2em;
-    left: 2em;
-    top: 0em;
-}
-
-.subtitulo-receta {
-    font-size: 0.8em;
-}
-
-/*.slick-list{padding:0 20% 0 0!important;}*/
-
-.pie {
-    padding: 3em 0 1em 0;
-}
-
-.select-footer {
-    width: 100%;
-}
-
-.logo-footer-espacio {padding-bottom: 1em!important;}
-}
-
+.slick-dots li button:before,
 .slick-dots li button {
-    font-size: 8px;
+    font-size: 10px !important;
 }
 
 .slick-dots li button:before {
@@ -650,7 +772,7 @@ li {
 }
 
 .slick-slide {
-    padding-right:20px;
+    padding-right: 20px;
 }
 
 .slick-list [data-index="1"] {
@@ -662,12 +784,12 @@ li {
 }
 
 /*.slick-slide{*/
-    /*margin-right:  15px;*/
+/*margin-right:  15px;*/
 /*}*/
 
 /*.slick-list {*/
-    /*margin-right: -15px;*/
-    /*pointer-events: none;*/
+/*margin-right: -15px;*/
+/*pointer-events: none;*/
 /*}*/
 
 .navbar-light .navbar-toggler {

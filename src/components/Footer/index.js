@@ -1,8 +1,8 @@
 import React from 'react'
-import logo from '../../images/logo-notco.svg';
-import useTranslations from '../useTranslations';
+import logo from '../../images/logo-notco.svg'
+import useTranslations from '../useTranslations'
 
-function Footer(){
+function Footer() {
 
     const {
         langSelect,
@@ -10,16 +10,16 @@ function Footer(){
         food,
         findUs,
         terms,
-        privacy
+        privacy,
     } = useTranslations()
 
-    return(
+    return (
         <footer className="page-footer font-small teal pie">
 
             <div className="container text-md-left pl-5 pr-5 pt-5">
                 <div className="row">
                     <div className="col-sm-12 col-md-6 espacio-pie">
-                        <img className="pb-5 logo-footer-espacio" src={logo} style={{ width: 81 }} alt="NotCo" />
+                        <img className="pb-5 logo-footer-espacio" src={logo} style={{ width: 81 }} alt="NotCo"/>
                         <div className="LanguageSelector">
                             <h2>{langSelect}</h2>
                             <select className="select-footer">
@@ -36,9 +36,11 @@ function Footer(){
                         <h4 className="findus pt-4">{findUs}</h4>
 
                         <div className="FindUs__Logos">
-                            <div><a href="https://www.facebook.com/thenotcompany/" aria-label="Facebook" target="_blank">
+                            <div><a href="https://www.facebook.com/thenotcompany/" aria-label="Facebook"
+                                    target="_blank">
                                 <div>
-                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fillRule="evenodd" clipRule="evenodd"
                                               d="M38 19C38 29.4934 29.4934 38 19 38C8.50659 38 0 29.4934 0 19C0 8.50659 8.50659 0 19 0C29.4934 0 38 8.50659 38 19ZM20.3863 19.7439H23.7766L24.2254 15.3829H20.3866V12.8139C20.3866 11.8503 21.0234 11.6241 21.4762 11.6241H24.2369V7.38701L20.432 7.37109C16.2092 7.37109 15.2497 10.5341 15.2497 12.5541V15.3788H12.8067V19.7439H15.2497V32.1644H20.3863V19.7439Z"
                                               fill="#FFFFFF"/>
@@ -47,7 +49,8 @@ function Footer(){
                             </a></div>
                             <div><a href="https://www.instagram.com/thenotco/" aria-label="Instagram" target="_blank">
                                 <div>
-                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M22.6367 19C22.6367 21.0085 21.0085 22.6367 19 22.6367C16.9915 22.6367 15.3633 21.0085 15.3633 19C15.3633 16.9915 16.9915 15.3633 19 15.3633C21.0085 15.3633 22.6367 16.9915 22.6367 19Z"
                                             fill="#FFFFFF"/>
@@ -60,18 +63,22 @@ function Footer(){
                                     </svg>
                                 </div>
                             </a></div>
-                            <div><a href="https://www.linkedin.com/company/the-not-co-/" aria-label="LinkedIn" target="_blank">
+                            <div><a href="https://www.linkedin.com/company/the-not-co-/" aria-label="LinkedIn"
+                                    target="_blank">
                                 <div>
-                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M19 0C8.50819 0 0 8.50819 0 19C0 29.4918 8.50819 38 19 38C29.4918 38 38 29.4918 38 19C38 8.50819 29.4918 0 19 0ZM13.4788 28.7227H8.85146V14.8011H13.4788V28.7227ZM11.1653 12.9001H11.1351C9.58234 12.9001 8.57806 11.8312 8.57806 10.4953C8.57806 9.1292 9.61307 8.08984 11.196 8.08984C12.779 8.08984 13.7531 9.1292 13.7832 10.4953C13.7832 11.8312 12.779 12.9001 11.1653 12.9001ZM30.1641 28.7227H25.5373V21.275C25.5373 19.4033 24.8673 18.1268 23.1931 18.1268C21.9148 18.1268 21.1535 18.9878 20.8189 19.819C20.6966 20.1165 20.6667 20.5322 20.6667 20.9482V28.7227H16.0397C16.0397 28.7227 16.1003 16.1072 16.0397 14.8011H20.6667V16.7723C21.2816 15.8237 22.3819 14.4744 24.8369 14.4744C27.8813 14.4744 30.1641 16.4641 30.1641 20.7401V28.7227Z"
                                             fill="#FFFFFF"/>
                                     </svg>
                                 </div>
                             </a></div>
-                            <div><a href="https://www.youtube.com/channel/UCT2H7LfjkiIQpusjjVlclxg" aria-label="YouTube" target="_blank">
+                            <div><a href="https://www.youtube.com/channel/UCT2H7LfjkiIQpusjjVlclxg" aria-label="YouTube"
+                                    target="_blank">
                                 <div>
-                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16.6334 22.5596L22.8139 19L16.6334 15.4404V22.5596Z" fill="#FFFFFF"/>
                                         <path
                                             d="M19 0C8.50819 0 0 8.50819 0 19C0 29.4918 8.50819 38 19 38C29.4918 38 38 29.4918 38 19C38 8.50819 29.4918 0 19 0ZM30.8721 19.0194C30.8721 19.0194 30.8721 22.8727 30.3833 24.7308C30.1093 25.7478 29.3074 26.5497 28.2904 26.8234C26.4323 27.3125 19 27.3125 19 27.3125C19 27.3125 11.5871 27.3125 9.70961 26.804C8.69258 26.5303 7.89067 25.7281 7.6167 24.7111C7.12761 22.8727 7.12761 19 7.12761 19C7.12761 19 7.12761 15.147 7.6167 13.2889C7.89038 12.2719 8.71201 11.4503 9.70961 11.1766C11.5677 10.6875 19 10.6875 19 10.6875C19 10.6875 26.4323 10.6875 28.2904 11.196C29.3074 11.4697 30.1093 12.2719 30.3833 13.2889C30.8918 15.147 30.8721 19.0194 30.8721 19.0194Z"
@@ -90,4 +97,4 @@ function Footer(){
     )
 }
 
-export default Footer;
+export default Footer
