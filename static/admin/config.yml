@@ -72,7 +72,7 @@ collections:
                 label: 'Gallery',
                 name: 'gallery',
                 widget: 'list',
-                fields: { label: 'image', name: 'image', widget: 'image' },
+                field: { label: 'image', name: 'image', widget: 'image' },
             }
           - {
                 label: 'Date',
@@ -143,7 +143,7 @@ collections:
                 label: 'Gallery',
                 name: 'gallery',
                 widget: 'list',
-                fields: { label: 'image', name: 'image', widget: 'image' },
+                field: { label: 'image', name: 'image', widget: 'image' },
             }
           - {
                 label: 'Date',
@@ -214,7 +214,7 @@ collections:
                 label: 'Gallery',
                 name: 'gallery',
                 widget: 'list',
-                fields: { label: 'image', name: 'image', widget: 'image' },
+                field: { label: 'image', name: 'image', widget: 'image' },
             }
           - {
                 label: 'Date',
