@@ -1,6 +1,6 @@
 backend:
     name: git-gateway
-#    repo: Estebank94/iceberg-gatsby-multilang
+    #    repo: Estebank94/iceberg-gatsby-multilang
     branch: master
 #    site_domain: https://relaxed-gates-6dd431.netlify.app/
 
@@ -11,35 +11,80 @@ show_preview_links: true
 
 collections:
     #Posts (English)
-    - name: 'posts-en' # Used in routes, e.g., /admin/collections/blog
-      label: 'Posts (English)' # Used in the UI
-      folder: 'blog' # The path to the folder where the documents are stored
+    - name: 'posts-en' # Used in routes, e.g., /admin/collections/recipes
+      label: 'Recipes (English)' # Used in the UI
+      folder: 'recipes' # The path to the folder where the documents are stored
       create: true # Allow users to create new documents in this collection
       slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., title.md
       extension: 'en.md'
       format: frontmatter
       fields: # The fields for each document, usually in front matter
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - {label: 'Author', name: 'author', widget: 'string'}
-      - {label: 'Featured', name: 'featured', widget: 'boolean', default: false}
-      - {label: "Difficulty", name: "difficulty", widget: "number", default: 1, valueType: "int", min: 1}
-      - {label: "Servings", name: "servings", widget: "number", default: 1, valueType: "int", min: 1}
-      - {label: "Preparation Time", name: "preparationTime", widget: "number", default: 15, valueType: "int", min: 1}
-      - {label: "Ingredients", name: "ingredients", widget: "list", fields: [{label: "ingredient", name: "ingredient", widget: "string"}, {label: "amount", name: "amount", widget: "string"}]}
-      - { label: 'image', name: 'image', widget: 'image' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - {
-           label: 'Date',
-           name: 'date',
-           widget: 'datetime',
-           format: 'YYYY-MM-DD hh:mm:ss',
-      }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Author', name: 'author', widget: 'string' }
+          - {
+                label: 'Featured',
+                name: 'featured',
+                widget: 'boolean',
+                default: false,
+            }
+          - {
+                label: 'Difficulty',
+                name: 'difficulty',
+                widget: 'number',
+                default: 1,
+                valueType: 'int',
+                min: 1,
+            }
+          - {
+                label: 'Servings',
+                name: 'servings',
+                widget: 'number',
+                default: 1,
+                valueType: 'int',
+                min: 1,
+            }
+          - {
+                label: 'Preparation Time',
+                name: 'preparationTime',
+                widget: 'number',
+                default: 15,
+                valueType: 'int',
+                min: 1,
+            }
+          - {
+                label: 'Ingredients',
+                name: 'ingredients',
+                widget: 'list',
+                fields:
+                    [
+                        {
+                            label: 'ingredient',
+                            name: 'ingredient',
+                            widget: 'string',
+                        },
+                        { label: 'amount', name: 'amount', widget: 'string' },
+                    ],
+            }
+          - { label: 'image', name: 'image', widget: 'image' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - {
+                label: 'Gallery',
+                name: 'gallery',
+                widget: 'list',
+                fields: { label: 'image', name: 'image', widget: 'image' },
+            }
+          - {
+                label: 'Date',
+                name: 'date',
+                widget: 'datetime',
+                format: 'YYYY-MM-DD hh:mm:ss',
+            }
 
     #Posts (Portuguese)
-    - name: 'posts-pt' # Used in routes, e.g., /admin/collections/blog
-      label: 'Posts (Portuguese)' # Used in the UI
-      folder: 'blog' # The path to the folder where the documents are stored
+    - name: 'posts-pt' # Used in routes, e.g., /admin/collections/recipes
+      label: 'Recipes (Portuguese)' # Used in the UI
+      folder: 'recipes' # The path to the folder where the documents are stored
       create: true # Allow users to create new documents in this collection
       slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., title.md
       extension: 'pt.md'
@@ -47,14 +92,59 @@ collections:
       fields: # The fields for each document, usually in front matter
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'string' }
-          - {label: 'Author', name: 'author', widget: 'string'}
-          - {label: 'Featured', name: 'featured', widget: 'boolean', default: false}
-          - {label: "Difficulty", name: "difficulty", widget: "number", default: 1, valueType: "int", min: 1}
-          - {label: "Servings", name: "servings", widget: "number", default: 1, valueType: "int", min: 1}
-          - {label: "Preparation Time", name: "preparationTime", widget: "number", default: 15, valueType: "int", min: 1}
-          - {label: "Ingredients", name: "ingredients", widget: "list", fields: [{label: "ingredient", name: "ingredient", widget: "string"}, {label: "amount", name: "amount", widget: "string"}]}
+          - { label: 'Author', name: 'author', widget: 'string' }
+          - {
+                label: 'Featured',
+                name: 'featured',
+                widget: 'boolean',
+                default: false,
+            }
+          - {
+                label: 'Difficulty',
+                name: 'difficulty',
+                widget: 'number',
+                default: 1,
+                valueType: 'int',
+                min: 1,
+            }
+          - {
+                label: 'Servings',
+                name: 'servings',
+                widget: 'number',
+                default: 1,
+                valueType: 'int',
+                min: 1,
+            }
+          - {
+                label: 'Preparation Time',
+                name: 'preparationTime',
+                widget: 'number',
+                default: 15,
+                valueType: 'int',
+                min: 1,
+            }
+          - {
+                label: 'Ingredients',
+                name: 'ingredients',
+                widget: 'list',
+                fields:
+                    [
+                        {
+                            label: 'ingredient',
+                            name: 'ingredient',
+                            widget: 'string',
+                        },
+                        { label: 'amount', name: 'amount', widget: 'string' },
+                    ],
+            }
           - { label: 'image', name: 'image', widget: 'image' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - {
+                label: 'Gallery',
+                name: 'gallery',
+                widget: 'list',
+                fields: { label: 'image', name: 'image', widget: 'image' },
+            }
           - {
                 label: 'Date',
                 name: 'date',
@@ -63,9 +153,9 @@ collections:
             }
 
     #Posts (Spanish)
-    - name: 'posts-es' # Used in routes, e.g., /admin/collections/blog
-      label: 'Posts (Spanish)' # Used in the UI
-      folder: 'blog' # The path to the folder where the documents are stored
+    - name: 'posts-es' # Used in routes, e.g., /admin/collections/recipes
+      label: 'Recipes (Spanish)' # Used in the UI
+      folder: 'recipes' # The path to the folder where the documents are stored
       create: true # Allow users to create new documents in this collection
       slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., title.md
       extension: 'es.md'
@@ -73,14 +163,59 @@ collections:
       fields: # The fields for each document, usually in front matter
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'string' }
-          - {label: 'Author', name: 'author', widget: 'string'}
-          - {label: 'Featured', name: 'featured', widget: 'boolean', default: false}
-          - {label: "Difficulty", name: "difficulty", widget: "number", default: 1, valueType: "int", min: 1}
-          - {label: "Servings", name: "servings", widget: "number", default: 1, valueType: "int", min: 1}
-          - {label: "Preparation Time", name: "preparationTime", widget: "number", default: 15, valueType: "int", min: 1}
-          - {label: "Ingredients", name: "ingredients", widget: "list", fields: [{label: "ingredient", name: "ingredient", widget: "string"}, {label: "amount", name: "amount", widget: "string"}]}
+          - { label: 'Author', name: 'author', widget: 'string' }
+          - {
+                label: 'Featured',
+                name: 'featured',
+                widget: 'boolean',
+                default: false,
+            }
+          - {
+                label: 'Difficulty',
+                name: 'difficulty',
+                widget: 'number',
+                default: 1,
+                valueType: 'int',
+                min: 1,
+            }
+          - {
+                label: 'Servings',
+                name: 'servings',
+                widget: 'number',
+                default: 1,
+                valueType: 'int',
+                min: 1,
+            }
+          - {
+                label: 'Preparation Time',
+                name: 'preparationTime',
+                widget: 'number',
+                default: 15,
+                valueType: 'int',
+                min: 1,
+            }
+          - {
+                label: 'Ingredients',
+                name: 'ingredients',
+                widget: 'list',
+                fields:
+                    [
+                        {
+                            label: 'ingredient',
+                            name: 'ingredient',
+                            widget: 'string',
+                        },
+                        { label: 'amount', name: 'amount', widget: 'string' },
+                    ],
+            }
           - { label: 'image', name: 'image', widget: 'image' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - {
+                label: 'Gallery',
+                name: 'gallery',
+                widget: 'list',
+                fields: { label: 'image', name: 'image', widget: 'image' },
+            }
           - {
                 label: 'Date',
                 name: 'date',

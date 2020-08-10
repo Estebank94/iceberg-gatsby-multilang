@@ -60,7 +60,7 @@ export const query = graphql`
     allMarkdownRemark(
       filter: {
         fields: { locale: { eq: $locale } }
-        fileAbsolutePath: {regex: "/(blog)/.*\\.md$/"}
+        fileAbsolutePath: {regex: "/(recipes)/.*\\.md$/"}
       }
     ) {
       edges {

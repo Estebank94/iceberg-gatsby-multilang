@@ -39,7 +39,7 @@ function Recipes({ recipes, insideRecipe }) {
                          },
                      }, index) => (
                         <Recipe
-                            slug={`/blog/${slug}`}
+                            slug={`/recipes/${slug}`}
                             title={title}
                             image={image}
                             key={index}

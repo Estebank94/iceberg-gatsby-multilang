@@ -4,9 +4,7 @@ import Stamp from '../../images/stamp/sello.png'
 import Recipe from '../FeaturedRecipe'
 import useTranslations from '../useTranslations'
 
-
 const FeaturedRecipes = ({ featuredRecipes }) => {
-
     const { theFavs, checkOut } = useTranslations()
 
     const settings = {
@@ -49,31 +47,33 @@ const FeaturedRecipes = ({ featuredRecipes }) => {
                 </div>
             </div>
             <div className="col-12 p-0 m-0">
-                <img className="sello" src={Stamp} alt="100% plant-based"/>
+                <img className="sello" src={Stamp} alt="100% plant-based" />
                 <Slider {...settings}>
-                    {featuredRecipes.filter(f => f.node.frontmatter.featured).map(
-                        ({
-                             node: {
-                                 frontmatter: {
-                                     title,
-                                     image,
-                                     ingredients,
-                                     servings,
-                                     preparationTime,
-                                 },
-                                 fields: { slug },
-                             },
-                         }) => (
-                            <Recipe
-                                slug={`/blog/${slug}`}
-                                title={title}
-                                image={image}
-                                ingredients={ingredients}
-                                servings={servings}
-                                preparationTime={preparationTime}
-                            />
-                        ),
-                    )}
+                    {featuredRecipes
+                        .filter(f => f.node.frontmatter.featured)
+                        .map(
+                            ({
+                                node: {
+                                    frontmatter: {
+                                        title,
+                                        image,
+                                        ingredients,
+                                        servings,
+                                        preparationTime,
+                                    },
+                                    fields: { slug },
+                                },
+                            }) => (
+                                <Recipe
+                                    slug={`/recipes/${slug}`}
+                                    title={title}
+                                    image={image}
+                                    ingredients={ingredients}
+                                    servings={servings}
+                                    preparationTime={preparationTime}
+                                />
+                            )
+                        )}
                 </Slider>
             </div>
         </div>
