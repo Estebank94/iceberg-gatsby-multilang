@@ -24,7 +24,7 @@ const Header = ({ locale }) => {
     const toggle = () => setIsOpen(!isOpen)
 
     return (
-        <div>
+        <>
             <Navbar
                 color="light"
                 light
@@ -33,7 +33,7 @@ const Header = ({ locale }) => {
                 style={{ zIndex: 3 }}
             >
                 <NavbarBrand href={locale === 'en' ? '/' : locale}>
-                    <img src={logo} alt="Logo" style={{ width: 55 }} />
+                    <img src={logo} alt="NotCo" style={{ width: 55 }} />
                 </NavbarBrand>
                 <div
                     id="nav-icon"
@@ -45,14 +45,6 @@ const Header = ({ locale }) => {
                 </div>
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto" navbar>
-                        {/*<NavItem>*/}
-                        {/*    <NavLink*/}
-                        {/*        href="/"*/}
-                        {/*        className="nav-link item-menu pr-5 menu-link"*/}
-                        {/*    >*/}
-                        {/*        NOT<span className="azul">MILK COFFEE</span>*/}
-                        {/*    </NavLink>*/}
-                        {/*</NavItem>*/}
                         <NavItem>
                             <NavLink
                                 href="/"
@@ -61,18 +53,9 @@ const Header = ({ locale }) => {
                                 NOTCO.COM
                             </NavLink>
                         </NavItem>
-                        {/*<NavItem>*/}
-                        {/*    <NavLink*/}
-                        {/*        href="/"*/}
-                        {/*        className="nav-link item-menu pr-5 menu-link"*/}
-                        {/*    >*/}
-                        {/*        NOT<span className="azul">MILK</span>*/}
-                        {/*    </NavLink>*/}
-                        {/*</NavItem>*/}
                         <UncontrolledDropdown
                             nav
                             inNavbar
-                            className="desplegable-header"
                         >
                             <DropdownToggle nav caret>
                                 <span className="nav-link item-menu menu-link d-inline">
@@ -112,7 +95,7 @@ const Header = ({ locale }) => {
                     </Nav>
                 </Collapse>
             </Navbar>
-        </div>
+        </>
     )
 }
 

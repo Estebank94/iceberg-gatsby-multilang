@@ -13,7 +13,11 @@ ingredients:
     ingredient: Not Milk
   - amount: 1 cda
     ingredient: Cacao en polvo
-image: /assets/img/chia_pudding.jpg
+image: /assets/img/chia-pudding.jpg
+gallery:
+  - /assets/img/chia-pudding.jpg
+  - /assets/img/chia-pudding-2.jpg
+  - /assets/img/chia-pudding-3.jpg
 date: '2020-07-22 12:15:50'
 ---
 1. Hacer el café según máquina (italiana, francesa o americana).		

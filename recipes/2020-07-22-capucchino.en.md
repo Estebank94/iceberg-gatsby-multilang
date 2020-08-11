@@ -14,6 +14,10 @@ ingredients:
   - amount: 1 cda
     ingredient: Cacao en polvo
 image: /assets/img/capuccino.jpg
+gallery:
+  - /assets/img/capuccino.jpg
+  - /assets/img/capuccino-2.jpg
+  - /assets/img/capuccino-3.jpg
 date: '2020-07-22 12:15:50'
 ---
 1. Hacer el café según máquina (italiana, francesa o americana).		

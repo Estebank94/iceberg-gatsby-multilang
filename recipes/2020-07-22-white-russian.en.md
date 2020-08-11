@@ -13,7 +13,9 @@ ingredients:
     ingredient: Not Milk
   - amount: 1 cda
     ingredient: Cacao en polvo
-image: /assets/img/white_russian.jpg
+image: /assets/img/white-russian.jpg
+gallery:
+  - /assets/img/white-russian.jpg
 date: '2020-07-22 12:15:50'
 ---
 1. Hacer el café según máquina (italiana, francesa o americana).		

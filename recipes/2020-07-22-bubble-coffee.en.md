@@ -13,7 +13,10 @@ ingredients:
     ingredient: Not Milk
   - amount: 1 cda
     ingredient: Cacao en polvo
-image: /assets/img/bubble_coffee.jpg
+image: /assets/img/bubble-coffee.jpg
+gallery:
+  - /assets/img/bubble-coffee.jpg
+  - /assets/img/bubble-coffee-2.jpg
 date: '2020-07-22 12:15:50'
 ---
 1. Hacer el café según máquina (italiana, francesa o americana).		

@@ -13,7 +13,10 @@ ingredients:
     ingredient: Not Milk
   - amount: 1 cda
     ingredient: Cacao en polvo
-image: /assets/img/caramel_macchiato.jpg
+image: /assets/img/caramel-macchiato.jpg
+gallery:
+  - /assets/img/caramel-macchiato.jpg
+  - /assets/img/caramel-macchiato-2.jpg
 date: '2020-07-22 12:15:50'
 ---
 1. Hacer el café según máquina (italiana, francesa o americana).		

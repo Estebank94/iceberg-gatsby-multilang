@@ -13,7 +13,11 @@ ingredients:
     ingredient: Not Milk
   - amount: 1 cda
     ingredient: Cacao en polvo
-image: /assets/img/dalgona_coffee.jpg
+image: /assets/img/dalgona-coffee.jpg
+gallery:
+  - /assets/img/dalgona-coffee.jpg
+  - /assets/img/dalgona-coffee-2.jpg
+  - /assets/img/dalgona-coffee-3.jpg
 date: '2020-07-22 12:15:50'
 ---
 1. Hacer el café según máquina (italiana, francesa o americana).		

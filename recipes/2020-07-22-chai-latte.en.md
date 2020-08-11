@@ -13,7 +13,11 @@ ingredients:
     ingredient: Not Milk
   - amount: 1 cda
     ingredient: Cacao en polvo
-image: /assets/img/chai_latte.jpg
+image: /assets/img/chai.jpg
+gallery:
+  - /assets/img/chai.jpg
+  - /assets/img/chai-2.jpg
+  - /assets/img/chai-3.jpg
 date: '2020-07-22 12:15:50'
 ---
 1. Hacer el café según máquina (italiana, francesa o americana).		
