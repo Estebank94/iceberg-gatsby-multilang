@@ -13,17 +13,13 @@ const Index = ({ data: { allMarkdownRemark } }) => {
     // so it'll automatically give back the right translations
     const {
         hello,
-        subline,
-        category,
-        latestPosts,
-        allPosts,
     } = useTranslations()
 
     const postList = allMarkdownRemark.edges
 
     return (
         <div className="homepage">
-            <SEO title="Home" />
+            <SEO title="NotMilk Coffee" />
             <Hero />
             <FeaturedRecipes featuredRecipes={postList} />
             <AllRecipes recipes={postList} />
@@ -53,6 +49,7 @@ export const query = graphql`
             ingredients {
                 ingredient
             }
+            gallery
           }
           fields {
             locale

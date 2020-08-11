@@ -1,8 +1,12 @@
 import React from 'react'
 import Slider from 'react-slick'
-import Stamp from '../../images/stamp/sello.png'
+import { LocaleContext } from '../Layout';
+import Stamp from '../../images/stamp/en-base-a-plantas-white.png'
 import Recipe from '../FeaturedRecipe'
 import useTranslations from '../useTranslations'
+import stampEs from '../../images/stamp/en-base-a-plantas-white.png'
+import stampPt from '../../images/stamp/feito-de-plantas-white.png'
+import stampEn from '../../images/stamp/made-from-plants-white.png'
 
 const FeaturedRecipes = ({ featuredRecipes }) => {
     const { theFavs, checkOut } = useTranslations()
@@ -38,6 +42,18 @@ const FeaturedRecipes = ({ featuredRecipes }) => {
         ],
     }
 
+    const { locale } = React.useContext(LocaleContext);
+
+    const getStamp = (locale) => {
+        if(locale === 'es') {
+            return stampEs;
+        } else if (locale === 'pt') {
+            return stampPt;
+        } else {
+            return stampEn;
+        }
+    }
+
     return (
         <div className="container featured extra-padding">
             <div className="row">
@@ -47,7 +63,7 @@ const FeaturedRecipes = ({ featuredRecipes }) => {
                 </div>
             </div>
             <div className="col-12 p-0 m-0">
-                <img className="sello" src={Stamp} alt="100% plant-based" />
+                <img className="sello" src={getStamp(locale)} alt="100% plant-based" />
                 <Slider {...settings}>
                     {featuredRecipes
                         .filter(f => f.node.frontmatter.featured)
@@ -60,6 +76,7 @@ const FeaturedRecipes = ({ featuredRecipes }) => {
                                         ingredients,
                                         servings,
                                         preparationTime,
+                                        gallery
                                     },
                                     fields: { slug },
                                 },
@@ -71,6 +88,7 @@ const FeaturedRecipes = ({ featuredRecipes }) => {
                                     ingredients={ingredients}
                                     servings={servings}
                                     preparationTime={preparationTime}
+                                    gallery={gallery}
                                 />
                             )
                         )}

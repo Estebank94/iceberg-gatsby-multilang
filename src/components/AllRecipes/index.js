@@ -34,6 +34,7 @@ function Recipes({ recipes, insideRecipe }) {
                              frontmatter: {
                                  title,
                                  image,
+                                 gallery
                              },
                              fields: { slug },
                          },
@@ -42,6 +43,7 @@ function Recipes({ recipes, insideRecipe }) {
                             slug={`/recipes/${slug}`}
                             title={title}
                             image={image}
+                            gallery={gallery}
                             key={index}
                             insideRecipe={insideRecipe}
                         />

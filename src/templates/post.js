@@ -11,6 +11,8 @@ const Post = props => {
     const post = props.data.markdownRemark
     const recipes = props.data.allMarkdownRemark.edges
 
+    console.log('post', post);
+
     return (
         <div className="recipe-page">
             <SEO
@@ -22,6 +24,7 @@ const Post = props => {
                 title={post.frontmatter.title}
                 author={post.frontmatter.author}
                 image={post.frontmatter.image}
+                gallery={post.frontmatter.gallery}
                 location={props.location}
             />
             <RecipeInfo
@@ -49,6 +52,7 @@ export const query = graphql`
         author 
         image
         servings
+        gallery
         preparationTime
         ingredients {
           ingredient

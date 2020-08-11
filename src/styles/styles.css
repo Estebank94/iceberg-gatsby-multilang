@@ -229,8 +229,9 @@ a:hover {
 .sello-receta {
     position: absolute;
     top: 42%;
-    left: -4.5em;
+    left: 45%;
     width: 9em;
+    z-index: 1;
 }
 
 .sello.hero {
@@ -401,12 +402,13 @@ li {
 .desc-receta {
     position: absolute;
     font-family: Neutraface2Display-Titling, sans-serif;
-    right: 4em;
     text-align: right;
-    top: 1em;
     font-size: 1.75em;
     color: white;
     overflow: hidden;
+    margin-top: 1em;
+    right: 1em;
+    z-index: 1;
 }
 
 .iconos-receta {
@@ -566,7 +568,15 @@ li {
 
 
 /*Estilos version mobile*/
+@media only screen and (max-width: 760px) {
+    .desc-receta {
+        top: 28.5em;
+    }
+}
 @media only screen and (max-width: 600px) {
+    .desc-receta {
+        top: 13em;
+    }
 
     .desplegable-header {
         margin-bottom: 1em;
@@ -603,9 +613,9 @@ li {
     }
 
     .sello.hero {
-        right: -2.4em !important;
+        right: -2.75em !important;
         top: -0.8em !important;
-        width: 43px;
+        width: 53px;
         display: inherit;
     }
 
@@ -626,7 +636,7 @@ li {
     }
 
     .cabecera-titulo-2 {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .espacio-cabecera {
@@ -644,7 +654,7 @@ li {
     }
 
     .hero-subtitle {
-        right: 2em;
+        right: 3em;
         top: 9em;
     }
 
@@ -714,10 +724,6 @@ li {
         height: 301px;
     }
 
-    .desc-receta {
-        right: 1em;
-    }
-
     .detalle-izquierda {
         height: 410px;
     }
@@ -770,6 +776,25 @@ li {
 .slick-dots li.slick-active button:before {
     opacity: .75;
     color: #00A3FF !important;
+}
+
+.recipe-dots li button:before {
+    color: #FFFFFF !important;
+}
+
+.recipe-dots li.slick-active button:before {
+    opacity: .75;
+    color: #FFFFFF !important;
+}
+
+.recipe-slider .slick-slide {
+    padding-right: 0 !important;
+    margin-bottom: -6px !important;
+}
+
+
+.recipe-dots {
+    bottom: 25px !important;
 }
 
 .slick-slide {

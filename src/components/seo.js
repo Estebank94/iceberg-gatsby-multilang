@@ -31,6 +31,7 @@ function SEO({ description, lang, meta, title, image }) {
 
   const url = site.siteMetadata.siteUrl;
   const ogImage = `${url}${image || '/assets/img/cover.png'}`;
+  console.log('ogImage', ogImage);
 
   return (
     <Helmet
