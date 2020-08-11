@@ -20,7 +20,7 @@ function Hero({ title, author, image, location, gallery }) {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        lazyLoad: true,
+        lazyLoad: false,
         autoplay: false,
         dots: true,
         dotsClass: "slick-dots recipe-dots",

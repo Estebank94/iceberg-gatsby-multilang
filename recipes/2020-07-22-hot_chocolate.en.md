@@ -16,8 +16,8 @@ ingredients:
 image: /assets/img/chocolate-caliente.jpg
 gallery:
   - /assets/img/chocolate-caliente.jpg
-  - /assets/img/chocolate-caliente-1.jpg
   - /assets/img/chocolate-caliente-2.jpg
+  - /assets/img/chocolate-caliente-3.jpg
 date: '2020-07-22 12:15:50'
 ---
 1. Hacer el café según máquina (italiana, francesa o americana).		

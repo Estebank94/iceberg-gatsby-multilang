@@ -30,7 +30,7 @@ function Banner() {
     const imageData = data.desktop.childImageSharp.fluid
 
     return (
-        <div className="container-fluid m-0 p-0">
+        <div className="container-fluid">
             <div className="row text-center p-4 banner d-flex align-items-center">
                 <div className="col-sm-3 d-none d-xl-block d-lg-block d-md-block">
                     <Image fluid={imageData} className="banner-pack mx-auto" />
