@@ -68,6 +68,22 @@
     font-display: swap;
 }
 
+.modal-content {
+    border: none;
+    border-radius: 0;
+
+}
+
+.modal-header {
+    border-bottom: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .show-desktop { display: initial; }
 .show-mobile { display: none; }
 
@@ -461,6 +477,15 @@ li {
     height: 233%;
     background-color: #fabbb4;
     z-index: 10000;
+}
+
+.dropdown-item:active {
+    background-color: #FFFFFF;
+}
+
+.dropdown-item:hover {
+    color: #E81F76;
+    background-color: #FFFFFF;
 }
 
 .dropdown-toggle::after {

@@ -19,7 +19,7 @@ const Index = ({ data: { allMarkdownRemark } }) => {
 
     return (
         <div className="homepage">
-            <SEO title="NotMilk Coffee" />
+            <SEO title="NotMilk Coffee" homePage />
             <Hero />
             <FeaturedRecipes featuredRecipes={postList} />
             <AllRecipes recipes={postList} />

@@ -85,6 +85,8 @@ const query = graphql`
             english
             spanish
             portuguese
+            
+            instagram
 
           }
         }
