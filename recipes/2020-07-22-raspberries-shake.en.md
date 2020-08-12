@@ -8,17 +8,17 @@ servings: 2
 preparationTime: 30
 ingredients:
   - amount: 1 taza de
-      ingredient: Frambuesas congeladas 
+    ingredient: Frambuesas congeladas 
   - amount: 2 cdas de
-      ingredient: Azúcar granulada
+    ingredient: Azúcar granulada
   - amount: 1 taza de
-      ingredient: Not Ice Cream (Frutilla)
+    ingredient: Not Ice Cream (Frutilla)
   - amount: 1 cda
-      ingredient: Café instantáneo
+    ingredient: Café instantáneo
   - amount: 1 taza
-      ingredient: Not Milk
+    ingredient: Not Milk
   - amount: 1 cda
-      ingredient: Cacao en polvo    
+    ingredient: Cacao en polvo    
 image: /assets/img/raspberry-shake.jpg
 gallery:
   - /assets/img/raspberry-shake.jpg
