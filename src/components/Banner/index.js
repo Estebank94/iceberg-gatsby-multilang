@@ -1,11 +1,11 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import BackgroundImage from 'gatsby-background-image'
 import Image from 'gatsby-image'
 import useTranslations from '../useTranslations'
 import contact from '../../images/icons/contact.svg'
 import cross from '../../images/icons/cross.svg'
 import location from '../../images/icons/location.svg'
+import { Link as GatsbyLink } from 'gatsby'
 
 function Banner() {
     const {
@@ -36,27 +36,33 @@ function Banner() {
                     <Image fluid={imageData} className="banner-pack mx-auto" />
                 </div>
                 <div className="col-sm-3">
-                    <h2 className="titulo-banner">
-                        <img src={location} className="pb-3" />
-                        <br />
-                        {whereToBuy}
-                    </h2>
+                    <GatsbyLink to="https://notco.com/where-to-buy">
+                        <h2 className="titulo-banner">
+                            <img src={location} className="pb-3" />
+                            <br />
+                            {whereToBuy}
+                        </h2>
+                    </GatsbyLink>
                 </div>
                 <div className="col-sm-3">
-                    <h2 className="titulo-banner">
-                        <img src={cross} className="pb-3" />
-                        <br />
-                        {knowMore}
-                        <span className="negro"> NOT</span>
-                        {products}
-                    </h2>
+                    <GatsbyLink to="https://notco.com/#products">
+                        <h2 className="titulo-banner">
+                            <img src={cross} className="pb-3" />
+                            <br />
+                            {knowMore}
+                            <span className="negro"> NOT</span>
+                            {products}
+                        </h2>
+                    </GatsbyLink>
                 </div>
                 <div className="col-sm-3">
-                    <h2 className="titulo-banner">
-                        <img src={contact} className="pb-3" />
-                        <br />
-                        {sendYourSpecialty}
-                    </h2>
+                    <GatsbyLink to="http://notco.com/#contact">
+                        <h2 className="titulo-banner">
+                            <img src={contact} className="pb-3" />
+                            <br />
+                            {sendYourSpecialty}
+                        </h2>
+                    </GatsbyLink>
                 </div>
             </div>
         </div>

@@ -7,11 +7,11 @@ difficulty: 1
 servings: 2
 preparationTime: 10
 ingredients:
-  - amount: 1/2 taza
+  - amount: 1/2 taza de
     ingredient: Shot expresso
-  - amount: 1/2 taza
+  - amount: 1/2 taza de
     ingredient: Not Milk
-  - amount: 1 cda
+  - amount: 1 cda de
     ingredient: Cacao en polvo
 image: /assets/img/protein-shake.jpg
 gallery:

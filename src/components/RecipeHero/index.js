@@ -51,8 +51,6 @@ function Hero({ title, author, image, location, gallery }) {
         return img.node.childImageSharp.fluid.src.includes('cover')
     })
 
-    console.log('gallery', gallery)
-
     const imgName = image ? image.split('/')[3] : false
 
     const postImg = imgName
