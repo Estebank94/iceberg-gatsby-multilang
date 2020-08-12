@@ -21,9 +21,9 @@ const featuredRecipe = ({
             edges {
               node {
                 childImageSharp {
-                  fluid(maxWidth: 1000, maxHeight: 1000) {
+                  fluid(maxWidth: 400, maxHeight: 400) {
                     src
-                    ...GatsbyImageSharpFluid
+                      ...GatsbyImageSharpFluid_withWebp
                   }
                 }
               }

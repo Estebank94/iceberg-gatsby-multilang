@@ -43,5 +43,10 @@
 
   "share": "spread the voice",
 
-  "madeBy": "Made by"
+  "madeBy": "Made by",
+
+  "language": "Language",
+  "english": "United State / English",
+  "spanish": "Chile / Spanish",
+  "portuguese": "Portuguese / Brazil"
 }

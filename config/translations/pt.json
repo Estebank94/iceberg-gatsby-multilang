@@ -46,5 +46,9 @@
 
   "share": "Compartilo",
 
-  "madeBy": "Hecho por"
+  "madeBy": "Hecho por",
+
+  "language": "Language",
+  "english": "english",
+  "portuguese": "Portuguese / Brazil"
 }

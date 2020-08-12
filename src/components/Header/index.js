@@ -19,7 +19,7 @@ import logo from '../../images/logo-notco-black.svg'
 const Header = ({ locale }) => {
     const [isOpen, setIsOpen] = useState(false)
 
-    const { t } = useTranslations()
+    const { language, english, spanish, portuguese } = useTranslations()
 
     const toggle = () => setIsOpen(!isOpen)
 
@@ -59,7 +59,7 @@ const Header = ({ locale }) => {
                         >
                             <DropdownToggle nav caret>
                                 <span className="nav-link item-menu menu-link d-inline">
-                                    Idioma
+                                    {language}
                                 </span>
                             </DropdownToggle>
                             <DropdownMenu right className="p-2">
@@ -69,7 +69,7 @@ const Header = ({ locale }) => {
                                         hrefLang="en"
                                         style={{ color: 'black' }}
                                     >
-                                        Estados Unidos / Ingles
+                                        {english}
                                     </GatsbyLink>
                                 </DropdownItem>
                                 <DropdownItem className="nav-link item-menu">
@@ -78,7 +78,7 @@ const Header = ({ locale }) => {
                                         hrefLang="es"
                                         style={{ color: 'black' }}
                                     >
-                                        Chile / Español
+                                        {spanish}
                                     </GatsbyLink>
                                 </DropdownItem>
                                 <DropdownItem className="nav-link item-menu">
@@ -87,7 +87,7 @@ const Header = ({ locale }) => {
                                         hrefLang="pt"
                                         style={{ color: 'black' }}
                                     >
-                                        Portugues / Brasil
+                                        {portuguese}
                                     </GatsbyLink>
                                 </DropdownItem>
                             </DropdownMenu>

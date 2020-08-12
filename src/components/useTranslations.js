@@ -80,6 +80,11 @@ const query = graphql`
             share
             
             madeBy
+            
+            language
+            english
+            spanish
+            portuguese
 
           }
         }

@@ -11,6 +11,9 @@ function Footer() {
         findUs,
         terms,
         privacy,
+        english,
+        spanish,
+        portuguese
     } = useTranslations()
 
     return (
@@ -23,9 +26,9 @@ function Footer() {
                         <div className="LanguageSelector">
                             <h2>{langSelect}</h2>
                             <select className="select-footer">
-                                <option label="United States / English" value="en-us">United States / English</option>
-                                <option label="Brasil / Português" value="pt-br">Brasil / Português</option>
-                                <option label="Chile / Español" value="es-ch">Chile / Español</option>
+                                <option label={english} value="en-us">{english}</option>
+                                <option label={portuguese} value="pt-br">{portuguese}</option>
+                                <option label={portuguese} value="es-ch">{spanish}</option>
                             </select>
                         </div>
                     </div>

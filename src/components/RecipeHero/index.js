@@ -35,9 +35,9 @@ function Hero({ title, author, image, location, gallery }) {
                     edges {
                         node {
                             childImageSharp {
-                                fluid(maxWidth: 1000, maxHeight: 1000) {
+                                fluid(maxWidth: 720, maxHeight: 720) {
                                     src
-                                    ...GatsbyImageSharpFluid
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }

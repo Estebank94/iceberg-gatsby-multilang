@@ -11,9 +11,9 @@ const Recipe = ({ slug, title, image, insideRecipe, key }) => {
                     edges {
                         node {
                             childImageSharp {
-                                fluid(maxWidth: 400, maxHeight: 400) {
+                                fluid(maxWidth: 350, maxHeight: 350) {
                                     src
-                                    ...GatsbyImageSharpFluid
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
