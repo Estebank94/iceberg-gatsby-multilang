@@ -87,6 +87,8 @@ const query = graphql`
             portuguese
             
             instagram
+            
+            shareTitle
 
           }
         }

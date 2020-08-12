@@ -358,7 +358,7 @@ a:hover {
 }
 
 .receta-derecha {
-    /*background: url("../images/recipies/back-receta.jpg")no-repeat center center;*/
+    /*background: url("../images/recipies/back-receta.jpg") no-repeat center center;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -379,6 +379,9 @@ a:hover {
     -o-background-size: cover;
     background-size: cover;
     height: 720px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    display: flex;
 }
 
 .detalle-derecha {
@@ -394,7 +397,7 @@ li {
     color: #000;
     font-family: Neutraface2Display-Titling, sans-serif;
     line-height: 0.750em;
-    font-size: 6em;
+    font-size: 6vw;
     text-align: left;
 }
 
@@ -437,10 +440,10 @@ li {
     color: #fff;
     font-weight: 600;
     position: absolute;
-    right: 2em;
     width: 50%;
-    top: 2em;
     font-size: 1.7em;
+    margin-bottom: 5em;
+    margin-top: 2.5em;
 }
 
 .descripcion-info-receta {
@@ -596,14 +599,47 @@ li {
 
 }
 
+/*Estilos version tablet*/
+@media only screen and (max-width: 992px) {
+    .detalle-izquierda {
+        height: auto;
+        min-height: 720px;
+        align-items: center;
+        justify-content: flex-end;
+        display: flex;
+    }
+
+    .iconos-receta {
+        position: relative;
+        width: 55%;
+    }
+
+    .detalle-derecha {
+        height: auto;
+    }
+
+    .parrafos-receta {
+        position: relative;
+        top: initial;
+        left: initial;
+        right: initial;
+    }
+
+    .titulo-receta {
+        font-size: 6em;
+    }
+
+}
+
 
 /*Estilos version mobile*/
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
     .desc-receta {
         top: 28.5em;
     }
 }
 @media only screen and (max-width: 600px) {
+
     .dropdown-toggle::after {
         color: #E81F76;
         margin-left: 12px;
@@ -762,25 +798,26 @@ li {
     }
 
     .detalle-izquierda {
-        height: 410px;
+        height: auto;
+        min-height: 300px;
     }
 
     .iconos-receta {
-        right: 1em;
-        width: 53%;
-        top: 1.5em;
+        width: 55%;
         font-size: 1.2em;
+        margin-top: 1.5em;
     }
 
     .detalle-derecha {
-        height: 200px;
+        height: auto;
     }
 
     .parrafos-receta {
         font-size: 1em;
-        right: 2em;
-        left: 2em;
-        top: 0em;
+        position: relative;
+        top: initial;
+        left: initial;
+        right: initial;
     }
 
     .subtitulo-receta {

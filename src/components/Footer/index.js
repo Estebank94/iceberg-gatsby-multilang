@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
 import logo from '../../images/logo-notco.svg'
 import useTranslations from '../useTranslations'
 import { navigate } from 'gatsby'
 import { TermsModal } from './termsModal'
 import { PrivacyModal } from './privacyModal'
+import { LocaleContext } from '../Layout'
 
 function Footer() {
     const {
@@ -20,6 +20,8 @@ function Footer() {
         instagram,
     } = useTranslations()
 
+    const { locale } = React.useContext(LocaleContext)
+
     const [termsModal, setTermsModal] = useState(false)
     const [privacyModal, setPrivacyModal] = useState(false)
 
@@ -28,8 +30,8 @@ function Footer() {
 
     return (
         <footer className="page-footer font-small teal pie">
-            <TermsModal modal={termsModal} toggle={toggleTerms} />
-            <PrivacyModal modal={privacyModal} toggle={togglePrivacy}/>
+            <TermsModal modal={termsModal} toggle={toggleTerms} locale={locale} />
+            <PrivacyModal modal={privacyModal} toggle={togglePrivacy} locale={locale} />
             <div className="container text-md-left pl-5 pr-5 pt-5">
                 <div className="row">
                     <div className="col-sm-12 col-md-6 espacio-pie">

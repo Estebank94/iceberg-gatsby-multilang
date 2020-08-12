@@ -11,10 +11,12 @@ import {
     faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 import { faShareAlt } from '@fortawesome/free-solid-svg-icons'
-import { LocaleContext } from '../Layout';
-
+import { LocaleContext } from '../Layout'
+import useTranslations from '../useTranslations'
 
 function Hero({ title, author, image, location, gallery }) {
+    const { shareTitle } = useTranslations()
+
     const settings = {
         infinite: true,
         speed: 500,
@@ -23,7 +25,7 @@ function Hero({ title, author, image, location, gallery }) {
         lazyLoad: false,
         autoplay: false,
         dots: true,
-        dotsClass: "slick-dots recipe-dots",
+        dotsClass: 'slick-dots recipe-dots',
         className: 'recipe-slider',
         arrows: false,
     }
@@ -71,27 +73,27 @@ function Hero({ title, author, image, location, gallery }) {
     }
 
     const shareData = {
-        title: 'Chequeá esta receta con NotMilk!',
+        title: { shareTitle },
         text: { title },
         url: location.href,
     }
 
-    const { locale } = React.useContext(LocaleContext);
+    const { locale } = React.useContext(LocaleContext)
 
-    const getStamp = (locale) => {
-        if(locale === 'es') {
-            return stampEs;
+    const getStamp = locale => {
+        if (locale === 'es') {
+            return stampEs
         } else if (locale === 'pt') {
-            return stampPt;
+            return stampPt
         } else {
-            return stampEn;
+            return stampEn
         }
     }
 
     return (
         <div className="container-fluid">
             <div className="row">
-                <div className="col-sm-12 col-md-6 receta-izquierda">
+                <div className="col-md-12 col-lg-6 receta-izquierda">
                     <h3
                         className="share-receta rotate"
                         onClick={() => navigator.share(shareData)}
@@ -122,7 +124,7 @@ function Hero({ title, author, image, location, gallery }) {
                     <br />
                     <span className="nut-strike-through">Nut</span>
                 </p>
-                <div className="col-sm-12 col-md-6 p-0 m-0">
+                <div className="col-md-12 col-lg-6 p-0 m-0">
                     <Slider {...settings}>
                         {gallery.map((image, index) => (
                             <Image

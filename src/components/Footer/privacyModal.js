@@ -1,9 +1,1129 @@
 import { Modal, ModalBody, ModalHeader } from 'reactstrap'
 import React from 'react'
 
-export function PrivacyModal({ modal, toggle }) {
+export function PrivacyModal({ modal, toggle, locale }) {
     return (
         <Modal isOpen={modal} toggle={toggle}>
+            {modalLocale(locale)}
+        </Modal>
+    )
+}
+
+const modalLocale = locale => {
+    if (locale === 'es') {
+        return <Spanish />
+    } else if (locale === 'en') {
+        return <English />
+    } else {
+        return <Portuguese />
+    }
+}
+
+function Portuguese() {
+    return (
+        <>
+            <ModalHeader toggle={toggle}>
+                TÉRMINOS Y CONDICIONES THE NOT COMPANY SpA
+            </ModalHeader>
+            <ModalBody>
+                <h1 className="font-bold">
+                    POLÍTICA DE PRIVACIDADE DA NOTCO BRASIL DISTRIBUIÇÃO E
+                    COMÉRCIO DE PRODUTOS ALIMENTÍCIOS LTDA.
+                </h1>
+                <p>
+                    <strong>Versão 22 de abril de 2020</strong>
+                </p>
+                <p>
+                    Esta política de privacidade (a “
+                    <u>
+                        <strong>Política de Privacidade</strong>
+                    </u>
+                    ”) regula a forma em que a{' '}
+                    <strong>
+                        NOTCO BRASIL DISTRIBUIÇÃO E COMÉRCIO DE PRODUTOS
+                        ALIMENTÍCIOS LTDA.
+                    </strong>
+                    , inscrita no CNPJ/ME n° 33.119.545/0001-70 ("
+                    <u>
+                        <strong>NotCo</strong>
+                    </u>
+                    "), tratará as informações e dados pessoais dos usuários que
+                    visitam os websites controlados pela NotCo nos quais seja
+                    publicada esta Política de Privacidade (em conjunto, os “
+                    <u>
+                        <strong>Sites</strong>
+                    </u>
+                    ”), ou no caso de outras funções interativas ou{' '}
+                    <i>downloads</i> que sejam de propriedade ou controladas
+                    pela NotCo e que estejam disponíveis por meio dos Sites, ou
+                    que interajam com os Sites.
+                </p>
+                <p>
+                    A NotCo é a controladora da informação e dos dados pessoais
+                    dos usuários que são coletados por meio dos Sites,
+                    diretamente, ou por meio de afiliadas locais indicadas ao
+                    final desta Política de Privacidade, dependendo do país ou
+                    região que figure na parte superior dos Sites. Esta Política
+                    de Privacidade foi criada para fornecer as informações sobre
+                    nossas práticas de privacidade e coleta de dados online,
+                    tais como os tipos de informação que coletamos com relação
+                    aos visitantes dos Sites. Esta Política de Privacidade não
+                    abrange informações coletadas em outro website (a não ser
+                    que esteja indicado especificamente no respectivo website) e
+                    não se aplica a websites operados por Partes Relacionadas,
+                    conforme definido abaixo.
+                </p>
+                <p>
+                    Por favor, leia com atenção a presente Política de
+                    Privacidade. Se tiver alguma dúvida ou pergunta relacionada
+                    com esta Política de Privacidade, entre em contato com o
+                    coordenador de privacidade da sua respectiva jurisdição,
+                    conforme indicado ao final desta Política de Privacidade, ou
+                    envie uma carta para a NotCo ou ao endereço local
+                    correspondente à região ou ao país informado ao final desta
+                    Política de Privacidade. Além disso, verifique os Termos de
+                    Uso, que reguem o uso dos Sites.
+                </p>
+                <p>
+                    Ao clicar na caixa aplicável da página de registro desta
+                    Política de Privacidade, você aceita estes termos e concorda
+                    em se vincular a este instrumento.
+                </p>
+                <p>
+                    <strong>
+                        Definições. Para os fins da presente Política de
+                        Privacidade, os termos a seguir terão o significado
+                        estabelecido nesta seção.
+                    </strong>
+                </p>
+                <p>
+                    <strong>"Anonimização dos Dados Pessoais"</strong>:
+                    significa qualquer Tratamento de Dados Pessoais para que a
+                    informação obtida não possa ser associada com nenhuma pessoa
+                    identificada ou identificável.
+                </p>
+                <p>
+                    <strong>"Anunciantes"</strong>: significa qualquer
+                    anunciante que não a NotCo.
+                </p>
+                <p>
+                    <strong>"Base de Dados"</strong>: significa qualquer
+                    conjunto organizado de Dados Pessoais que esteja sujeito ao
+                    Tratamento de Dados (conforme definido a seguir), por meios
+                    eletrônicos ou por qualquer outra forma, qualquer que seja a
+                    forma de coleta, armazenamento, organização ou acesso.
+                </p>
+                <p>
+                    <strong>"Controlador de Dados"</strong> ou{' '}
+                    <strong>
+                        "Controlador de arquivo, registro, Base de Dados ou
+                        banco de dados"
+                    </strong>
+                    : significa a pessoa física ou jurídica, pública ou privada,
+                    que tenha o controle sobre um arquivo, registro, Base de
+                    Dados ou banco de dados ou que tenha autoridade para decidir
+                    como e por que os Dados Pessoais serão processadas.
+                </p>
+                <p>
+                    <strong>"Dados Pessoais"</strong>: significa qualquer
+                    informação relacionada com uma pessoa ou entidade
+                    identificada ou identificável (dependendo da jurisdição da
+                    qual sejam acessados os Sites), como nome pessoal, caixa
+                    postal, e-mail e número de telefone; data de nascimento;
+                    gênero; número de identidade; endereço; e, se aplicável,
+                    nome da empresa e função desempenhada.
+                </p>
+                <p>
+                    <strong>"Parte Relacionada"</strong>: qualquer afiliado,
+                    entidade controlada e/ou filiais da NotCo.
+                </p>
+                <p>
+                    <strong>"Prestadores de Serviços"</strong>: qualquer
+                    prestador de serviços que não seja uma Parte Relacionada,
+                    que possa prestar serviços para a NotCo, tais como
+                    hospedagem de sites, cumprimento de pedidos, entrega de
+                    materiais promocionais e ofertas de produtos da NotCo,
+                    compensação e processamento de crédito e débito, pagamentos
+                    com cartão, ou que possa realizar outros serviços em nome da
+                    NotCo.
+                </p>
+                <p>
+                    <strong>"Promoção"</strong>: significa qualquer sorteio,
+                    concursos e outras promoções oferecidas por meio dos Sites
+                    que requeiram registro para a participação do usuário.
+                </p>
+                <p>
+                    <strong>"Tratamento"</strong>: significa qualquer operação,
+                    eletrônica ou física, de coleta, registro, organização,
+                    armazenamento, alteração, vinculação, avaliação, bloqueio,
+                    eliminação, dissociação, compartilhamento, transferência e
+                    em geral o tratamento de Dados Pessoais, mediante
+                    transmissão, buscas, interconexões ou transferências.
+                </p>
+                <p>
+                    <strong>"Websites de Terceiros"</strong>: significam outros
+                    websites ou endereços da web que sejam operados e
+                    controlados por terceiros que não a NotCo ou suas Partes
+                    Relacionadas.
+                </p>
+                <p>
+                    Os Dados Pessoais podem ser solicitados e registrados nos
+                    cadastros realizados nos Sites.
+                </p>
+                <p>
+                    Você sempre poderá optar por não enviar Dados Pessoais;
+                    entretanto isso poderá impedir o acesso a certas
+                    características e funcionalidades dos Sites. Você é
+                    responsável pela veracidade e exatidão das informações que
+                    nos envia.
+                </p>
+                <p>
+                    <strong>Uso de Dados Pessoais</strong>. A NotCo pode
+                    utilizar seus Dados Pessoais, sejam eles coletados ativa ou
+                    passivamente, para: (1) fornecer ao usuário informações ou
+                    serviços, ou processar transações que o usuário tenha
+                    solicitado ou tenha acordado receber; (2) processar e manter
+                    seu cadastro nos Sites, inclusive para verificar a vigência
+                    e a validade de seu endereço eletrônico; (3) melhorar os
+                    Sites ou nossos serviços, personalizar sua experiência nos
+                    Sites, ou com seu consentimento para oferecer-lhe conteúdo
+                    específico que seja relevante para você; (4) entrar em
+                    contato com você para tratar sobre seu uso dos Sites e, a
+                    nosso critério, as alterações de nossas políticas; (5) para
+                    fins comerciais internos; e (6) para os propósitos revelados
+                    no momento em que você nos fornecer seus Dados Pessoais.
+                    Adicionalmente, com uma finalidade secundária e sua
+                    concordância, a NotCo poderá utilizar seus Dados Pessoais
+                    para comercialização direta ou indireta de produtos da
+                    NotCo.
+                </p>
+                <p>
+                    <strong>Coleta Ativa de Dados Pessoais</strong>. Geralmente,
+                    você pode visitar os Sites sem revelar sua identidade ou nos
+                    dar informações sobre você. Entretanto, para acessar ou
+                    aproveitar algumas áreas dos Sites, podemos solicitar que
+                    nos forneça algum Dado Pessoal. Para tanto, a NotCo também
+                    solicitará seu expresso consentimento para coletar
+                    ativamente seus Dados Pessoais. Se você consentir com tal
+                    coleta, a continuação do uso dos Sites por você será
+                    interpretada como confirmação de seu consentimento para
+                    futuras solicitações de coleta de Dados Pessoais. Podemos
+                    obter informações demográficas ou similares dos Prestadores
+                    de Serviços e, com seu consentimento, podemos combinar essas
+                    informações com os Dados Pessoais que coletamos e rastreamos
+                    para criarmos um perfil do indivíduo que acessa os Sites, a
+                    fim de podermos fornecer serviços personalizados e uma
+                    comunicação interativa, informarmos sobre novos produtos que
+                    possam ser de seu interesse, e para fins de pesquisa de
+                    mercado interno e desenvolvimento de produtos. Tratamos
+                    todas essas informações como Dados Pessoais sujeitas a esta
+                    Política de Privacidade.
+                </p>
+                <p>
+                    <strong>Coleta Passiva de Informação</strong>. Além dos
+                    Dados Pessoais que você nos forneça ativamente, nós ou
+                    nossos Provedores de Serviços podemos utilizar uma variedade
+                    de tecnologias para coletar informações automaticamente
+                    quando você utilizar os Sites e quando utilizar determinados
+                    Websites de Terceiros (para mais informações, favor
+                    consultar "Publicidade online e Retargeting" abaixo). Estas
+                    informações podem incluir informações demográficas, tipo de
+                    navegador, sistema operacional, endereço IP, identificadores
+                    de dispositivos móveis e outras informações dessa natureza.
+                    Tais informações podem incluir dados de fluxo de cliques,
+                    que consiste na informação sobre o caminho de página a
+                    página que você visita enquanto navega pelos Sites e
+                    determinados Websites de Terceiros. Alguns terceiros também
+                    podem coletar informações similares quando você visitar os
+                    Sites ou outros Websites de Terceiros e serviços online.
+                </p>
+                <p>
+                    Os métodos que nós e nossos Provedores de Serviços podemos
+                    utilizar para coletar automaticamente as referidas
+                    informações são os seguintes:
+                </p>
+                <ul className="list-outside list-line">
+                    <li>
+                        <p>
+                            <strong>Cookies:</strong> Os cookies são arquivos de
+                            dados enviados a seu computador quando você visita
+                            um website. Estes cookies podem ser utilizados para
+                            muitos propósitos, incluindo, entre outros, o
+                            acompanhamento das preferências do usuário e as
+                            páginas da web visitadas enquanto você utiliza os
+                            Sites e determinados Websites de Terceiros para fins
+                            de marketing, dentre outros. Estes Prestadores de
+                            Serviços utilizam cookies ou web beacons que nos
+                            ajudam a oferecer o conteúdo dos Sites, compilar
+                            métricas e análises dos Sites e nos ajudam a
+                            personalizar suas experiências nos Sites e a
+                            direcionar nossos esforços publicitários. Podemos
+                            disponibilizar uma lista desses Prestadores de
+                            Serviço quando solicitado. Os cookies podem ser
+                            desativados utilizando as preferências de seu
+                            navegador. Entretanto, é possível que algumas
+                            funções dos Sites não funcionem corretamente ou
+                            funcionem lentamente caso você desabilite os
+                            cookies. Também, deve-se levar em consideração que,
+                            ao desabilitar os cookies, eliminará todos os
+                            cookies de seu sistema, incluindo os que podem ser
+                            úteis, como senhas e nomes de usuário que tenha
+                            guardado em websites visitados com frequência.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Web Beacons e Pixels:</strong> Podemos
+                            incluir pequenas imagens gráficas denominadas web
+                            beacons, também conhecidas como "etiquetas de
+                            Internet" ou "clear gifs", ou pixels em nossos Sites
+                            e mensagens de correio eletrônico. Podemos usar web
+                            beacons, pixels ou tecnologias similares para uma
+                            série de propósitos, incluindo, mas não se limitando
+                            a, para contar o número de visitantes dos Sites,
+                            monitorar a forma de navegação dos usuários pelos
+                            Sites, contar quantos e-mails enviados foram abertos
+                            efetivamente ou para contar quantos artigos ou links
+                            foram realmente vistos, e para o marketing de
+                            terceiros, conforme descrito a seguir em "Rede de
+                            Publicidade e Remarketing".
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Scripts:</strong> um script é um código de
+                            programação inserido que foi desenhado para coletar
+                            informações sobre suas interações com os Sites. É
+                            baixado temporariamente no seu computador a partir
+                            de nosso servidor web ou de um terceiro com o qual
+                            trabalhamos, permanecendo ativo somente enquanto
+                            estiver conectado aos Sites e sendo posteriormente
+                            excluído ou desativado.
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    As informações coletadas passivamente sobre você podem ser
+                    combinadas ou associadas com seus Dados Pessoais.
+                    Adicionalmente, podemos enviar a você promoções de produtos
+                    que acreditamos que você tenha interesse em receber,
+                    baseados nas informações coletadas passivamente. Se
+                    associarmos qualquer informação coletada passivamente com
+                    seus Dados Pessoais, tais informações combinadas serão
+                    tratadas como Dados Pessoais. Em cada uma destas instâncias,
+                    aplicaremos esta Política de Privacidade a qualquer
+                    informação recebida, salvo se manifestarmos expressamente o
+                    contrário.
+                </p>
+                <p>
+                    <strong>Publicidade online e Retargeting</strong>. Na
+                    extensão em que possa ser legalmente utilizado, a NotCo
+                    poderá participar de redes de publicidade online e de
+                    intercâmbios que mostrem anúncios relevantes aos visitantes
+                    dos Sites baseados nos interesses refletidos em sua
+                    navegação nos Sites e em determinados Websites de Terceiros
+                    que participam das mesmas redes e intercâmbios. Os
+                    Anunciantes podem coletar informações dos anúncios que
+                    aparecem durante o uso dos Sites e determinados Websites de
+                    Terceiros, verificando em quais anúncios você clica. Estas
+                    empresas utilizam cookies, web beacons, pixels e outras
+                    tecnologias similares para coletar de forma passiva
+                    informações sobre você por meio de e-mails enviados pela
+                    NotCo e baseadas em sua atividade nos Sites e em
+                    determinados Websites de Terceiros que podem ser usados para
+                    personalizar a publicidade que você vê nos Sites ou em outra
+                    parte da rede. A coleta de informações através destes
+                    métodos pode permitir que os Anunciantes rastreiem cada vez
+                    que lhe seja enviado um anúncio online desse Anunciante.
+                    Isso significa que algumas informações sobre sua navegação
+                    nos Sites e determinados Websites de Terceiros podem ser
+                    compartilhadas com estas empresas a fim de publicar anúncios
+                    nos Sites e em determinados Websites de Terceiros, e a NotCo
+                    pode receber de algumas destas empresas informações sobre
+                    sua atividade nos Sites e nos Websites de Terceiros que
+                    visitou.
+                </p>
+                <p>
+                    Esta informação é utilizada para fins de marketing e a
+                    prática se denomina "retargeting", indicando que a
+                    informação de um comerciante é utilizada para sugerir-lhe
+                    produtos relevantes oferecidos por outro comerciante. Esta
+                    Política de Privacidade não abrange o uso de informações que
+                    esses terceiros possam ter coletado sobre você (por exemplo,
+                    tipo de navegador, sistema operacional, nome do domínio, dia
+                    e hora da visita, página(s) visitada) ou os métodos
+                    utilizados por tais terceiros para coletar essas informações
+                    (por exemplo, cookies, web beacons e “clear gifs”). Não
+                    fazemos declarações nem damos garantias relativas às
+                    políticas ou práticas comerciais dos referidos Anunciantes,
+                    e recomendamos que você se familiarize com as respectivas
+                    políticas de privacidade. Você pode também obter mais
+                    informações sobre como inabilitar a ressegmentação ou
+                    retargeting de publicidade online em "Optar por Cancelar o
+                    Recebimento de Publicidade de Retargeting”.
+                </p>
+                <p>
+                    <strong>Informações de Terceiros</strong>. Podemos, de vez
+                    em quando, obter informações complementares a seu respeito
+                    provenientes de fontes de terceiros ou por meio de nossos
+                    parceiros de marketing, que sejam relacionadas com Websites
+                    de Terceiros ou promoções de marcas compartilhadas e com
+                    serviços de publicidade online (ver acima). Se recebermos
+                    Dados Pessoais de uma fonte de terceiros e/ou combinarmos as
+                    informações recebidas dessas fontes de terceiros com seus
+                    Dados Pessoais, trataremos essas informações e a informação
+                    combinada como Dados Pessoais. Não assumimos
+                    responsabilidade pela exatidão das informações fornecidas
+                    por terceiros nem pela forma como os terceiros coletam e
+                    usam as referidas informações.
+                </p>
+                <p>
+                    <strong>Loterias, Concursos e Promoções</strong>. Podemos
+                    realizar Promoções. Ao participar de uma Promoção, você
+                    concorda com os termos, as condições ou as regras oficiais
+                    que regem a referida Promoção, que podem conter exigências
+                    específicas em relação a você, incluindo, salvo se proibido
+                    na lei aplicável, que os patrocinadores da Promoção façam
+                    uso de seu nome, voz e/ou interesse na publicidade ou
+                    marketing associados com a Promoção. Se você decidir
+                    participar em uma Promoção, algum ou todos os seus Dados
+                    Pessoais, conforme aplicável, podem ser compartilhados com
+                    terceiros ou com o público em conexão com a administração da
+                    referida Promoção, incluindo, mas não se limitando à seleção
+                    do ganhador, cumprimento dos prêmios e, conforme previsto na
+                    lei aplicável ou permitido pelas regras oficiais da
+                    Promoção, em lista de ganhadores.
+                </p>
+                <p>
+                    <strong>Compartilhamento de Informações</strong>. Exceto
+                    quando disposto em contrário, a NotCo não compartilha, aluga
+                    ou vende nenhuma Informação Pessoal que coletar a terceiros
+                    para fins de marketing ou solicitações. No entanto, podemos,
+                    a nosso exclusivo critério, compartilhar com anunciantes e
+                    parceiros de negócios informações de navegação, sempre
+                    sujeito à Anonimização dos Dados Pessoais. Por exemplo,
+                    podemos comunicar a segmentação etária dos visitantes de
+                    nossos Sites.
+                </p>
+                <p>
+                    <strong>Seus Direitos.</strong>
+                </p>
+                <p>
+                    <strong>
+                        Direito de Acesso, Retificação, Exclusão e Oposição ao
+                        Tratamento de seus Dados Pessoais
+                    </strong>
+                    . Você poderá exercer seus direitos para (i) ter acesso aos
+                    Dados Pessoais que possuímos sobre você, bem como sobre o
+                    Tratamento utilizado com seus Dados Pessoais, (ii) retificar
+                    quaisquer Dados Pessoais se incompletos ou inexatos, (iii)
+                    solicitar a exclusão dos Dados Pessoais que estão sendo
+                    utilizados para um dos usos previstos nesta Política de
+                    Privacidade e (iv) opor-se ao Tratamento de seus Dados
+                    Pessoais a qualquer momento, enviando uma carta ou um e-mail
+                    ao endereço da NotCo indicado abaixo referente à sua
+                    jurisdição.
+                </p>
+                <p>
+                    Para atender corretamente sua solicitação, por favor,
+                    indique seu nome, sobrenome, endereço, telefone, e-mail e
+                    qualquer outro dado para contato que possamos utilizar para
+                    verificar sua identidade e entrar em contato, envie uma
+                    cópia de seu documento de identidade ou identificação com
+                    foto e uma descrição clara e precisa de seus Dados Pessoais
+                    em relação aos quais deseja ter acesso, retificar, excluir,
+                    limitar seu uso ou divulgação ou se opor ao Tratamento, bem
+                    como qualquer outra informação útil para localizar seus
+                    Dados Pessoais. Todas nossas comunicações com você serão
+                    encaminhadas sob os mais altos níveis disponíveis de reserva
+                    e confidencialidade. A reclamação estará sujeita à
+                    regulamentação aplicável em matéria de proteção de dados no
+                    que se refere aos prazos e a outros requisitos.
+                </p>
+                <p>
+                    <strong>
+                        Revogação do Consentimento e limitação do uso e
+                        divulgação
+                    </strong>
+                    . A qualquer tempo você poderá revogar o consentimento
+                    outorgado à NotCo sobre seus Dados Pessoais entrando em
+                    contato com a equipe de proteção de dados por meio do
+                    endereço eletrônico da NotCo indicado abaixo referente à sua
+                    jurisdição. Dentro do prazo estabelecido na lei aplicável,
+                    contado do momento em que recebermos sua solicitação,
+                    excluiremos todos os Dados Pessoais armazenados em nossas
+                    Bases de Dados. Todavia, deve ser levado em conta que nem
+                    sempre é possível excluir ou excluir completamente todas as
+                    informações de nossas Bases de Dados sem que fiquemos com
+                    alguns dados residuais devido a cópias de segurança e por
+                    outras razões. Você também poderá limitar o uso ou a
+                    divulgação de seus Dados Pessoais entrando em contato com a
+                    equipe de proteção de dados no endereço eletrônico indicado
+                    anteriormente (ou no e-mail aplicável ao final desta
+                    Política de Privacidade, dependendo da jurisdição da qual
+                    acessar os Sites), indicando sua vontade de revogar seu
+                    consentimento ou limitar seus Dados Pessoais. Nesta
+                    hipótese, enviaremos uma resposta de acordo com o mecanismo
+                    e o prazo requerido pela legislação aplicável.
+                </p>
+                <p>
+                    <strong>
+                        Cancelar Inscrição das Listas de Correspondência
+                    </strong>
+                    . A qualquer tempo você poderá solicitar a exclusão de seu
+                    nome das nossas listas de correspondência. Para excluir seu
+                    nome de uma lista de correspondência, ou se quiser atualizar
+                    suas informações (por exemplo, mudar seu endereço), você
+                    poderá, a qualquer momento, enviar uma notificação à NotCo
+                    por carta ou por e-mail ao endereço indicado ao final deste
+                    documento referente à sua jurisdição.
+                </p>
+                <p>
+                    <strong>
+                        Optar por não receber e-mail comercial da NotCo
+                    </strong>
+                    . Se não quiser receber notificações por e- mail a respeito
+                    de nossos produtos ou serviços, você poderá optar por não
+                    receber tais e-mails comerciais cada vez que nos fornecer
+                    seus Dados Pessoais. Igualmente, você poderá optar por não
+                    receber e-mails comerciais enviados pela NotCo selecionando
+                    a opção "cancelar inscrição" ou similar incluída em cada
+                    mensagem eletrônica enviada.
+                </p>
+                <p>
+                    <strong>
+                        Optar por Cancelar o Recebimento de Publicidade de
+                        Retargeting
+                    </strong>
+                    . Se você não quiser receber publicidade de retargeting da
+                    NotCo, em função de sua atividade em Websites de Terceiros,
+                    poderá, a qualquer momento, desativar os cookies conforme
+                    foi descrito anteriormente na seção de cookies e apagar o
+                    histórico de seu navegador.
+                </p>
+                <p>
+                    <strong>Proteção da Privacidade de Crianças</strong>. O
+                    acesso e utilização dos Sites por menores de idade, de
+                    acordo com legislação vigente, é integral responsabilidade
+                    de seus respectivos pais, tutores ou representantes.
+                    Igualmente, a NotCo adverte que os maiores de idade que, de
+                    acordo com a legislação vigente, sejam pais ou assumam a
+                    condição de tutores ou representantes, serão responsáveis
+                    pelos menores de idade que, estando sob sua tutela ou sendo
+                    representados por eles, acessarem os Sites, de modo que se
+                    recomenda enfaticamente que tais pais, tutores ou
+                    representantes tomem as devidas precauções a navegação nos
+                    Sites.
+                </p>
+                <p>
+                    <strong>Websites de Terceiros</strong>. Pode haver
+                    hiperlinks nos Sites para Websites de Terceiros (incluídos,
+                    entre outros, os sites e aplicativos de redes sociais).
+                    Estes Websites de Terceiros podem utilizar seus próprios
+                    cookies, web beacons e outras tecnologias para coletar
+                    informações sobre você de forma independente, e podem
+                    solicitar seus Dados Pessoais. Os Websites de Terceiros têm
+                    práticas próprias de privacidade e de coleta de dados, e a
+                    NotCo, uma vez que você sair dos Sites, não tem controle ou
+                    responsabilidade alguma sobre as normas de privacidade ou
+                    sobre as atividades de coleta de dados em Websites de
+                    Terceiros. Não assumimos obrigação ou fazemos qualquer
+                    declaração com relação às políticas ou práticas comerciais
+                    dos referidos Websites de Terceiros e recomendamos que se
+                    familiarize com as suas respectivas políticas de privacidade
+                    antes de fornecer seus Dados Pessoais.
+                </p>
+                <p>
+                    <strong>
+                        Armazenamento e Transferência de Informações
+                    </strong>
+                    . Os Sites são operados na jurisdição indicada na parte
+                    superior do Site que você acessa (a "
+                    <u>Jurisdição Relevante</u>"). Assim, você deverá ter em
+                    mente que as informações que coletamos, incluídos os Dados
+                    Pessoais, serão processadas e armazenadas na Jurisdição
+                    Relevante, mas também poderão ser transferidos, processados
+                    e armazenados em outras jurisdições, cujas leis de
+                    privacidade e proteção de dados podem divergir das do seu
+                    país. Consequentemente, os tribunais e outras autoridades da
+                    Jurisdição Relevante e em outras jurisdições poderão ter
+                    direito, em certas circunstâncias, a acessar seus Dados
+                    Pessoais. Ao utilizar os Sites ou nos fornecer informações
+                    através dos Sites, você concorda com essa transferência,
+                    processamento e armazenamento de suas informações na
+                    Jurisdição Relevante e em outras jurisdições, incluindo para
+                    Tratamento de Dados Pessoais. Entretanto, destacamos que,
+                    independentemente do local onde seja realizado o Tratamento,
+                    os Provedores de Serviços da NotCo estão obrigados por
+                    contrato a proteger a confidencialidade e a segurança de
+                    seus Dados Pessoais.
+                </p>
+                <p>
+                    <strong>Segurança</strong>. A NotCo conserva seus Dados
+                    Pessoais durante o tempo que for necessário para cumprir a
+                    finalidade para a qual foram coletados e para cumprir a
+                    legislação aplicável. A NotCo adota medidas comercialmente
+                    justas para proteger os Dados Pessoais. Entretanto, você
+                    deve estar ciente que a transmissão de dados através da
+                    Internet, transmissão sem fio ou armazenamento eletrônico da
+                    informação jamais será 100% segura, de modo que a NotCo, na
+                    máxima extensão permitida pela lei aplicável, não garantirá
+                    a segurança de nenhuma informação que coletar. Assim, a
+                    utilização dos nossos Sites e o fornecimento de suas
+                    informações deverá ser feito por você sob seu próprio risco.
+                </p>
+                <p>
+                    <strong>Alterações nesta Política</strong>. De tempos em
+                    tempos, a NotCo pode modificar esta Política de Privacidade.
+                    Qualquer alteração lhe será comunicada se assim o exigir a
+                    legislação local e terá efeitos imediatos a partir da
+                    publicação da política revisada nos Sites. Dessa forma,
+                    recomendamos que você visite os Sites periodicamente, a fim
+                    de permanecer informado sobre qualquer alteração.
+                    Entretanto, não utilizaremos seus Dados Pessoais de forma
+                    substancialmente diversa à estabelecida na Política de
+                    Privacidade vigente no momento em que foram coletados a não
+                    ser que você manifeste seu consentimento.
+                </p>
+                <p>
+                    <strong>Contato</strong>. Se tiver dúvidas sobre nossa
+                    Política de Privacidade, nossas práticas ou seu trato com os
+                    Sites, ou solicitar acesso ou correção ou atualização de
+                    seus Dados Pessoais, revogar seu consentimento (sujeito a
+                    limitações legais ou contratuais e a aviso prévio) ou tiver
+                    motivos para crer que a NotCo não tenha cumprido com esta
+                    Política de Privacidade, por favor escreva para
+                    whynot@thenotcompany.com.
+                </p>
+            </ModalBody>
+        </>
+    )
+}
+
+function English() {
+    return (
+        <>
+            <ModalHeader>PRIVACY POLICY THE NOT COMPANY SpA</ModalHeader>
+            <ModalBody>
+                <p>
+                    <strong>Version April 22th, 2020</strong>
+                </p>
+                <p>
+                    This privacy policy (the “<u>Privacy Policy</u>”) regulates
+                    how The Not Company SpA (“<u>NotCo</u>”) shall treat the
+                    personal information and data of users who visit websites
+                    controlled by NotCo where this Privacy Policy are posted
+                    (collectively, the “<u>Sites</u>”) or other interactive
+                    features or downloads owned or controlled by NotCo and
+                    available through the Sites, or which interact with the
+                    Sites.
+                </p>
+                <p>
+                    NotCo is the controller of the information and personal data
+                    of users collected through the Sites, either by itself or by
+                    its local subsidiaries listed at the end of this Privacy
+                    Policy, depending on the country or region at the top of
+                    this website. This Privacy Policy is designed to provide
+                    information about our online privacy and data collection
+                    practices, such as the type of information we collect
+                    regarding visitors to the Sites. This Privacy Policy does
+                    not cover any information collected on any other website
+                    (unless specifically stated on such website). This Privacy
+                    Policy does not apply to websites operated or managed by
+                    Related Parties.
+                </p>
+                <p>
+                    Please review this Privacy Policy carefully. If you have
+                    questions or concerns regarding this Privacy Policy, please
+                    contact the privacy coordinator for your respective
+                    jurisdiction listed at the end of this Privacy Policy, or
+                    send a letter to The Not Company SpA or to the address
+                    applicable to the country or region listed at the end of
+                    this Privacy Policy. In addition, please review the Terms of
+                    Use, which govern your use of the Sites.
+                </p>
+                <p>
+                    By clicking on the appropriate box on the registration page
+                    of this Privacy Policy, you accept these terms and agree to
+                    be bound by this instrument
+                </p>
+                <p>
+                    <strong>Definitions</strong>. For the purpose of this
+                    Privacy Policy, the following terms shall have the meaning
+                    set forth in this section.
+                </p>
+                <p>
+                    <strong>“Personal Information”</strong>: Any information
+                    relating to an identified or identifiable natural person or
+                    entity (depending on the jurisdiction from which you access
+                    the Sites), such as personal name, mailing address, e- mail
+                    address and telephone number; birth date; gender; identity
+                    number; company name, mailing address, e-mail address and
+                    telephone number; and job position.
+                </p>
+                <p>
+                    <strong>“Database”</strong>: Any organized set of Personal
+                    Information which is subject to Information Processing (as
+                    defined below), by electronic means or otherwise, whatever
+                    the mode of collection, storage, organization or access.
+                </p>
+                <p>
+                    <strong>“Information Processing”</strong>: Any operation and
+                    systematic process, electronic or otherwise, enabling the
+                    collection, recording, organization, storage, alteration,
+                    linkage, assessment, blocking, erasure, dissociation and in
+                    general Personal Information Processing, as well as its
+                    assignment to third parties through transmission, searches,
+                    interconnections or transfers.
+                </p>
+                <p>
+                    <strong>"Data Controller"</strong> or{' '}
+                    <strong>
+                        "Controller of a file, registry, database or databank"
+                    </strong>
+                    : The natural person or entity, public or private, who is
+                    the owner of a file, registry, Database or databank, or who
+                    has the authority to decide how and why Personal Information
+                    will be processed.
+                </p>
+                <p>
+                    <strong>“Information Dissociation”</strong>:Any processing
+                    of Personal Information so that the information obtained
+                    cannot be associated with any identified or identifiable
+                    person.
+                </p>
+                <p>
+                    <strong>“Related Party”</strong>: means any affiliates,
+                    entities which control NotCo and/or subsidiaries of NotCo.
+                </p>
+                <p>
+                    <strong>“Promotion”</strong>: means any sweepstakes,
+                    contests, and other promotions offered through the Sites
+                    that may require registration.
+                </p>
+                <p>
+                    <strong>“Service Providers”</strong>: means any third party
+                    service providers, that are not a Related Party, that may
+                    perform certain services for us, such as website hosting,
+                    order fulfillment, delivery of NotCo’s promotional materials
+                    and product offers, clearing and processing credit and debit
+                    card payments, or performing other services on our behalf.
+                </p>
+                <p>
+                    <strong>“Advertisers”</strong>: means any third-party
+                    advertiser.
+                </p>
+                <p>
+                    <strong>“Third Party Websites”</strong>: means other
+                    websites or locations that are operated and controlled by
+                    third parties other than NotCo or its Related Parties.
+                </p>
+                <p>
+                    <strong>Use of Personal Information</strong>. NotCo may use
+                    your Personal Information, whether collected actively or
+                    passively: (1) to provide you with information or services,
+                    or process transactions that you have requested or agreed to
+                    receive; (2) to process your registration with the Sites,
+                    including verifying that your e-mail address is active and
+                    valid; (3) to improve the Sites or our services, to
+                    customize your experience on the Sites, or with your consent
+                    to serve you specific content that is relevant to you; (4)
+                    to contact you with regard to your use of the Sites and, in
+                    our discretion, changes to our policies; (5) for internal
+                    business purposes; and (6) for purposes disclosed at the
+                    time you provide your Personal Information. In addition, as
+                    a secondary purpose, with your consent, NotCo may use your
+                    Personal Information for direct or indirect marketing of
+                    NotCo’s products to you.
+                </p>
+                <p>
+                    <strong>Active Collection of Personal Information</strong>.
+                    In general, you can visit the Sites without revealing your
+                    identity or giving us any information about yourself.
+                    However, in order to access or take advantage of some areas
+                    of the Sites, we may ask you to provide Personal
+                    Information. Upon such request, NotCo shall also ask for
+                    your express consent to actively collect Personal
+                    Information from you. If you consent such action, the
+                    continuous use of the Sites shall be understood as an
+                    affirmation of your consent on further requests for Personal
+                    Information. We may obtain demographic or similar
+                    information from Service Providers and, with your consent,
+                    may combine that information with the Personal Information
+                    we collect and track in order to create a profile on an
+                    individual so that we may provide you with personalized
+                    services and interactive communication, advise you about new
+                    products that may be of interest to you, and for internal
+                    market research and product development purposes. We treat
+                    all such information as Personal Information subject to this
+                    Privacy Policy.
+                </p>
+                <p>
+                    Personal Information may be requested and collected at
+                    various locations and on various forms on the Sites.
+                </p>
+                <p>
+                    You may always elect not to submit Personal Information,
+                    however, as a result, you may not be able to access certain
+                    of the Sites' features and functionality. You are
+                    responsible for maintaining the accuracy of the information
+                    you submit to us.
+                </p>
+                <p>
+                    <strong>Passive Collection of Information</strong>. In
+                    addition to the Personal Information that you actively
+                    provide to us, we or our Service Providers may use a variety
+                    of technologies to automatically collect information when
+                    you use the Sites and when you use certain third party sites
+                    (see "Network Advertising and Retargeting," below). This
+                    information may include demographic information, browser
+                    type, operating system, IP address, mobile device
+                    identifiers and other information of this kind. This
+                    information may also include clickstream data, which is
+                    information about the page-by-page paths you take as you
+                    browse through the Sites and certain third-party sites. Some
+                    third parties may also collect similar information when you
+                    visit the Sites or other online websites and services.
+                </p>
+                <p>
+                    The methods that we and our Service Providers may use to
+                    automatically collect such information include the
+                    following:
+                </p>
+                <ul className="list-outside list-line">
+                    <li>
+                        <p>
+                            <strong>Cookies:</strong> Cookies are data files
+                            that are placed on a computer when it is used to
+                            visit a website. These cookies may be used for many
+                            purposes, including, without limitation, tracking
+                            user preferences and web pages visited while using
+                            the Sites and certain third-party sites for
+                            marketing and other purposes. These Service
+                            Providers use cookies or web beacons to help us
+                            deliver Site content, compile Site metrics and
+                            analytics, and help us improve and customize your
+                            experiences on the Sites and in our advertising
+                            efforts. A list of these companies is available on
+                            request. You may disable cookies using your
+                            browser's preferences. However, some features of the
+                            Sites may not function properly or may operate
+                            slowly if you disable the cookies. Please also be
+                            aware that disabling cookies will remove all cookies
+                            from your system including those you may find useful
+                            such as passwords and usernames you have saved on
+                            frequently visited websites.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Web Beacons and Pixels:</strong> We may
+                            include small graphic images called web beacons,
+                            also known as "Internet tags" or "clear gifs," or
+                            pixels in our web pages and e-mail messages. We may
+                            use web beacons, pixels or similar technologies for
+                            a number of purposes, including, without limitation,
+                            to count the number of visitors to the Sites, to
+                            monitor how users navigate the Sites, to count how
+                            many e-mails that we sent were actually opened or to
+                            count how many particular articles or links were
+                            actually viewed, and for third party marketing as
+                            described below in "Network Advertising and
+                            Retargeting."
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Embedded Scripts:</strong> An embedded
+                            script is programming code that is designed to
+                            collect information about your interactions with the
+                            Sites. It is temporarily downloaded onto your
+                            computer from our web server or a third party we
+                            work with, is active only while you are connected to
+                            the Sites and is deleted or deactivated thereafter.
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    Passively collected information about you, may be combined
+                    or associated with your Personal Information. In addition,
+                    we may send you product promotions that we think you may be
+                    interested in receiving based on the passively collected
+                    information. If we associate any such passively collected
+                    information with Personal Information about you, we will
+                    treat the combined information as Personal Information. In
+                    each of these instances, we will apply this Privacy Policy
+                    to any information received, unless otherwise specifically
+                    disclosed by us.
+                </p>
+                <p>
+                    <strong>Network Advertising and Retargeting</strong>. NotCo
+                    participates in online advertising networks and exchanges
+                    that display relevant advertisements to site visitors based
+                    on their interests as reflected in their browsing of the
+                    Sites and certain third-party sites participating in the
+                    same networks and exchanges. These companies use cookies,
+                    web beacons, pixels and other similar technologies to
+                    passively collect information from you which may be used to
+                    tailor the advertising you see on the Site or elsewhere on
+                    the web. This means that some information about your
+                    browsing of the Service and certain third party sites may be
+                    shared with these companies for the purpose of delivering
+                    ads to you on the Service and certain third party sites, and
+                    NotCo may receive from some of these companies information
+                    about third party sites that you have visited. This
+                    information is used for marketing purposes and the practice
+                    is sometimes termed "retargeting" to indicate that
+                    information from one retailer is used to suggest to you
+                    relevant products offered by another retailer.
+                </p>
+                <p>
+                    This information is used for marketing purposes and the
+                    practice is sometimes termed "retargeting" to indicate that
+                    information from one retailer is used to suggest to you
+                    relevant products offered by another retailer. This Privacy
+                    Policy does not cover any use of information that such third
+                    parties themselves may have collected from you (e.g., type
+                    of browser, operating system, domain name, day and time of
+                    visit, page(s) visited) or the methods used by the third-
+                    parties to collect that information (e.g., cookies, web
+                    beacons and clear gifs). We make no representations or
+                    warranties regarding the policies or business practices of
+                    such third-party advertisers and we encourage you to
+                    familiarize yourself with their privacy policies. You can
+                    also learn more about opting out of network advertising
+                    retargeting below under "Opting Out of Network Advertising
+                    Retargeting.The Sites do not respond to “do not track”
+                    signals.
+                </p>
+                <p>
+                    <strong>Information from Third Parties</strong>. We may,
+                    from time to time, obtain supplemental information about you
+                    from third party sources or from our marketing partners in
+                    connection with co-branded websites or promotions and from
+                    network advertising services (see above). If we receive
+                    Personal Information from a third-party source and/or we
+                    combine the information we receive from these third-party
+                    sources with your Personal Information, we will treat that
+                    information and the combined information as Personal
+                    Information. We are not responsible for the accuracy of the
+                    information provided by third parties or how such third
+                    parties collect and use such information.
+                </p>
+                <p>
+                    <strong>Sweepstakes, Contests and Promotions</strong>. We
+                    may offer Promotions. By participating in a Promotion, you
+                    are agreeing to the terms, conditions or official rules that
+                    govern that Promotion, which may contain specific
+                    requirements of you, including, except where prohibited by
+                    law, allowing the sponsor(s) of the Promotion to use your
+                    name, voice and/or likeness in advertising or marketing
+                    associated with the Promotion. If you choose to enter a
+                    Promotion, your Personal Information may be disclosed to
+                    third parties or the public in connection with the
+                    administration of such Promotion, including, without
+                    limitation, in connection with winner selection, prize
+                    fulfillment, and as required by law or permitted by the
+                    Promotion's official rules, such as on a winners list.
+                </p>
+                <p>
+                    <strong>Disclosure of Information</strong>. Except as
+                    otherwise provided herein, NotCo does not share, rent, or
+                    sell any Personal Information it collects to any third party
+                    for marketing or solicitations purposes. We may, however, in
+                    our sole discretion, share browsing information with third
+                    parties such as advertisers and business partners, always
+                    subject to the anonymity of personal data. For example, we
+                    may communicate the age segmentation of visitors to our
+                    Sites.
+                </p>
+                <p>
+                    <strong>Your Rights.</strong>
+                </p>
+                <p>
+                    <strong>
+                        Right to Access, Rectify, Erase and Object to
+                        Information Processing of Personal Information
+                    </strong>
+                    . You can exercise your rights to (i) access the Personal
+                    Information we have about you as well as about the
+                    Information Processing done with your Personal Information,
+                    (ii), rectify the Personal Information in the event that it
+                    is incomplete or inaccurate, (iii) erase the Personal
+                    Information that its being used for one of the intended uses
+                    stated in this Privacy Policy and (iv) object to the
+                    Information Processing of your Personal Information at any
+                    time by sending a letter to NotCo’s address mentioned below
+                    or writing to the e-mail address below for your respective
+                    jurisdiction.
+                </p>
+                <p>
+                    In order to properly attend your request, please attach your
+                    name, surname, postal address, telephone, e-mail address and
+                    any other contact details that we can use to verify your
+                    identity and contact you, a copy of you ID card or a
+                    photo-ID and a clear and precise description of the Personal
+                    Information which you wish to access, rectify, erase, limit
+                    the use or disclosure of, or object to the Information
+                    Processing of, as well as any other information useful to
+                    locate the Personal Information. All our communications with
+                    you will be delivered with the highest available reserve and
+                    confidentiality levels. The claim shall be subject to the
+                    applicable data protection regulation regarding time periods
+                    and other requirements.
+                </p>
+                <p>
+                    <strong>
+                        Revocation of Consent and limitation of use and
+                        disclosure
+                    </strong>
+                    . At any time, you may revoke the consent given to NotCo
+                    over your Personal Information by contacting the data
+                    protection team at the e-mail address stated above. After
+                    that, we shall eliminate all Personal Information stored in
+                    our databases. However, you should be aware that it is not
+                    always possible to completely remove or delete all of your
+                    information from our databases without some residual data
+                    because of backups and other reasons. You may also limit the
+                    use or disclosure of your personal information by reaching
+                    the data protection team at the e-mail address stated above
+                    (or the applicable email address at the bottom of this
+                    Privacy Policy depending on the jurisdiction from which you
+                    are accessing the Sites), indicating your desire to withdraw
+                    or limit your information. An answer will be provided to you
+                    according to the mechanism and timeframe required by
+                    applicable law.
+                </p>
+                <p>
+                    <strong>Opting Out of Mailing Lists</strong>. You can always
+                    ask us to delete your name from our lists of correspondence.
+                    In the event that you want to delete your name from a
+                    mailing list, or if you wish to update your information
+                    (e.g., change your address), you can do so at any time by
+                    notifying NotCo by letter to the address listed below or by
+                    sending an email to the address below for your respective
+                    jurisdiction.
+                </p>
+                <p>
+                    <strong>
+                        Opting Out Of Receiving Commercial E-mail Correspondence
+                        from NotCo
+                    </strong>
+                    . If you do not wish to receive e-mail notices regarding our
+                    products or services, you may opt-out at the time you
+                    provide your Personal Information to us. Otherwise, at any
+                    other time you may opt-out by any commercial e-mail you
+                    receive from NotCo by selecting the "unsubscribe" or similar
+                    option included with each e-mail.
+                </p>
+                <p>
+                    <strong>
+                        Opting Out of Network Advertising Retargeting
+                    </strong>
+                    . If you do not wish to receive retargeted advertising from
+                    NotCo based on your activity on third party sites, you may
+                    disable cookies as described above in the cookies section
+                    and clear your browser history.
+                </p>
+                <p>
+                    <strong>Children’s Privacy Protection</strong>. The access
+                    to and use of the Sites by minors, in accordance with
+                    current legislation, is the responsibility of their
+                    respective parents, legal guardians or representatives.
+                    Likewise, NotCo acknowledges that those of legal age who, in
+                    accordance with the legislation in force, are parents, legal
+                    guardians or representatives, shall be responsible in the
+                    event that minors under their guardianship access the Sites,
+                    and therefore, they are strongly recommended to Children’s
+                    Privacy Protection. The access to and use of the Sites by
+                    minors, in accordance with current legislation, is the
+                    responsibility of their respective parents, legal guardians
+                    or representatives. Likewise, NotCo acknowledges that those
+                    of legal age who, in accordance with the legislation in
+                    force, are parents, legal guardians or representatives,
+                    shall be responsible in the event that minors under their
+                    guardianship access the Sites, and therefore, they are
+                    strongly recommended to
+                </p>
+                <p>
+                    <strong>Third Party Links</strong>. There may be hyperlinks
+                    on the Sites to Third Party Websites (including but not
+                    limited to social media sites and applications). These
+                    Third-Party Websites may use their own cookies, web beacons
+                    and other technology to independently collect information
+                    about you. In addition, these Third-Party Websites may
+                    solicit Personal Information from you. The Third-Party
+                    Websites have separate privacy and data collection
+                    practices. Once you leave this site, NotCo has no control or
+                    liability of any kind on privacy standards or on the
+                    activities of collecting data on other sites. We make no
+                    representations regarding the policies or business practices
+                    of such Third-Party Websites and encourage you to
+                    familiarize yourself with their privacy policies before
+                    providing them with your Personal Information.
+                </p>
+                <p>
+                    <strong>Storage and Transfer of Information</strong>. The
+                    Sites are operated in the jurisdiction shown at the top of
+                    the Site which you access (the "<u>Relevant Jurisdiction</u>
+                    "). Please be aware that information we collect, including
+                    Personal Information, will be processed and stored in the
+                    Relevant Jurisdiction and may also be transferred to,
+                    processed and stored in other jurisdictions, where the
+                    privacy and data protection laws may differ from those of
+                    your country. Accordingly, courts and other authorities in
+                    the Relevant Jurisdiction and in such other jurisdictions
+                    may, in certain circumstances, be entitled to access your
+                    Personal Information. By using the Sites or providing us
+                    with any information through the Sites, you consent to this
+                    transfer, processing and storage of your information in the
+                    Relevant Jurisdiction and in such other jurisdictions,
+                    included for the treatment of personal data. Regardless of
+                    where the processing takes place, NotCo’s Service Providers
+                    are required by contract to protect the confidentiality and
+                    security of your Personal Information.
+                </p>
+                <p>
+                    <strong>Security</strong>. NotCo retains your Personal
+                    Information for as long as necessary to fulfill the
+                    purpose(s) for which it was collected and to comply with
+                    applicable laws. NotCo takes commercially reasonable steps
+                    to help protect and secure Personal Information. However, no
+                    data transmission over the Internet, wireless transmission
+                    or electronic storage of information can be guaranteed to be
+                    100% secure. Please note that we cannot ensure or warrant
+                    the security of any information we collect, and you use our
+                    Sites and provide us with your information at your own risk.
+                </p>
+                <p>
+                    <strong>Changes to this Policy</strong>. NotCo may from time
+                    to time revise its Privacy Policy. You will be advised if
+                    required by local law of any changes and will be effective
+                    immediately when revised policy is posted on the Sites.
+                    Please check the Sites regularly for any changes. We will
+                    not, however, use your existing Personal Information in a
+                    manner materially different from that set forth in the
+                    policy posted on the Sites at the time your Personal
+                    Information was collected unless we receive your consent.
+                </p>
+                <p>
+                    <strong>Contacting us</strong>. If you have any questions
+                    about our Privacy Policy, the practices of the Site, or your
+                    dealings with the Site, wish to request access or correction
+                    or updated of your Personal Information, wish to withdraw
+                    your consent (subject to legal or contractual restrictions
+                    and reasonable notice) or have reason to believe that NotCo
+                    may have failed to comply with this Privacy Policy, please
+                    write to whynot@thenotcompany.com.
+                </p>
+            </ModalBody>
+        </>
+    )
+}
+
+function Spanish() {
+    return (
+        <>
             <ModalHeader toggle={toggle}>
                 POLÍTICAS DE PRIVACIDAD THE NOT COMPANY SpA
             </ModalHeader>
@@ -556,6 +1676,6 @@ export function PrivacyModal({ modal, toggle }) {
                     Privacidad, por favor escribir a whynot@thenotcompany.com.
                 </p>
             </ModalBody>
-        </Modal>
+        </>
     )
 }

@@ -13,7 +13,7 @@ function Info({ ingredients, preparationTime, servings, html }) {
     return (
         <div className="container-fluid">
             <div className="row">
-                <div className="col-sm-12 col-md-6 detalle-izquierda">
+                <div className="col-md-12 col-lg-6 detalle-izquierda">
                     <div className="iconos-receta">
                         <p className="listado-receta">
                             <FontAwesomeIcon
@@ -29,7 +29,7 @@ function Info({ ingredients, preparationTime, servings, html }) {
                             />
                             {servings} {serv}
                         </p>
-                        <p className="pb-4">
+                        <p className="pb-2">
                             <FontAwesomeIcon
                                 icon={faWineBottle}
                                 className="pr-2"
@@ -52,7 +52,7 @@ function Info({ ingredients, preparationTime, servings, html }) {
                     </div>
                 </div>
 
-                <div className="col-sm-12 col-md-6 detalle-derecha">
+                <div className="col-md-12 col-lg-6 mt-3 detalle-derecha">
                     <div className="parrafos-receta">
                         <div dangerouslySetInnerHTML={{ __html: html }} />
                     </div>
