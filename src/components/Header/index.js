@@ -47,7 +47,7 @@ const Header = ({ locale }) => {
                     <Nav className="ml-auto" navbar>
                         <NavItem>
                             <NavLink
-                                href="/"
+                                href="https://notco.com"
                                 className="nav-link item-menu pr-5 menu-link"
                             >
                                 NOTCO.COM

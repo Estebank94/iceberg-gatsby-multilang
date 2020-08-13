@@ -38,7 +38,6 @@ function Hero({ title, author, image, location, gallery }) {
                         node {
                             childImageSharp {
                                 fluid(maxWidth: 720, maxHeight: 720) {
-                                    src
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
@@ -96,7 +95,7 @@ function Hero({ title, author, image, location, gallery }) {
                 <div className="col-md-12 col-lg-6 receta-izquierda">
                     <h3
                         className="share-receta rotate"
-                        onClick={() => navigator.share(shareData)}
+                        onClick={async () => await navigator.share(shareData)}
                     >
                         <span className="mr-2">Share</span>{' '}
                         <FontAwesomeIcon icon={faFacebookSquare} />{' '}

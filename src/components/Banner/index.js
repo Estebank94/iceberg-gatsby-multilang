@@ -36,33 +36,33 @@ function Banner() {
                     <Image fluid={imageData} className="banner-pack mx-auto" />
                 </div>
                 <div className="col-sm-3">
-                    <GatsbyLink to="https://notco.com/where-to-buy">
+                    <a href="https://notco.com/where-to-buy">
                         <h2 className="titulo-banner">
-                            <img src={location} className="pb-3" />
+                            <img src={location} className="pb-3" alt="where-to-buy" />
                             <br />
                             {whereToBuy}
                         </h2>
-                    </GatsbyLink>
+                    </a>
                 </div>
                 <div className="col-sm-3">
-                    <GatsbyLink to="https://notco.com/#products">
+                    <a href="https://notco.com/#products">
                         <h2 className="titulo-banner">
-                            <img src={cross} className="pb-3" />
+                            <img src={cross} className="pb-3" alt="NotCo Logo" />
                             <br />
                             {knowMore}
                             <span className="negro"> NOT</span>
                             {products}
                         </h2>
-                    </GatsbyLink>
+                    </a>
                 </div>
                 <div className="col-sm-3">
-                    <GatsbyLink to="http://notco.com/#contact">
+                    <a href="http://notco.com/#contact">
                         <h2 className="titulo-banner">
-                            <img src={contact} className="pb-3" />
+                            <img src={contact} className="pb-3" alt="Send your specialty" />
                             <br />
                             {sendYourSpecialty}
                         </h2>
-                    </GatsbyLink>
+                    </a>
                 </div>
             </div>
         </div>

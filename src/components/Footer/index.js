@@ -62,11 +62,11 @@ function Footer() {
 
                     <div className="col-sm-12 col-md-6 espacio-pie">
                         <p className="footer-link">
-                            <a href="#">{contact}</a>
+                            <a href="http://notco.com/#contact">{contact}</a>
                         </p>
-                        <p className="footer-link">
-                            <a href="#">{food}</a>
-                        </p>
+                        {/*<p className="footer-link">*/}
+                        {/*    <a href="#">{food}</a>*/}
+                        {/*</p>*/}
                         <h4 className="findus pt-4">{findUs}</h4>
 
                         <div className="FindUs__Logos">
