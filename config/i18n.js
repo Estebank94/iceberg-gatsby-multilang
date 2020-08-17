@@ -9,7 +9,7 @@ module.exports = {
         siteLanguage: `en`,
         ogLanguage: `en_US`,
         defaultTitle: `NOT Milk Recipes`,
-        defaultDescription: `Not Milk Recipe Site`,
+        defaultDescription: `Not Milk Recipes`,
     },
     pt: {
         path: `pt`,
@@ -18,7 +18,7 @@ module.exports = {
         siteLanguage: `pt`,
         ogLanguage: `pt_BR`,
         defaultTitle: `Recetas Not Milk`,
-        defaultDescription: `Pagina de recetas Not Milk`,
+        defaultDescription: `Recetas Not Milk`,
     },
     es: {
         path: `es`,
@@ -27,6 +27,6 @@ module.exports = {
         siteLanguage: `es`,
         ogLanguage: `es_CL`,
         defaultTitle: `Recetas Not Milk`,
-        defaultDescription: `Pagina de recetas Not Milk`,
+        defaultDescription: `Recetas Not Milk`,
     },
 }

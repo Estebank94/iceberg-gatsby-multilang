@@ -15,7 +15,7 @@ import { LocaleContext } from '../Layout'
 import useTranslations from '../useTranslations'
 
 function Hero({ title, author, image, location, gallery }) {
-    const { shareTitle, doneBy } = useTranslations()
+    const { shareTitle, doneBy, share} = useTranslations()
 
     const settings = {
         infinite: true,
@@ -97,7 +97,7 @@ function Hero({ title, author, image, location, gallery }) {
                         className="share-receta rotate"
                         onClick={async () => await navigator.share(shareData)}
                     >
-                        <span className="mr-2">Share</span>{' '}
+                        <span className="mr-2">{share}</span>{' '}
                         <FontAwesomeIcon icon={faFacebookSquare} />{' '}
                         <FontAwesomeIcon icon={faInstagram} />{' '}
                         <FontAwesomeIcon icon={faShareAlt} />

@@ -54,7 +54,7 @@ function Info({ ingredients, preparationTime, servings, html }) {
 
                 <div className="col-md-12 col-lg-6 mt-3 detalle-derecha">
                     <div className="parrafos-receta">
-                        <p className="iconos-receta text-dark font-weight-bold mt-0 mb-2 text-capitalize">{instructions}</p>
+                        <p className="titulo-instrucciones mb-2 text-capitalize">{instructions}</p>
                         <div dangerouslySetInnerHTML={{ __html: html }} />
                     </div>
                 </div>

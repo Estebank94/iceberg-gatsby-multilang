@@ -419,9 +419,10 @@ li {
     font-family: Neutraface2Display-Titling, sans-serif;
     font-size: 1.4em;
     position: absolute;
-    left: -2em;
-    top: 23.5em;
+    left: -4.5em;
+    top: 22.5em;
     cursor: pointer;
+    min-width: 295px;
 }
 
 .desc-receta {
@@ -434,6 +435,14 @@ li {
     margin-top: 1em;
     right: 1em;
     z-index: 1;
+}
+
+.titulo-instrucciones {
+    font-family: Neutraface2Text, sans-serif;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.7em;
+    margin-bottom: 0;
 }
 
 .iconos-receta {
@@ -782,8 +791,9 @@ li {
 
     .share-receta {
         font-size: 1em;
-        left: -2em;
-        top: 9.8em;
+        left: -4.5em;
+        top: 8.5em;
+        min-width: 200px;
     }
 
     .texto-principal {
@@ -801,6 +811,10 @@ li {
     .detalle-izquierda {
         height: auto;
         min-height: 300px;
+    }
+
+    .titulo-instrucciones {
+        font-size: 1.5em;
     }
 
     .iconos-receta {
@@ -858,7 +872,7 @@ li {
 }
 
 .recipe-dots li.slick-active button:before {
-    opacity: .75;
+    opacity: 1;
     color: #FFFFFF !important;
 }
 
