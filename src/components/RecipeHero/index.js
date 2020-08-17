@@ -15,7 +15,7 @@ import { LocaleContext } from '../Layout'
 import useTranslations from '../useTranslations'
 
 function Hero({ title, author, image, location, gallery }) {
-    const { shareTitle } = useTranslations()
+    const { shareTitle, doneBy } = useTranslations()
 
     const settings = {
         infinite: true,
@@ -108,7 +108,7 @@ function Hero({ title, author, image, location, gallery }) {
                             <br />
                             <span className="azul">{title}</span>
                         </h1>
-                        <p className="subtitulo-receta azul">{author}</p>
+                        <p className="subtitulo-receta azul">{doneBy} {author}</p>
                     </div>
                 </div>
                 <img
@@ -116,13 +116,13 @@ function Hero({ title, author, image, location, gallery }) {
                     src={getStamp(locale)}
                     alt="100% plant-based"
                 />
-                <p className="desc-receta">
-                    <span className="lactose-strike-through">Lactose</span>
-                    <br />
-                    <span className="gluten-strike-through">Gluten</span>
-                    <br />
-                    <span className="nut-strike-through">Nut</span>
-                </p>
+                {/*<p className="desc-receta">*/}
+                {/*    <span className="lactose-strike-through">Lactose</span>*/}
+                {/*    <br />*/}
+                {/*    <span className="gluten-strike-through">Gluten</span>*/}
+                {/*    <br />*/}
+                {/*    <span className="nut-strike-through">Nut</span>*/}
+                {/*</p>*/}
                 <div className="col-md-12 col-lg-6 p-0 m-0">
                     <Slider {...settings}>
                         {gallery.map((image, index) => (

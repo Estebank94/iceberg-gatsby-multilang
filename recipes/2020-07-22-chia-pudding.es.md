@@ -1,7 +1,7 @@
 ---
 title: Chia Pudding
 description: Receta de cafe
-author: Catalina Donoso
+author: Paula Pesse
 featured: true
 difficulty: 1
 servings: 2

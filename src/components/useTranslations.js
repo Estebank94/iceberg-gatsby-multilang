@@ -89,6 +89,10 @@ const query = graphql`
             instagram
             
             shareTitle
+            
+            instructions
+            
+            doneBy
 
           }
         }

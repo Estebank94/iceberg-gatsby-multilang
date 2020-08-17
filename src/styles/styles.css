@@ -127,7 +127,8 @@ body {
     color: #fff;
     font-family: Neutraface2Display-Titling, sans-serif;
     font-size: 3em;
-    line-height: 0.3em;
+    line-height: 1em;
+    margin-bottom: 0;
 }
 
 .titulo-banner {
@@ -840,7 +841,7 @@ li {
 
 .slick-dots li button:before,
 .slick-dots li button {
-    font-size: 10px !important;
+    font-size: 16px !important;
 }
 
 .slick-dots li button:before {

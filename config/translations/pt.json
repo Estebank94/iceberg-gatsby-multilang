@@ -19,41 +19,45 @@
   "maintainedBy": "Projeto mantido por",
   "contributeMessage": "Você sempre poderá contribuir com esse projeto no",
 
-  "theFavorites": "The Favorites",
-  "checkOutOurTopThreePreps": "Check out our top three preps",
+  "theFavorites": "As favoritas",
+  "checkOutOurTopThreePreps": "Confira as top três receitas",
 
-  "theFavs": "The Favorites",
-  "checkOut": "Check out our top three preps",
+  "theFavs": "As favoritas",
+  "checkOut": "Confira as top três receitas:",
 
-  "moreToTry": "Más para probar",
-  "mouthWatering": "Todas las deliciosas recetas que necesitas",
+  "moreToTry": "Mais receitas para provar",
+  "mouthWatering": "Veja mais receitas que dão água na boca",
 
-  "whereToBuy": "Donde comprar",
-  "knowMore": "Conoce más sobre nuestros",
-  "products": "productos",
-  "sendYourSpecialty": "Envianos tu receta",
+  "whereToBuy": "Onde comprar",
+  "knowMore": "Conheça mais sobre nossos",
+  "products": "produtos",
+  "sendYourSpecialty": "Envie sua receita",
 
-  "langSelect": "Prefiero Este Idioma",
+  "langSelect": "Prefiro Este Idioma",
   "contact": "Contacto",
   "food": "Servicios de Catering",
-  "findUs": "Síguenos:",
-  "terms": "Términos y Condiciones",
-  "privacy": "Politicas de Privacidad",
+  "findUs": "SEGUE A GENTE",
+  "terms": "Termos de Uso",
+  "privacy": "Política de Privacidade",
 
   "minutes": "minutos",
-  "serv": "porciones",
-  "ingred": "ingredientes",
+  "serv": "porções",
+  "ingred": "ingredientes:",
 
   "share": "Compartilo",
 
-  "madeBy": "Hecho por",
+  "madeBy": "Feito por:",
 
-  "language": "Language",
-  "english": "English",
-  "spanish": "Spanish",
-  "portuguese": "Portuguese",
+  "language": "Idioma",
+  "english": "Inglês",
+  "spanish": "Espanhol",
+  "portuguese": "Português",
 
   "instagram": "https://www.instagram.com/notcobr/",
 
-  "shareTitle": "Check out this coffee recipe with NOT MILK!"
+  "shareTitle": "Check out this coffee recipe with NOT MILK!",
+
+  "doneBy": "Feito pelo nosso chef",
+
+  "instructions": "Preparação"
 }

@@ -1,7 +1,7 @@
 ---
 title: Chai Latte
 description: Receta de cafe
-author: Catalina Donoso
+author: Carolina Carriel
 featured: false
 difficulty: 1
 servings: 2

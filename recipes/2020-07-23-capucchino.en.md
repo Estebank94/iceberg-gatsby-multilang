@@ -1,8 +1,8 @@
 ---
-title: Protein Coffee Shake
+title: Capucchino
 description: Receta de cafe
 author: Catalina Donoso
-featured: false
+featured: true
 difficulty: 1
 servings: 2
 preparationTime: 10
@@ -13,10 +13,11 @@ ingredients:
     ingredient: Not Milk
   - amount: 1 cda de
     ingredient: Cacao en polvo
-image: /assets/img/protein-shake.jpg
+image: /assets/img/capuccino.jpg
 gallery:
-  - /assets/img/protein-shake.jpg
-  - /assets/img/protein-shake-2.jpg
+  - /assets/img/capuccino.jpg
+  - /assets/img/capuccino-2.jpg
+  - /assets/img/capuccino-3.jpg
 date: '2020-07-22 12:15:50'
 ---
 1. Hacer el café según máquina (italiana, francesa o americana).		

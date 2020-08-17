@@ -1,7 +1,7 @@
 ---
 title: Raspberries Shake
 description: Receta de cafe
-author: Catalina Donoso
+author: Víctor Arias
 featured: false
 difficulty: 1
 servings: 2

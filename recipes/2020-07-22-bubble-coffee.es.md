@@ -1,7 +1,7 @@
 ---
 title: Bubble Coffee
 description: Receta de cafe
-author: Catalina Donoso
+author: Michael Jerez
 featured: false
 difficulty: 1
 servings: 2

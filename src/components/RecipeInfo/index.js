@@ -8,7 +8,7 @@ import {
 import useTranslations from '../useTranslations'
 
 function Info({ ingredients, preparationTime, servings, html }) {
-    const { minutes, serv, ingred } = useTranslations()
+    const { minutes, serv, ingred, instructions } = useTranslations()
 
     return (
         <div className="container-fluid">
@@ -36,7 +36,7 @@ function Info({ ingredients, preparationTime, servings, html }) {
                             />
                             {ingredients.length} {ingred}
                         </p>
-                        <p className="descripcion-info-receta"></p>
+                        <p className="listado-receta mb-2 text-capitalize">{ingred}:</p>
                         {ingredients.map((ingredient, index) => (
                             <p className="descripcion-info-receta" key={index}>
                                 {ingredient.amount}{' '}
@@ -54,6 +54,7 @@ function Info({ ingredients, preparationTime, servings, html }) {
 
                 <div className="col-md-12 col-lg-6 mt-3 detalle-derecha">
                     <div className="parrafos-receta">
+                        <p className="iconos-receta text-dark font-weight-bold mt-0 mb-2 text-capitalize">{instructions}</p>
                         <div dangerouslySetInnerHTML={{ __html: html }} />
                     </div>
                 </div>

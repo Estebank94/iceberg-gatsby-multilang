@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link as GatsbyLink } from 'gatsby'
 import useTranslations from '../useTranslations'
+import LocalizedLink from '../LocalizedLink'
 import {
     Collapse,
     DropdownItem,
@@ -32,9 +33,12 @@ const Header = ({ locale }) => {
                 className="navbar navbar-expand-lg navbar-light bg-light"
                 style={{ zIndex: 3 }}
             >
-                <NavbarBrand href={locale === 'en' ? '/' : locale}>
-                    <img src={logo} alt="NotCo" style={{ width: 55 }} />
-                </NavbarBrand>
+                <LocalizedLink to="/">
+                    <NavbarBrand>
+                        <img src={logo} alt="NotCo" style={{ width: 55 }} />
+                    </NavbarBrand>
+                </LocalizedLink>
+
                 <div
                     id="nav-icon"
                     onClick={toggle}

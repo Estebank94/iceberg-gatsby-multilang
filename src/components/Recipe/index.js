@@ -2,6 +2,7 @@ import React from 'react'
 import { Link as GatsbyLink } from 'gatsby'
 import { useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
+import LocalizedLink from '../LocalizedLink'
 
 const Recipe = ({ slug, title, image, insideRecipe, key }) => {
     const { listImages } = useStaticQuery(
@@ -37,7 +38,7 @@ const Recipe = ({ slug, title, image, insideRecipe, key }) => {
 
     return (
         <div className={'col mb-3'}>
-            <GatsbyLink to={slug}>
+            <LocalizedLink to={slug}>
                 <Image
                     className="img-fluid"
                     fluid={postImg.node.childImageSharp.fluid}
@@ -52,7 +53,7 @@ const Recipe = ({ slug, title, image, insideRecipe, key }) => {
                 >
                     {title}
                 </h4>
-            </GatsbyLink>
+            </LocalizedLink>
         </div>
     )
 }
