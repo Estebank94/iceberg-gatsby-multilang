@@ -1,5 +1,5 @@
 ---
-title: Dalgona Mokka
+title: Moka
 description: Receta de cafe
 author: Catalina Donoso
 featured: false

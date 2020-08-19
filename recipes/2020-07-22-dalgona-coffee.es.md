@@ -26,6 +26,4 @@ date: '2020-07-22 12:15:50'
 
 2. Revolver con batidor de varillas manual, eléctrico o batidora durante 5 minutos aprox. hasta conseguir la textura deseada, untuosa y cremosa.				
 
-3. En un vaso agregar hielo, Not Milk y sobre esta disponer la mezcla de café anterior.				
-
-4. Espolvorear con cacao en polvo.
+3. En un vaso agregar hielo, Not Milk y sobre esta disponer la mezcla de café anterior.

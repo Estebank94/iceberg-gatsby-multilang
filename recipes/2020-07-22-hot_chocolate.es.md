@@ -15,7 +15,7 @@ ingredients:
     ingredient: Esencia de vainilla
   - amount: 1/2 taza
     ingredient: Leche coco o crema para batir  
-  - amount: 2 cdas. de
+  - amount: 2 tazas de
     ingredient: Not Milk  
 image: /assets/img/chocolate-caliente.jpg
 gallery:
