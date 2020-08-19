@@ -8,8 +8,8 @@ module.exports = {
         dateFormat: `DD/MM/YYYY`,
         siteLanguage: `en`,
         ogLanguage: `en_US`,
-        defaultTitle: `NOT Milk Recipes`,
-        defaultDescription: `Not Milk Recipes`,
+        defaultTitle: `NotMilk Coffee Recipes`,
+        defaultDescription: `Looking for inspiration? Check out our collections of recipes made by NotCo's chefs`,
     },
     pt: {
         path: `pt`,
@@ -17,8 +17,8 @@ module.exports = {
         dateFormat: `DD/MM/YYYY`,
         siteLanguage: `pt`,
         ogLanguage: `pt_BR`,
-        defaultTitle: `Recetas Not Milk`,
-        defaultDescription: `Recetas Not Milk`,
+        defaultTitle: `NotMilk Receitas`,
+        defaultDescription: `¿Procurando inspiração? Confira nossas coleções de receitas feitas pelos chefs do NotCo`,
     },
     es: {
         path: `es`,
@@ -26,7 +26,7 @@ module.exports = {
         dateFormat: `DD/MM/YYYY`,
         siteLanguage: `es`,
         ogLanguage: `es_CL`,
-        defaultTitle: `Recetas Not Milk`,
-        defaultDescription: `Recetas Not Milk`,
+        defaultTitle: `Recetas de NotMilk`,
+        defaultDescription: `¿Buscando inspiración? Chequea nuestras recetas hechas por los chefs de NotCo`,
     },
 }

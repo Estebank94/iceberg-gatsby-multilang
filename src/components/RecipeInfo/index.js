@@ -6,14 +6,30 @@ import {
     faWineBottle,
 } from '@fortawesome/free-solid-svg-icons'
 import useTranslations from '../useTranslations'
+import BackgroundImage from 'gatsby-background-image/index'
+import { graphql, useStaticQuery } from 'gatsby'
 
 function Info({ ingredients, preparationTime, servings, html }) {
     const { minutes, serv, ingred, instructions } = useTranslations()
 
+    const data = useStaticQuery(graphql`
+        query {
+            desktop: file(relativePath: { eq: "recipies/back-receta-prod.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1500, quality: 100) {
+                        ...GatsbyImageSharpFluid_withWebp
+                    }
+                }
+            }
+        }
+    `)
+
+    const imageData = data.desktop.childImageSharp.fluid
+
     return (
         <div className="container-fluid">
             <div className="row">
-                <div className="col-md-12 col-lg-6 detalle-izquierda">
+                <BackgroundImage fluid={imageData} className="col-md-12 col-lg-6 detalle-izquierda">
                     <div className="iconos-receta">
                         <p className="listado-receta">
                             <FontAwesomeIcon
@@ -50,7 +66,7 @@ function Info({ ingredients, preparationTime, servings, html }) {
                             </p>
                         ))}
                     </div>
-                </div>
+                </BackgroundImage>
 
                 <div className="col-md-12 col-lg-6 mt-3 detalle-derecha">
                     <div className="parrafos-receta">

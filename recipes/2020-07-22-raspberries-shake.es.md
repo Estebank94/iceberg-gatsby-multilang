@@ -3,7 +3,7 @@ title: Raspberries Shake
 description: Receta de cafe
 author: Víctor Arias
 featured: false
-difficulty: 1
+difficulty: 2
 servings: 2
 preparationTime: 30
 ingredients:

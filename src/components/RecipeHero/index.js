@@ -37,7 +37,7 @@ function Hero({ title, author, image, location, gallery }) {
                     edges {
                         node {
                             childImageSharp {
-                                fluid(maxWidth: 720, maxHeight: 720) {
+                                fluid(quality: 90, maxWidth: 720, maxHeight: 720) {
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
@@ -72,8 +72,6 @@ function Hero({ title, author, image, location, gallery }) {
     }
 
     const shareData = {
-        title: { shareTitle },
-        text: { title },
         url: location.href,
     }
 

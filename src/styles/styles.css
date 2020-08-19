@@ -374,7 +374,7 @@ a:hover {
 }
 
 .detalle-izquierda {
-    background: url("../images/recipies/back-receta-prod.png") no-repeat center center;
+    /*background: url("../images/recipies/back-receta-prod.png") no-repeat center center;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
