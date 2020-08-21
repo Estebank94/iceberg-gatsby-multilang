@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
         title: `NotCo`,
-        description: `NotCo Recipe`,
+        description: `Discover new recipes made by NotCo's chefs.`,
         author: `The Not Company`,
         siteUrl: `https://relaxed-gates-6dd431.netlify.app`,
     },

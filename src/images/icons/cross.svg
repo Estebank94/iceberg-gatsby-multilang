@@ -1,9 +1,17 @@
-<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <defs></defs>
+<svg width="36px" height="36px" viewBox="0 0 293 294" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Fill 7</title>
+    <defs>
+        <polygon id="path-1" points="0.06 0 2312.77 0 2312.77 599.94 0.06 599.94"></polygon>
+    </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="20200721-NotMilk-Coffee-WEB-copy" transform="translate(-851.000000, -3935.000000)" fill="#000000">
-            <polygon id="Fill-29" points="869.2627 3956.6768 876.1247 3963.4988 882.9867 3970.3208 884.8277 3968.4898 886.6697 3966.6578 879.8087 3959.8368 872.9467 3953.0148 879.8087 3946.1928 886.6697 3939.3698 884.8277 3937.5388 882.9867 3935.7078 876.1247 3942.5308 869.2627 3949.3518 862.4017 3942.5308 855.5387 3935.7078 853.6977 3937.5388 851.8557 3939.3698 858.7177 3946.1928 865.5787 3953.0148 858.7177 3959.8368 851.8557 3966.6578 853.6977 3968.4898 855.5387 3970.3208 862.4017 3963.4988"></polygon>
+        <g id="NotCo-Logo" transform="translate(-1246.000000, -153.000000)">
+            <g id="Group-5">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+            </g>
+            <polyline id="Fill-7" fill="#000105" points="1539.06 195.51 1497.26 153.714 1392.77 258.204 1288.28 153.714 1246.49 195.51 1350.98 300 1246.49 404.49 1288.28 446.286 1392.77 341.796 1497.26 446.286 1539.06 404.49 1434.57 300 1539.06 195.51"></polyline>
         </g>
     </g>
 </svg>

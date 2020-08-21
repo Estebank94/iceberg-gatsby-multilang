@@ -93,6 +93,9 @@ const query = graphql`
             instructions
             
             doneBy
+            
+            title
+            description
 
           }
         }

@@ -12,14 +12,15 @@ const Index = ({ data: { allMarkdownRemark } }) => {
     // useTranslations is aware of the global context (and therefore also "locale")
     // so it'll automatically give back the right translations
     const {
-        hello,
+        title,
+        description
     } = useTranslations()
 
     const postList = allMarkdownRemark.edges
 
     return (
         <div className="homepage">
-            <SEO title="NotMilk Coffee" homePage />
+            <SEO title={title} description={description} homePage />
             <Hero />
             <FeaturedRecipes featuredRecipes={postList} />
             <AllRecipes recipes={postList} />

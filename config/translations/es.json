@@ -21,7 +21,7 @@
   "contributeMessage": "You can always contribute with the project on",
 
   "theFavs": "Nuestras Favoritas",
-  "checkOut": "Chequea nuestras tres recetas favoritas",
+  "checkOut": "Mira nuestras tres recetas favoritas",
 
   "moreToTry": "Más para probar",
   "mouthWatering": "Todas las deliciosas recetas que necesitas",
@@ -57,5 +57,8 @@
 
   "doneBy": "Hecha por nuestro chef",
 
-  "instructions": "Procedimiento"
+  "instructions": "Procedimiento",
+
+  "title": "NotMilk Coffee",
+  "description": "Descubre nuevas recetas hechas por los chefs de NotCo."
 }

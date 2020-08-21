@@ -15,7 +15,7 @@ import { LocaleContext } from '../Layout'
 import useTranslations from '../useTranslations'
 
 function Hero({ title, author, image, location, gallery }) {
-    const { shareTitle, doneBy, share} = useTranslations()
+    const { shareTitle, doneBy, share, description } = useTranslations()
 
     const settings = {
         infinite: true,
@@ -72,6 +72,8 @@ function Hero({ title, author, image, location, gallery }) {
     }
 
     const shareData = {
+        title,
+        text: description,
         url: location.href,
     }
 
