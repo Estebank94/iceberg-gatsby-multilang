@@ -1,5 +1,5 @@
 ---
-title: Capucchino
+title: Capuccino
 description: Receta de cafe
 author: Catalina Donoso
 featured: true
