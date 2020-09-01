@@ -17,8 +17,6 @@ const LocalizedLink = ({ to, ...props }) => {
     ? to
     : `${locales[locale].path}${isIndex ? `` : `${to}`}`;
 
-  console.log('PATH', path);
-
   return <Link {...props} to={path} />;
 };
 

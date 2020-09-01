@@ -9,8 +9,24 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
+import useTranslations from './useTranslations'
 
-function SEO({ description, lang, meta, title, image, homePage }) {
+function JsonLd({ children }) {
+    return (
+        <script type="application/ld+json">{JSON.stringify(children)}</script>
+    )
+}
+
+function SEO({
+    description,
+    lang,
+    meta,
+    title,
+    image,
+    homePage,
+    recipe,
+    posts,
+}) {
     const { site } = useStaticQuery(
         graphql`
             query {
@@ -26,6 +42,8 @@ function SEO({ description, lang, meta, title, image, homePage }) {
         `
     )
 
+    const { titleSite } = useTranslations()
+
     const metaDescription = description || site.siteMetadata.description
 
     const url = site.siteMetadata.siteUrl
@@ -37,7 +55,7 @@ function SEO({ description, lang, meta, title, image, homePage }) {
                 lang,
             }}
             title={title}
-            titleTemplate={`%s | ${site.siteMetadata.title}`}
+            titleTemplate={`%s | ${titleSite}`}
             meta={[
                 {
                     name: `description`,
@@ -94,6 +112,33 @@ function SEO({ description, lang, meta, title, image, homePage }) {
             />
             {!homePage && (
                 <script src="https://unpkg.com/share-api-polyfill/dist/share-min.js"></script>
+            )}
+            {homePage && (
+                <JsonLd>
+                    {{
+                        '@context': 'https://schema.org',
+                        '@type': 'ItemList',
+                        "itemListElement": posts,
+                    }}
+                </JsonLd>
+            )}
+            {recipe && (
+                <JsonLd>
+                    {{
+                        '@context': 'http://schema.org/',
+                        '@type': 'Recipe',
+                        "name": recipe.title,
+                        "image":
+                            'https://relaxed-gates-6dd431.netlify.app' +
+                            recipe.image,
+                        "author": {
+                            '@type': 'Person',
+                            "name": recipe.author,
+                        },
+                        "totalTime": recipe.prepTime,
+                        "recipeYield": recipe.servings,
+                    }}
+                </JsonLd>
             )}
         </Helmet>
     )

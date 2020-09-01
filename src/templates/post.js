@@ -21,7 +21,14 @@ const Post = props => {
             <SEO
                 title={post.frontmatter.title}
                 description={description}
-                // image={post.frontmatter.image}
+                recipe={{
+                    name: post.frontmatter.title,
+                    author: post.frontmatter.author,
+                    image: post.frontmatter.image,
+                    prepTime: post.frontmatter.preparationTime,
+                    ingredients: post.frontmatter.ingredients,
+                    recipeYield: post.frontmatter.servings + ' servings',
+                }}
             />
             <RecipeHero
                 title={post.frontmatter.title}

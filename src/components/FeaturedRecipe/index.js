@@ -61,7 +61,7 @@ const featuredRecipe = ({
                         alt={title}
                     />
                     <div className="card-img-overlay rotate nombre-receta">
-                        <p>{title}</p>
+                        <h2>{title}</h2>
                     </div>
                     <div className="card-body datos-receta-home row justify-content-between">
                         <div className="text-center">
