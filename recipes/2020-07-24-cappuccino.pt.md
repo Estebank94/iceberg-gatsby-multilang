@@ -1,5 +1,5 @@
 ---
-title: Cappuccino
+title: Frozen Cappuccino
 description: Receta de cafe
 author: Catalina Donoso
 featured: true
@@ -7,7 +7,7 @@ difficulty: 1
 servings: 2
 preparationTime: 10
 ingredients:
-  - amount: 1/2 xícara 
+  - amount: 1/2 xícara
     ingredient: Shot expresso
   - amount: 1/2 xícara
     ingredient: Not Milk
