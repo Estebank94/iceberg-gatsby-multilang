@@ -20,6 +20,7 @@ module.exports = {
         `gatsby-transformer-json`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
+        `gatsby-plugin-preload-fonts`,
         // It needs to be the first one to work with gatsby-remark-images
         {
             resolve: `gatsby-source-filesystem`,
@@ -85,18 +86,6 @@ module.exports = {
                 ],
             },
         },
-        {
-            resolve: `gatsby-plugin-prefetch-google-fonts`,
-            options: {
-                fonts: [
-                    {
-                        family: `Open Sans`,
-                        variants: [`400`, `600`],
-                    },
-                ],
-            },
-        },
-
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sitemap`,
         {
