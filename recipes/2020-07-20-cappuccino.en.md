@@ -1,5 +1,5 @@
 ---
-title: Frozen Cappuccino
+title: Cappuccino
 description: Receta de cafe
 author: Catalina Donoso
 featured: true
