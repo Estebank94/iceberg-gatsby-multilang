@@ -1,5 +1,5 @@
 ---
-title: Frapuccino
+title: Frozen Capuccino
 description: Receta de cafe
 author: Carolina Carriel
 featured: false
