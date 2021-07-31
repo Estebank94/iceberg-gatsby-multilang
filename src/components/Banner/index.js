@@ -19,7 +19,7 @@ function Banner() {
         query {
             desktop: file(relativePath: { eq: "banners/notmilk.png" }) {
                 childImageSharp {
-                    fluid(quality: 70, maxWidth: 300) {
+                    fluid(quality: 100, maxWidth: 300) {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }

@@ -25,7 +25,7 @@ const featuredRecipe = ({
                     edges {
                         node {
                             childImageSharp {
-                                fluid(maxWidth: 400, maxHeight: 400) {
+                                fluid(maxWidth: 800, maxHeight: 800) {
                                     src
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
@@ -50,6 +50,8 @@ const featuredRecipe = ({
               return img.node.childImageSharp.fluid.src.includes(imgName)
           })
         : false
+
+    console.log('SLUG:', slug);
 
     return (
         <LocalizedLink to={slug}>

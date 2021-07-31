@@ -25,7 +25,7 @@ const PostItem = ({
           edges {
             node {
               childImageSharp {
-                fluid(maxWidth: 1000, maxHeight: 1000) {
+                fluid(maxWidth: 1500, maxHeight: 1500) {
                   src
                   ...GatsbyImageSharpFluid
                 }

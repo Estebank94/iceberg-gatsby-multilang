@@ -37,7 +37,7 @@ function Hero({ title, author, image, location, gallery }) {
                     edges {
                         node {
                             childImageSharp {
-                                fluid(quality: 90, maxWidth: 720, maxHeight: 720) {
+                                fluid(quality: 100, maxWidth: 1400, maxHeight: 1400) {
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
