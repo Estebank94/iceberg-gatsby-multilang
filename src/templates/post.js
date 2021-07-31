@@ -42,6 +42,7 @@ const Post = props => {
                 ingredients={post.frontmatter.ingredients}
                 servings={post.frontmatter.servings}
                 html={post.html}
+                isOriginal={post.frontmatter.isOriginal}
             />
             <AllRecipes recipes={recipes} insideRecipe/>
             <Banner/>
@@ -63,6 +64,7 @@ export const query = graphql`
         image
         servings
         gallery
+        isOriginal  
         preparationTime
         ingredients {
           ingredient

@@ -3,6 +3,7 @@ title: Irish Cream
 description: Receta de cafe
 author: Catalina Donoso
 featured: false
+isOriginal: true
 difficulty: 1
 servings: 2
 preparationTime: 10

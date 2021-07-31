@@ -3,6 +3,7 @@ title: Hot Chocolate
 description: Receta de cafe
 author: Catalina Donoso
 featured: true
+isOriginal: true
 difficulty: 1
 servings: 2
 preparationTime: 10

@@ -4,6 +4,7 @@ description: Receta de cafe
 author: Víctor Arias
 featured: false
 difficulty: 2
+isOriginal: true
 servings: 2
 preparationTime: 30
 ingredients:

@@ -9,12 +9,19 @@ import useTranslations from '../useTranslations'
 import BackgroundImage from 'gatsby-background-image/index'
 import { graphql, useStaticQuery } from 'gatsby'
 
-function Info({ ingredients, preparationTime, servings, html }) {
+function Info({ ingredients, preparationTime, servings, html, isOriginal }) {
     const { minutes, serv, ingred, instructions } = useTranslations()
 
-    const data = useStaticQuery(graphql`
+    const imageData = useStaticQuery(graphql`
         query {
-            desktop: file(relativePath: { eq: "recipies/back-receta-prod.png" }) {
+            original: file(relativePath: { eq: "recipies/back-receta-original.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1500, quality: 100) {
+                        ...GatsbyImageSharpFluid_withWebp
+                    }
+                }
+            }
+            lowFat: file(relativePath: { eq: "recipies/back-receta-prod.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 1500, quality: 100) {
                         ...GatsbyImageSharpFluid_withWebp
@@ -24,12 +31,13 @@ function Info({ ingredients, preparationTime, servings, html }) {
         }
     `)
 
-    const imageData = data.desktop.childImageSharp.fluid
+    const lowFatData = imageData.lowFat.childImageSharp.fluid
+    const originalFatData = imageData.original.childImageSharp.fluid
 
     return (
         <div className="container-fluid">
             <div className="row">
-                <BackgroundImage fluid={imageData} className="col-md-12 col-lg-6 detalle-izquierda">
+                <BackgroundImage fluid={isOriginal ? originalFatData : lowFatData} className="col-md-12 col-lg-6 detalle-izquierda">
                     <div className="iconos-receta">
                         <p className="listado-receta">
                             <FontAwesomeIcon
